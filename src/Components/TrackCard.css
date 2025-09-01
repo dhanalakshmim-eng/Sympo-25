@@ -1,0 +1,75 @@
+/* .trackcard {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: Montserrat;
+    background-color: transparent;
+    font-weight: bold;
+    padding: 1em 2em 1em 1em;
+    border-radius: 20px;
+    overflow: hidden;
+    z-index: 1;
+    row-gap: 1em;
+  }
+  .trackcard img {
+    width: 11em;
+    margin-right: 1em;
+    margin-left: 1em;
+    animation: float 2s ease-in-out infinite;
+    z-index: 5;
+  }
+  
+  .heading {
+    z-index: 2;
+    transition: 0.4s ease-in-out;
+  }
+  .trackcard:hover .heading {
+    letter-spacing: 0.3em;
+  }
+  
+  .heading::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    opacity: 1;
+    box-shadow: 220px 118px #fff, 280px 176px #fff, 40px 50px #fff,
+      60px 180px #fff, 120px 130px #fff, 180px 176px #fff, 220px 290px #fff,
+      520px 250px #fff, 400px 220px #fff, 50px 350px #fff, 10px 230px #fff;
+    z-index: -1;
+    transition: 1s ease;
+    animation: 1s glowing-stars linear alternate infinite;
+    animation-delay: 0s;
+  }
+  
+  @keyframes glowing-stars {
+    0% {
+      opacity: 0;
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }  */

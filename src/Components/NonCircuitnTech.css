@@ -1,0 +1,23 @@
+.card-container {
+  padding: 60px;
+  background: transparent; /* Ensure transparency */
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.5) transparent;
+}
+
+.card-container::-webkit-scrollbar {
+  height: 15px;
+}
+
+.card-container::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+}
+
+.card-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.card-container > a {
+  display: inline-block; /* Ensure cards are inline for horizontal swipe */
+}

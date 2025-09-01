@@ -1,0 +1,31 @@
+/* Keyframes for infinite border movement animation */
+@keyframes borderAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 200% 50%;
+    }
+  }
+  
+  /* Apply the infinite border animation */
+  .animate-border {
+    animation: borderAnimation 3s linear infinite;
+  }
+  
+  /* On hover, the background position slows down */
+  .group-hover\:bg-position-animate:hover {
+    animation: borderAnimation 8s linear infinite;
+  }
+  
+  /* Optional smooth spin effect for hover (if needed) */
+  /* You can adjust the animation timing if you want a spin effect on hover */
+  @keyframes spin-slow {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  

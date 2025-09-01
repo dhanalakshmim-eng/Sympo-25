@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Guerrilla&family=Nerko+One&family=Roboto+Slab:wght@100..900&display=swap');
+
+@font-face {
+  font-family: 'otherfont';
+  src: url('/fonts/kanit-ExtraBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'collegefont';
+    src: url('/fonts/Game Of Squids.woff2') format('woff2'),
+         url('/fonts/Game Of Squids.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+  font-family: 'timerfont';
+  src: url('/fonts/digital-7.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'aboutfont';
+  src: url('/fonts/Revamped.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  /* font-display: swap; */
+}
+/* @font-face {
+  font-family: 'faqfont';
+  src: url('/fonts/Roboto-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+} */
+
+
+/* .college-font {
+  font-family: 'collegefont', sans-serif;
+  color: #66FCF1;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+} */
+
+/*.college-font h1 {
+  font-size: 4rem;
+  margin: 20px 0;
+  padding: 10px 0;
+  line-height: 1.2;
+  background: linear-gradient(90deg, #66FCF1, #45A29E, #C5C6C7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.college-font h2 {
+  font-size: 2.5rem;
+  margin: 15px 0;
+  padding: 5px 0;
+  background: linear-gradient(90deg, #66FCF1, #C5C6C7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}*/
+
+.bg-custom-gradient {
+  background: linear-gradient(to right, #160142, #010224);
+}
+
+
+.event-text {
+  font-family: "Protest Guerrilla", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.roboto-slab-500 {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+/* Countdown animation for sliding the number */
+@keyframes slide-down {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(-100%);
+    opacity: 1;
+  }
+}
+
+.countdown-timer .slide {
+  animation: slide-down 0.5s ease-in-out;
+}
+
+
+.text-gradient {
+  background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(to right, #8b5cf6, #a5f63b);
+}
+
+@keyframes gradientBackground {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.glow-neon {
+  box-shadow: 0 0 20px rgba(99, 102, 241, 0.7), 0 0 30px rgba(99, 102, 241, 0.5);
+}
+
+@media (max-width: 640px) {
+  .mt-small {
+    margin-top: 20px; /* Change this value as needed */
+  }}
