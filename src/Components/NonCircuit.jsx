@@ -22,7 +22,7 @@ const NonCircuit = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-      <EventButton label="Register" />
+      <EventButton label="Register1" />
       </a>
       </div>
       <br />

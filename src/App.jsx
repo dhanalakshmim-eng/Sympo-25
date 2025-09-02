@@ -20,7 +20,7 @@ const App = () => {
     return <Loading />; // Display loader while loading is true
   }
   return (
-    <div className="text-2xl    text-white">
+    <div className="text-2xl    text-white ">
       <Header />
 
       {/* mb-20 removed due to the white space */}
