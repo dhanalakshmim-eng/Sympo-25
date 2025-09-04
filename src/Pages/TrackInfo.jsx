@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import "./animation.css";
+import "./styles/animation.css";
 import VanillaTilt from "vanilla-tilt";
 import "animate.css"
 // import Image from "../assets/symposium/SymLogo.png"; // Change to the image you want to use for the poster if necessary.

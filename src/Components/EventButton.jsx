@@ -1,5 +1,5 @@
 import React from "react";
-import './EventButton.css';
+import './styles/EventButton.css';
 
 const EventButton = ({label}) => {
     return (

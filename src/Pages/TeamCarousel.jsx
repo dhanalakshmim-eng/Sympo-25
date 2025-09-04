@@ -2,7 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "./Contact.css"; 
+import "./styles/Contact.css"; 
 import "../text.css";
 import vinoth from "../utils/Img/vinoth.jpg";
 import shifan from "../utils/Img/shifan.jpg";

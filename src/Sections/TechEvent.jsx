@@ -1,7 +1,7 @@
 import React from "react";
 import { techEventsData } from "../utils/techEvents";
 import { Link } from "react-router-dom";
-import "./TechEvent.css"; // Link the custom CSS
+import "./styles/TechEvent.css"; // Link the custom CSS
 import Button from "../Components/Button";
 const TechEvent = () => {
   return (

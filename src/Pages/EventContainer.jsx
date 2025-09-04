@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import VanillaTilt from "vanilla-tilt";
 // import eventPoster from "../assets/symposium/OverallPoster.jpeg";
 import eventPoster from "../assets/symposium/overallPoster.jpg"
-import EventButton from "./EventButton";
+import EventButton from "../Components/EventButton.jsx";
 
 const EventContainer = () => {
   const tiltRef = useRef(null);

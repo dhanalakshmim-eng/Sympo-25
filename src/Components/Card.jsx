@@ -1,5 +1,5 @@
 import React from "react";
-import "./card.css"; // Link to the CSS file
+import "./styles/card.css"; // Link to the CSS file
 import EventButton from "./EventButton";
 
 const Card = ({ imageSrc, altText, label, onClick }) => {

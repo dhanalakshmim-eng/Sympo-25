@@ -5,7 +5,7 @@ import EventButton from "../Components/EventButton";
 import { Link } from "react-router-dom";
 import TrackInfo from "./TrackInfo";
 import img from "../assets/symposium/OverallPoster.jpeg";
-import "animate.css";
+import "./styles/animation.css";
 const Circuit = () => {
   return (
     <div>

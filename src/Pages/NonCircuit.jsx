@@ -1,7 +1,7 @@
 import React from 'react'
-import NonCircuitnTech from './NonCircuitnTech'
-import NonCircuitTec from "./NonCircuitTec"
-import EventButton from "./EventButton"
+import NonCircuitnTech from '../Components/NonCircuitnTech'
+import NonCircuitTec from "../Components/NonCircuitTec"
+import EventButton from "../Components/EventButton"
 import { Link } from 'react-router-dom'
 import TrackInfo from '../Pages/TrackInfo'
 import img from "../assets/symposium/track1.jpg"

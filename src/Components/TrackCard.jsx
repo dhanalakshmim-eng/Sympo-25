@@ -1,5 +1,5 @@
 import React from 'react';
-import "./TrackCard.css";
+import "./styles/TrackCard.css";
 
 const TrackCard = ({ imageSrc, heading }) => (
     <div className="trackcard">

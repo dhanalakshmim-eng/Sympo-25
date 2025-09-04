@@ -1,6 +1,6 @@
 import React from "react";
 import { questions } from "../utils/faq";
-import './faq.css';
+import './styles/faq.css';
 
 const Faq = () => {
   return (

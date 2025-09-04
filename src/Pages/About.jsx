@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import "./animation.css"; // Import the CSS for the cubes animation
+import "./styles/animation.css"; // Import the CSS for the cubes animation
 import VanillaTilt from "vanilla-tilt";
 import Image from "../assets/symposium/SymLogo.png";
 
