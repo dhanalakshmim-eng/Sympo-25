@@ -2,7 +2,7 @@ import React from "react";
 import { techEventsData } from "../utils/techEvents";
 import { Link } from "react-router-dom";
 import "./TechEvent.css"; // Link the custom CSS
-import Button from "./Button";
+import Button from "../Components/Button";
 const TechEvent = () => {
   return (
     <div className="max-w-7xl mx-auto p-6 card">

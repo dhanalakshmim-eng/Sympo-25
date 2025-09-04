@@ -3,7 +3,7 @@ import NonCircuitnTech from './NonCircuitnTech'
 import NonCircuitTec from "./NonCircuitTec"
 import EventButton from "./EventButton"
 import { Link } from 'react-router-dom'
-import TrackInfo from './TrackInfo'
+import TrackInfo from '../Pages/TrackInfo'
 import img from "../assets/symposium/track1.jpg"
 const NonCircuit = () => {
   return (

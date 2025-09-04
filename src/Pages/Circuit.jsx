@@ -1,7 +1,7 @@
 import React from "react";
-import NonCircuitnTech from "./NonCircuitnTech";
+import NonCircuitnTech from "../Components/NonCircuitnTech";
 import CircuitTec from "./CircuitTec";
-import EventButton from "./EventButton";
+import EventButton from "../Components/EventButton";
 import { Link } from "react-router-dom";
 import TrackInfo from "./TrackInfo";
 import img from "../assets/symposium/OverallPoster.jpeg";

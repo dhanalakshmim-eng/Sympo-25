@@ -1,5 +1,5 @@
 import React from "react";
-import TrackCard from "./TrackCard.jsx";
+import TrackCard from "../Components/TrackCard.jsx";
 import circuit from "../utils/Img/circuit1.png";
 import noncircuit from "../utils/Img/circuit.png";
 import "animate.css";

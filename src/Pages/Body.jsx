@@ -1,27 +1,22 @@
 import React, { useState, useEffect } from "react";
-import CollegeName from "./CollegeName";
-import Loading from "./Loading"; // Import the loader
-import Faq from "./Faq";
-import NewAbout from "./NewAbout";
-import CountdownTimer from "./CountDown";
-import Footer from "./Footer";
-import Highlight from "./Highlight";
-import TeamCarousel from "./TeamCarousel";
-import InfoSections from "./InfoSections";
-import HomeEventDetails from "./HomeEventDetails";
-import NeonButton from "./NeonButton";
-import EventButton from "./EventButton";
-import EventCardDesign from "./EventCardDesign";
-import Card from "./Card";
-import MediaSection from "./MediaSection";
-import ContactUs from "./ContactUs";
-import LocateMap from "./LocateMap";
-import Teams from "./Teams";
+import CollegeName from "../Sections/CollegeName";
+
+import Faq from "../Sections/Faq";
+import NewAbout from "./About";
+import CountdownTimer from "../Sections/CountDown";
+import Footer from "../Sections/Footer";
+
+
+
+
+import EventButton from "../Components/EventButton";
+
+import Teams from "../Sections/Teams";
 import "animate.css";
 import { Link } from "react-router-dom";
-import Carousel from "./Carousel";
-import OverallGuest from "./OverallGuest";
-import Carousel1 from "./Carousel1";
+import Carousel from "../Components/Carousel";
+import OverallGuest from "../Sections/OverallGuest";
+import Carousel1 from "../Components/Carousel1";
 
 const Body = () => {
   // const [loading, setLoading] = useState(true);

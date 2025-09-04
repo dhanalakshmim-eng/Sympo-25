@@ -2,8 +2,8 @@ import React from "react";
 import randomColor from "randomcolor";
 import "../text.css";
 import Logo from "../utils/Img/TechLogo.jpg";
-import Card from "./Card";
-import RandomEvents from "./RandomEvents";
+import Card from "../Components/Card";
+import RandomEvents from "../Components/RandomEvents";
 import iplauction from "../assets/symposium/iplauction.jpg"
 
 
