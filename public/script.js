@@ -24,7 +24,7 @@ class Particle {
   draw() {
     ctx.beginPath();
     ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-    ctx.fillStyle = 'rgba(211, 3, 252, 0.5)'; // Particle color
+    ctx.fillStyle = '#E8BCB9'; // Particle color
     ctx.shadowBlur = 29; // Increase blur intensity for a more pronounced glow
     ctx.shadowColor = 'rgba(255, 255, 255, 0.9)'; // Lighten the glow color for a softer effect
     ctx.globalCompositeOperation = 'lighter'; // Makes the glow effect more vivid and bright

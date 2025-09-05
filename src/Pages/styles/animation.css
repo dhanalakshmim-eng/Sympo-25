@@ -161,15 +161,15 @@
   
   .item:nth-child(6) {
     margin-top: -9.375em;
-    color: #E100FF;
+    color: #E8BCB9;
     animation-delay: -0.2s;
   }
   
   .item:nth-child(6):before {
-    color: #E150FF;
+    color: #E8BCB9;
   }
   
   .item:nth-child(6):after {
-    color: #E180FF;
+    color: #E8BCB9;
   }
   
