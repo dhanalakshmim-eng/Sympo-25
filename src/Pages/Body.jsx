@@ -35,9 +35,23 @@ const Body = () => {
 
   return (
     <div>
+      <section className="relative  w-screen h-screen flex items-center justify-center overflow-hidden ">
+      {/* Video Background */}
+      {/* <video
+        className="absolute top-0 left-0 w-full h-full object-cover"
+        src="hero.webm"
+        autoPlay
+        loop
+        muted
+      /> */}
+
+      {/* Overlay (optional, for better text readability) */}
+      <div className="absolute top-0 left-0 w-full h-screen "></div>
+
+      {/* Hero Content */}
       <div className="mt-small">
       <CollegeName />
-      <div className="flex flex-wrap justify-center gap-5 my-5 animate__animated animate__fadeInUp duration-500">
+      <div className="flex flex-wrap justify-center gap-5 my-1 animate__animated animate__fadeInUp duration-500">
         <Link to="/events">
           <EventButton label="Explore" />
         </Link>
@@ -45,6 +59,8 @@ const Body = () => {
 
       <CountdownTimer />
       </div>
+    </section>
+      
       
       <hr className="border-t-2 border-gray-400 w-3/4 mx-auto my-10" />
       <NewAbout />

@@ -48,7 +48,7 @@ class Particle {
 // Initialize particles
 function initParticles() {
   for (let i = 0; i < numberOfParticles; i++) {
-    const size = Math.random() * 15 + 10; // Particle size
+    const size = Math.random() * 5 + 5; // Particle size
     const x = Math.random() * canvas.width;
     const y = Math.random() * canvas.height;
     const speedX = (Math.random() - 0.5) * 2; // Speed in x

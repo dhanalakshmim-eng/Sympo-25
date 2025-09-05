@@ -23,7 +23,7 @@ const NewAbout = () => {
       <div className="glassmorphic-container p-6 md:p-10 w-full max-w-5xl">
         {/* Heading Section */}
         <h1 className="text-5xl md:text-5xl text-lg mb-5 leading-relaxed text-left">
-          About
+          About12
         </h1>
 
         {/* Title */}
