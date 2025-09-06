@@ -1,7 +1,7 @@
 .eventbutton {
   position: relative;
   /* padding: 17px 35px; */
-  background: linear-gradient(to right, #ff00cc, #333399);
+  background: linear-gradient(to right, #AE445A, #E8BCB9);
   /* font-size: 17px; */
   width: 200px;
   height: 55px;
@@ -11,12 +11,12 @@
   text-transform: uppercase;
   font-family: sans-serif;
   letter-spacing: 4px;
-  color: #ffffff;
-  border: 3px solid #efa6ff;
+  color: #1D1A39;
+  border: 3px solid #1D1A39;
   border-radius: 5rem;
-  box-shadow: 0 0 15px #ff00cc, 0 0 30px #333399;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
+  
 }
   
   .star-1 {
@@ -86,9 +86,13 @@
   }
   
   .eventbutton:hover {
-    background: transparent;
-    color: #ee95fe;
-    box-shadow: 0 0 25px #fa95fe8c;
+    background: linear-gradient(to left, #AE445A, #E8BCB9);
+    color: #1D1A39;
+    border: 3px solid #1D1A39;
+    border-radius: 5rem;
+    box-shadow: 0 0 15px #1D1A39, 0 0 30px #E8BCB9;
+    transition: all 0.1s ease-in-out;
+    cursor: pointer;
   }
   
   .eventbutton:hover .star-1 {

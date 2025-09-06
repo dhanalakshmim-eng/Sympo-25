@@ -133,9 +133,10 @@ main {
     opacity: 0;
   }
 }
+
 /* Glassmorphic container with padding */
 .glassmorphic-container {
-background: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+background: transparent; /* Semi-transparent white */
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
 backdrop-filter: blur(10px); /* Blur background elements */
 -webkit-backdrop-filter: blur(10px); /* Safari compatibility */
@@ -145,12 +146,13 @@ padding: 2rem; /* Inner padding for content */
 margin: 1rem; /* Outer margin to center it visually */
 width: calc(100% - 2rem); /* Ensure the glass container doesn't touch edges */
 max-width: 1200px; /* Optional: Set a maximum width for large screens */
-transition: all 0.3s ease; /* Smooth hover effect */
+transition: all 1s ease; /* Smooth hover effect */
 }
 
 /* Optional: Add hover effect for interactivity */
 .glassmorphic-container:hover {
-background: rgba(255, 255, 255, 0.2); /* Slightly less transparent on hover */
+background: #e8bcb9cb; /* Slightly less transparent on hover */
+color: black;
 box-shadow: 0 6px 40px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
 }
 
