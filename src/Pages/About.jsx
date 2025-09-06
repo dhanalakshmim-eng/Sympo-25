@@ -18,7 +18,7 @@ const NewAbout = () => {
   }, []);
 
   return (
-    <div className="bg-dark-grey text-white-grey flex flex-col items-center py-10">
+    <div className="flex flex-col items-center py-10">
       {/* Glassmorphic Container */}
       <div className="glassmorphic-container p-6 md:p-10 w-full max-w-5xl">
         {/* Heading Section */}
