@@ -17,8 +17,10 @@ const CollegeName = () => {
       </h2>
       {/* style={{ textShadow: '0 0 8px white' }} */}
       <br />
-      <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-7xl font-extrabold bg-white bg-clip-text text-transparent font-aboutfont animate__animated animate__fadeInUp duration-500" style={{textShadow : "0 0 8px white"}}>
-      Technovanza'25 <br /> {/* <p className='className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-extrabold bg-white bg-clip-text text-transparent font-otherfont'>2024-'25</p> */}
+      <h1 className="sympo-text text-2xl sm:text-4xl md:text-5xl lg:text-7xl font-extrabold bg-white bg-clip-text text-transparent font-aboutfont animate__animated animate__fadeInUp duration-500" style={{}}>
+      Technovanza'25 
+      {/* <span className="lightning"></span> */}
+      <br /> {/* <p className='className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-extrabold bg-white bg-clip-text text-transparent font-otherfont'>2024-'25</p> */}
       </h1>
     </div>
   );

@@ -124,3 +124,47 @@
   .mt-small {
     margin-top: 20px; /* Change this value as needed */
   }}
+.sympo-text{
+  
+  text-shadow : 0 0 20px #fac599;
+}
+
+/*   .technovanza {
+    position: relative;
+    font-size: 4rem;
+    font-weight: 900;
+    color: #fff; 
+    text-transform: uppercase;
+    display: inline-block;
+    overflow: hidden;
+  } */
+  
+  /* lightning overlay */
+  /* .technovanza .lightning {
+    position: absolute;
+    top: 0;
+    left: -100%; 
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+       #E8BCB9 45%,
+       #E8BCB9 50%,
+       #E8BCB9 55%,
+      transparent 100%
+    );
+    mix-blend-mode: screen; 
+    animation: lightning-move 2s linear infinite;
+  } 
+  
+  
+  @keyframes lightning-move {
+    0% {
+      left: -100%;
+    }
+    100% {
+      left: 100%;
+    }
+  } */
+  
