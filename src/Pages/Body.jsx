@@ -36,14 +36,14 @@ const Body = () => {
   return (
     <div>
       <section className="relative  w-screen h-screen flex items-center justify-center overflow-hidden ">
-      {/* Video Background */}
-      {/* <video
+      {/* Video Background 
+      <video
         className="absolute top-0 left-0 w-full h-full object-cover"
         src="hero.webm"
         autoPlay
         loop
         muted
-      /> */}
+      />*/}
 
       {/* Overlay (optional, for better text readability) */}
       <div className="absolute top-0 left-0 w-full h-screen "></div>

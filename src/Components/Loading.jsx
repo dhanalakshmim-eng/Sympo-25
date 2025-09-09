@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Lottie from "react-lottie-player";
-import NewLoader from "../assets/Price/NewLoader.json";
+import NewLoader from "../assets/Price/award.json";
 const Loader = () => {
   return (
     <div className="min-h-screen flex justify-center items-center">

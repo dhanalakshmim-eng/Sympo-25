@@ -129,6 +129,10 @@
   text-shadow : 0 0 20px #fac599;
 }
 
+
+.clg-font{
+  font-family: "Inter";
+}
 /*   .technovanza {
     position: relative;
     font-size: 4rem;
