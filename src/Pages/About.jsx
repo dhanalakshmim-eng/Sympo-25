@@ -23,12 +23,12 @@ const NewAbout = () => {
       <div className="glassmorphic-container p-6 md:p-10 w-full max-w-5xl">
         {/* Heading Section */}
         <h1 className="text-5xl md:text-5xl text-lg mb-5 leading-relaxed text-left">
-          About12
+          About
         </h1>
 
         {/* Title */}
         <h2 className="text-3xl md:text-5xl font-aboutfont tracking-widest text-left">
-          TECHNOVANZA 2024-'25
+          TECHNOVANZA'25
         </h2>
 
         {/* Content Section */}
