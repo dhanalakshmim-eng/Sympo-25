@@ -22,42 +22,42 @@ const NonCircuitTec = () => {
   const circuittechnicalEvents = [
     {
       id: 1,
-      imageSrc: elo, // Replace with actual image path
+      imageSrc: Image, // Replace with actual image path
       altText: "Eloquence",
       label: "Eloquence",
       path: "/eloquence",
     },
     {
       id: 2,
-      imageSrc: wiz,
+      imageSrc: Image,
       altText: "Wizzup",
       label: "Wizzup",
       path: "/wizzup",
     },
     {
       id: 3,
-      imageSrc: matter,
+      imageSrc: Image,
       altText: "MatterMind",
       label: "MatterMind",
       path: "/mattermind",
     },
     {
       id: 4,
-      imageSrc: viz,
+      imageSrc: Image,
       altText: "Viz Your Way",
       label: "Viz Your Way",
       path: "/vizyourway",
     },
     {
       id: 5,
-      imageSrc: ghost,
+      imageSrc: Image,
       altText: "GhostOps-CTF",
       label: "GhostOps-CTF",
       path: "/ghostops",
     },
     {
       id: 6,
-      imageSrc: codesprint,
+      imageSrc: Image,
       altText: "Code Sprint",
       label: "Code Sprint",
       path: "/codesprint",

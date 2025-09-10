@@ -8,7 +8,6 @@
   font-display: swap;
 }
 
-
 @font-face {
     font-family: 'collegefont';
     src: url('/fonts/Game Of Squids.woff2') format('woff2'),
@@ -133,6 +132,8 @@
 .clg-font{
   font-family: "Inter";
 }
+
+
 /*   .technovanza {
     position: relative;
     font-size: 4rem;

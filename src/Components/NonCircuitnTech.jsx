@@ -18,37 +18,37 @@ const NonCircuitnTech = () => {
   const circuittechnicalEvents = [
     {
       id: 1,
-      imageSrc: cini,
+      imageSrc: Image,
       altText: "Cinephilia",
       path: "/cinephilia",
     },
     {
       id: 2,
-      imageSrc: vault,
+      imageSrc: Image,
       altText: "Mystery Vault",
       path: "/mysteryvault",
     },
     {
       id: 3,
-      imageSrc: deadly,
+      imageSrc: Image,
       altText: "Deadly Deeds",
       path: "/deadlydeeds",
     },
     {
       id: 4,
-      imageSrc: iplauction,
+      imageSrc: Image,
       altText: "IPL Auction",
       path: "/iplauction",
     },
     {
       id: 5,
-      imageSrc: bgmi,
+      imageSrc: Image,
       altText: "BGMI",
       path: "/bgmi",
     },
     {
       id: 6,
-      imageSrc: ff,
+      imageSrc: Image,
       altText: "Free Fire",
       path: "/ff",
     },
