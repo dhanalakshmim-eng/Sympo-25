@@ -38,13 +38,13 @@ const Body = () => {
     <div>
       <section className="relative  w-screen h-screen flex items-center justify-center overflow-hidden ">
       {/* Video Background */}
-      {/* <video
+      <video
         className="absolute top-0 left-0 w-full h-full object-cover"
-        src="buffer.mp4"
+        src="b7.mp4"
         autoPlay
         loop
         muted
-      /> */}
+      />
 
       {/* Overlay (optional, for better text readability) */}
       <div className="absolute top-0 left-0 w-full h-screen "></div>
