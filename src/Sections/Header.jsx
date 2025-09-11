@@ -75,8 +75,9 @@ const Header = () => {
       <Link
         to="/"
         className={`font-collegefont block py-2 px-3 rounded md:bg-transparent md:p-0 ${
-          currentPath === "/" ? "text-[#fc03e3] bg-gradient-to-br from-[#fc03e3] to-[#a6033c] bg-clip-text text-transparent" : "text-white"
-        } hover:bg-gradient-to-br hover:from-[#fc03e3] hover:to-[#a6033c] hover:bg-clip-text hover:text-transparent `}
+          currentPath === "/" ?"text-[#E8BCB9] bg-gradient-to-br from-[#E8BCB9] to-[#AE445A] bg-clip-text text-transparent" : "text-white"
+        } hover:bg-gradient-to-br hover:from-[#E8BCB9] hover:to-[#AE445A] hover:bg-clip-text hover:text-transparent " bg-gradient-to-r from-pink-500 to-red-500 text-white font-bold rounded-full shadow-lg 
+        transform transition duration-300 hover:scale-105 hover:shadow-xl"`}
         aria-current={currentPath === "/" ? "page" : undefined}
         onClick={ () => {
           closeMenu();
@@ -90,8 +91,9 @@ const Header = () => {
       <Link
         to="/about"
         className={`font-collegefont block py-2 px-3 rounded md:bg-transparent md:p-0 ${
-          currentPath === "/about" ? "text-[#fc03e3] bg-gradient-to-br from-[#fc03e3] to-[#a6033c] bg-clip-text text-transparent" : "text-white"
-        } hover:bg-gradient-to-br hover:from-[#fc03e3] hover:to-[#a6033c] hover:bg-clip-text hover:text-transparent`}
+          currentPath === "/about" ? "text-[#E8BCB9] bg-gradient-to-br from-[#E8BCB9] to-[#AE445A] bg-clip-text text-transparent" : "text-white"
+        } hover:bg-gradient-to-br hover:from-[#E8BCB9] hover:to-[#AE445A] hover:bg-clip-text hover:text-transparent " bg-gradient-to-r from-pink-500 to-red-500 text-white font-bold rounded-full shadow-lg 
+        transform transition duration-300 hover:scale-105 hover:shadow-xl"`}
         onClick={closeMenu}
       >
         ABOUT
@@ -101,8 +103,9 @@ const Header = () => {
       <Link
         to="/events"
         className={`font-collegefont block py-2 px-3 rounded md:bg-transparent md:p-0 ${
-          currentPath === "/events" ? "text-[#fc03e3] bg-gradient-to-br from-[#fc03e3] to-[#a6033c] bg-clip-text text-transparent" : "text-white"
-        } hover:bg-gradient-to-br hover:from-[#fc03e3] hover:to-[#a6033c] hover:bg-clip-text hover:text-transparent`}
+          currentPath === "/events" ? "text-[#E8BCB9] bg-gradient-to-br from-[#E8BCB9] to-[#AE445A] bg-clip-text text-transparent" : "text-white"
+        } hover:bg-gradient-to-br hover:from-[#E8BCB9] hover:to-[#AE445A] hover:bg-clip-text hover:text-transparent " bg-gradient-to-r from-pink-500 to-red-500 text-white font-bold rounded-full shadow-lg 
+        transform transition duration-300 hover:scale-105 hover:shadow-xl"`}
         onClick={() => {
           closeMenu();
           window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -115,8 +118,9 @@ const Header = () => {
       <Link
         to="/contact"
         className={`font-collegefont block py-2 px-3 rounded md:bg-transparent md:p-0 ${
-          currentPath === "/contact" ? "text-[#fc03e3] bg-gradient-to-br from-[#fc03e3] to-[#a6033c] bg-clip-text text-transparent" : "text-white"
-        } hover:bg-gradient-to-br hover:from-[#fc03e3] hover:to-[#a6033c] hover:bg-clip-text hover:text-transparent`}
+          currentPath === "/contact" ? "text-[#E8BCB9] bg-gradient-to-br from-[#E8BCB9] to-[#AE445A] bg-clip-text text-transparent" : "text-white"
+        } hover:bg-gradient-to-br hover:from-[#E8BCB9] hover:to-[#AE445A] hover:bg-clip-text hover:text-transparent " bg-gradient-to-r from-pink-500 to-red-500 text-white font-bold rounded-full shadow-lg 
+        transform transition duration-300 hover:scale-105 hover:shadow-xl"`}
         onClick={() => {
           closeMenu();
           window.scrollTo({ top: 0, behavior: 'smooth' });
