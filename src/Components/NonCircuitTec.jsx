@@ -15,7 +15,6 @@ import RandomEvents from "./RandomEvents";
 import { Link } from "react-router-dom";
 
 const NonCircuitTec = () => {
-  const color = randomColor();
   const noncircuittec = RandomEvents("Circuit Branch - Technical Events");
 
   // Events data
@@ -67,10 +66,7 @@ const NonCircuitTec = () => {
   return (
     <div className="max-w-7xl mx-auto p-6">
       <h3
-        className="text-3xl md:text-4xl font-bold text-center mb-8 text-white uppercase event-text tracking-widest"
-        style={{
-          textShadow: `2px 2px 15px ${color}`,
-        }}
+        className="techeventfont text-3xl md:text-4xl font-bold text-center mb-8 text-white uppercase event-text tracking-widest"
       >
         Technical Events
       </h3>
