@@ -9,6 +9,7 @@ import vault from "../assets/symposium/MysteryVault.jpeg";
 import deadly from "../assets/symposium/deadly.png";
 import randomColor from "randomcolor";
 import iplauction from "../assets/symposium/iplauction.jpg"
+import OBSSTACKLE from "../assets/symposium/OBS-Stackle.jpg"
 
 import { Link } from "react-router-dom";
 // import "./NonCircuitnTech.css";
@@ -48,7 +49,7 @@ const NonCircuitnTech = () => {
     },
     {
       id: 6,
-      imageSrc: Image,
+      imageSrc: OBSSTACKLE,
       altText: "Free Fire",
       path: "/ff",
     },

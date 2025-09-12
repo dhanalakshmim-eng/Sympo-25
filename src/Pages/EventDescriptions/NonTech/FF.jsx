@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import VanillaTilt from "vanilla-tilt";
-import FreeFireImage from "../../../assets/symposium/NewFreeFire.jpg";
+import FreeFireImage from "../../../assets/symposium/OBS-Stackle.jpg";
 import "./MysteryVault.css";
 
 const FreeFire = () => {
