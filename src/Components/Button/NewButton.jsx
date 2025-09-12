@@ -3,7 +3,7 @@ import "./Button.css";
 
 const NewButton = (props) => {
   return (
-    <button className="wreck-btn">{props.label}</button>
+    <button style={props.style1 && {border:"white solid 2px"}}className="wreck-btn">{props.label}</button>
   );
 };
 

@@ -9,6 +9,7 @@ import wiz from "../assets/symposium/Wizzup_Debug.jpeg";
 import ghost from "../assets/symposium/Ghost.png";
 import matter from "../assets/symposium/MatterMindNew.jpg";
 import codesprint from "../assets/symposium/CodeSprint.jpeg";
+import OBSSTACKLE from "../assets/symposium/OBS-Stackle.jpg"
 
 import RandomEvents from "./RandomEvents";
 
@@ -21,7 +22,7 @@ const NonCircuitTec = () => {
   const circuittechnicalEvents = [
     {
       id: 1,
-      imageSrc: Image, // Replace with actual image path
+      imageSrc: OBSSTACKLE, // Replace with actual image path
       altText: "Eloquence",
       label: "Eloquence",
       path: "/eloquence",

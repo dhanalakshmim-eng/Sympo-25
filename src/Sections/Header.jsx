@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faCalendarDays, faPhone, faHouse } from "@fortawesome/free-solid-svg-icons";
 // import TechLogo from '../utils/Img/TechLogo.jpg';
-import logo from "../assets/symposium/NewTechLOGO.png";
+import logo from "../assets/symposium/Logo/Logo-bgremoved.png";
 import "animate.css";
 
 const Header = () => {
@@ -33,7 +33,7 @@ const Header = () => {
       <img
         src={logo}
         alt="Technovanza Logo"
-        className=" w-20 h-10 sm:w-22 sm:h-10 md:w-22 md:h-10 lg:w-24 lg:h-12 xl:w-24 xl:h-12 mr-2 object-cover"
+        className=" w-20 h-15 sm:w-22 sm:h-10 md:w-22 md:h-10 lg:w-24 lg:h-12 xl:w-24 xl:h-12 mr-2 object-cover"
       />
       {/* <span className="self-center text-2xl font-semibold whitespace-nowrap font-collegefont text-white">
         TECHNOVANZA

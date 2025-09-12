@@ -21,7 +21,7 @@ const CircuitTec = () => {
   const circuittechnicalEvents = [
     {
       id: 1,
-      imageSrc: energia, 
+      imageSrc: Image, 
       altText: "Energia Nova",
       label: "Energia Nova",
       path: "/energianova",
@@ -29,28 +29,28 @@ const CircuitTec = () => {
     },
     {
       id: 2,
-      imageSrc: cassedete, 
+      imageSrc: Image, 
       altText: "Casse-dete",
       label: "Casse-dete",
       path: "/cassedete",
     },
     {
       id: 3,
-      imageSrc: batallia, 
+      imageSrc: Image, 
       altText: "Batallia de Robots",
       label: "Batallia de Robots",
       path: "/batallia",
     },
     {
       id: 4,
-      imageSrc: tescaflow, 
+      imageSrc: Image, 
       altText: "Tescaflow",
       label: "Tescaflow",
       path: "/tescaflow",
     },
     {
       id: 5,
-      imageSrc: bizqueset, 
+      imageSrc: Image, 
       altText: "BizQuest",
       label: "BizQueset",
       path: "/bizqueset",

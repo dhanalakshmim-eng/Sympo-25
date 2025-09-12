@@ -2,15 +2,17 @@ import React from 'react'
 import NonCircuitnTech from '../Components/NonCircuitnTech'
 import NonCircuitTec from "../Components/NonCircuitTec"
 import EventButton from "../Components/EventButton"
+import NewButton from '../Components/Button/NewButton'
 import { Link } from 'react-router-dom'
 import TrackInfo from '../Pages/TrackInfo'
+
 import img from "../assets/symposium/track1.jpg"
 const NonCircuit = () => {
   return (
     <div>
       <TrackInfo 
       label="TRACK I"
-      Image={img}
+      
       Description="Registration for Technovanza is now open! Secure your spot today and
             be part of an event that celebrates innovation and collaboration.
             Don’t miss the opportunity to engage with tech enthusiasts and experts." />
@@ -22,7 +24,7 @@ const NonCircuit = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-      <EventButton label="Register1" />
+      <NewButton style1="true" label="Register" />
       </a>
       </div>
       <br />
