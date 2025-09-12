@@ -2,7 +2,7 @@ import React from 'react';
 import LocateMap from './LocateMap';
 import MediaSection from './MediaSection';
 import ContactUs from './ContactUs';
-import "../text.css";
+import "./footer.css";
 
 const Footer = () => {
   return (

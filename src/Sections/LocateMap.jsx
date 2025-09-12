@@ -1,4 +1,5 @@
 import React from 'react';
+import "./MediaSection.css";
 
 const LocateMap = () => {
   return (
