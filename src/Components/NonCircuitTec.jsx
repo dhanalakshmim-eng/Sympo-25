@@ -24,29 +24,26 @@ const NonCircuitTec = () => {
 
   // Events data
   const circuittechnicalEvents = [
-    {
-      id: 9,
-      imageSrc: Cinephilia, // Replace with actual image path
-      altText: "Cinephilia",
-      label: "Cinephilia",
-      path: "/Cinephilia",
-    },
+    
     {
       id: 1,
-      imageSrc: EscapeRoom, // Replace with actual image path
-      altText: "EscapeRoom",
-      label: "EscapeRoom",
-      path: "/escaperoom",
+      imageSrc: GIGZUP,
+      altText: "GIGZUP",
+      label: "GIGZUP",
+      path: "/gigzup",
+      
     },
     {
       id: 2,
-      imageSrc: CUEBATTLE,
-      altText: "CUEBATTLE",
-      label: "CUEBATTLE",
-      path: "/cuebattle",
+      imageSrc: SynaptiQ,
+      altText: "SynaptiQ",
+      label: "SynaptiQ",
+      path: "/synaptiq",
+      
     },
     {
       id: 3,
+      
       imageSrc: FLIPSTER,
       altText: "FLIPSTER",
       label: "FLIPSTER",
@@ -55,38 +52,41 @@ const NonCircuitTec = () => {
     
     {
       id: 4,
-      imageSrc: GIGZUP,
-      altText: "GIGZUP",
-      label: "GIGZUP",
-      path: "/gigzup",
+      imageSrc: EscapeRoom, // Replace with actual image path
+      altText: "EscapeRoom",
+      label: "EscapeRoom",
+      path: "/escaperoom",
+      
     },
+    
     {
-      id:5,
-      imageSrc:Oratio,
-      altText: "Oratio",
-      label: "Oratio",
-      path: "/oratio",
+      id: 5,
+      imageSrc: CUEBATTLE,
+      altText: "CUEBATTLE",
+      label: "CUEBATTLE",
+      path: "/cuebattle",
+     
     },
     {
       id: 6,
-      imageSrc: SynaptiQ,
-      altText: "SynaptiQ",
-      label: "SynaptiQ",
-      path: "/synaptiq",
-    },
-    {
-      id: 7,
       imageSrc: TriSpark,
       altText: "TriSpark",
       label: "TriSpark",
       path: "/triSpark",
     },
     {
-      id: 8,
+      id: 7,
       imageSrc: vizyourway,
       altText: "vizyourway",
       label: "vizyourway",
       path: "/vizyourway",
+    },
+    {
+      id: 8,
+      imageSrc: Cinephilia, // Replace with actual image path
+      altText: "Cinephilia",
+      label: "Cinephilia",
+      path: "/Cinephilia",
     },
   ];
 

@@ -18,7 +18,9 @@ import NewAbout from "./Pages/About.jsx";
 import Contact from "./Pages/Contact.jsx";
 
 import TeamCarousel from "./Pages/TeamCarousel.jsx";
-import Cinephilia from "./Pages/EventDesc/Cinephilia.jsx";
+import Cinephilia from "./Pages/EventDesc/Track1/Cinephilia.jsx";
+import CueBattle from "./Pages/EventDesc/Track1/CueBattle.jsx";
+
 
 const appRouter = createBrowserRouter([
   {
