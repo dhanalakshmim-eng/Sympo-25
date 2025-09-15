@@ -20,7 +20,13 @@ import Contact from "./Pages/Contact.jsx";
 import TeamCarousel from "./Pages/TeamCarousel.jsx";
 import Cinephilia from "./Pages/EventDesc/Track1/Cinephilia.jsx";
 import CueBattle from "./Pages/EventDesc/Track1/CueBattle.jsx";
-
+import EscapeRoom from "./Pages/EventDesc/Track1/EscapeRoom.jsx";
+import Flipster from "./Pages/EventDesc/Track1/Flipster.jsx";
+import GigUp from "./Pages/EventDesc/Track1/GigUp.jsx";
+import SynaptiQ from "./Pages/EventDesc/Track1/SynaptiQ.jsx";
+import TriSpark from "./Pages/EventDesc/Track1/TriSpark.jsx";
+import VizYourWay from "./Pages/EventDesc/Track1/VizYourWay.jsx";
+import AmpItUpArena from "./Pages/EventDesc/Track1/AmpItUpArena.jsx";
 
 const appRouter = createBrowserRouter([
   {
@@ -67,6 +73,44 @@ const appRouter = createBrowserRouter([
         path: "/team",
         element: <TeamCarousel/>,
       },
+      {
+        path: "/gigzup",
+        element: <GigUp />,
+      },
+      {
+        path: "/synaptiq",
+        element: <SynaptiQ />,
+      },
+      {
+        path: "/flipster",
+        element: <Flipster />,
+      },
+      {
+        path: "/escaperoom",
+        element: <EscapeRoom />,
+      },
+      {
+        path: "/cuebattle",
+        element: <CueBattle />,
+      },
+      {
+        path: "/triSpark",
+        element: <TriSpark />,
+      },
+      {
+        path: "/flipster",
+        element: <Flipster />,
+      },
+      {
+        path: "/vizyourway",
+        element: <VizYourWay />,
+      },
+      {
+        path: "/cinephilia",
+        element: <Cinephilia />,
+      },
+      
+
     ],
   },
 ]);

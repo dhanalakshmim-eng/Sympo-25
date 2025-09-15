@@ -86,7 +86,7 @@ const NonCircuitTec = () => {
       imageSrc: Cinephilia, // Replace with actual image path
       altText: "Cinephilia",
       label: "Cinephilia",
-      path: "/Cinephilia",
+      path: "/cinephilia",
     },
   ];
 
