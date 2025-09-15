@@ -64,6 +64,7 @@ const appRouter = createBrowserRouter([
         path: "/team",
         element: <TeamCarousel/>,
       },
+      
     ],
   },
 ]);

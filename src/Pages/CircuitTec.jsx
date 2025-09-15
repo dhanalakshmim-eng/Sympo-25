@@ -3,15 +3,21 @@ import randomColor from "randomcolor";
 import "../text.css";
 import Card from "../Components/Card";
 import Image from '../utils/Img/TechLogo.jpg';
-import energia from "../assets/symposium/Old/energiaNova.jpg";
-import batallia from "../assets/symposium/Old/robots.png";
-import bizqueset from "../assets/symposium/Old/Biquest.png"
-import tescaflow from "../assets/symposium/Old/Tescaflow.jpg"
-import cassedete from "../assets/symposium/Old/cassedete.jpg"
+import AmpItUpArena from "../assets/symposium/Sympo'25/Track2/Amp-it-up-arena.jpeg"
+import BioMystic from "../assets/symposium/Sympo'25/Track2/BioMystic.jpeg"
+import dEADLYDEEDS from "../assets/symposium/Sympo'25/Track2/dEADLYDEEDS.jpeg"
+import Nexus from "../assets/symposium/Sympo'25/Track2/Nexus.jpeg"
+import POTPURRI from "../assets/symposium/Sympo'25/Track2/POTPURRI.png"
+import THINKTANK from "../assets/symposium/Sympo'25/Track2/THINK TANK.png"
+import TRACKTRON from "../assets/symposium/Sympo'25/Track2/TRACK TRON.jpeg"
+
+import iplauction from "../assets/symposium/Old/iplauction.jpg"
 
 
 import RandomEvents from "../Components/RandomEvents";
 import { Link } from "react-router-dom";
+
+
 
 const CircuitTec = () => {
   const color = randomColor();
@@ -21,39 +27,43 @@ const CircuitTec = () => {
   const circuittechnicalEvents = [
     {
       id: 1,
-      imageSrc: Image, 
-      altText: "Energia Nova",
-      label: "Energia Nova",
-      path: "/energianova",
-      // onClick: () => alert("Energia Nova clicked"),
+      imageSrc: AmpItUpArena,
+      altText: "Amp-It-Up-Arena",
+      path: "/ampItUpArena",
     },
     {
       id: 2,
-      imageSrc: Image, 
-      altText: "Casse-dete",
-      label: "Casse-dete",
-      path: "/cassedete",
+      imageSrc: BioMystic,
+      altText: "BioMystic",
+      path: "/bioMystic",
     },
     {
       id: 3,
-      imageSrc: Image, 
-      altText: "Batallia de Robots",
-      label: "Batallia de Robots",
-      path: "/batallia",
+      imageSrc: dEADLYDEEDS, 
+      altText: "Deadly Deeds",
+      label: "Deadly Deeds",
+      path: "/deadlydeeds",
     },
     {
       id: 4,
-      imageSrc: Image, 
-      altText: "Tescaflow",
-      label: "Tescaflow",
-      path: "/tescaflow",
+      imageSrc: Nexus, 
+      altText: "Nexus",
+      label: "Nexus",
+      path: "/nexus",
     },
     {
       id: 5,
-      imageSrc: Image, 
-      altText: "BizQuest",
-      label: "BizQueset",
-      path: "/bizqueset",
+      imageSrc: POTPURRI, 
+      altText: "POTPURRI",
+      label: "POTPURRI",
+      path: "/potpurri",
+    },
+    {
+      id: 6,
+      imageSrc: THINKTANK, 
+      altText: "THINKTANK",
+      label: "THINKTANK",
+      path: "/thinktank",
     },
   ];
 
