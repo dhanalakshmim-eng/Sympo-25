@@ -3,12 +3,7 @@ import randomColor from "randomcolor";
 import "../text.css";
 import Card from "./Card";
 import Image from "../utils/Img/TechLogo.jpg";
-import elo from "../assets/symposium/Old/eloquence1.jpg";
-import viz from "../assets/symposium/Old/vizyour.jpeg";
-import wiz from "../assets/symposium/Old/Wizzup_Debug.jpeg";
-import ghost from "../assets/symposium/Old/Ghost.png";
-import matter from "../assets/symposium/Old/MatterMindNew.jpg";
-import codesprint from "../assets/symposium/Old/CodeSprint.jpeg";
+
 import OBSSTACKLE from "../assets/symposium/Old/OBS-Stackle.jpg"
 
 import RandomEvents from "./RandomEvents";
