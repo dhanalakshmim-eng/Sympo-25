@@ -1,0 +1,38 @@
+.reach-text{
+    color:#e8bcb9;
+}
+/* footer.css */
+
+/* ===== Footer Wrapper ===== */
+footer {
+  background: linear-gradient(135deg, #1d1a39, #f4d3bf2d); /* dark gradient */
+  /* background: linear-gradient(to right,#ead1bc84 0%,#4519528f 50%, #f7cecb77 100%); */
+
+  color: white;
+}
+
+/* ===== Contact Us Section ===== */
+
+
+.location-text {
+  color: #f0f0f0; /* light gray */
+  font-size: 1rem;
+}
+
+.email-text {
+  color: #e8bcb9;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.email-text:hover {
+  text-decoration: underline;
+}
+
+/* ===== Media Section Heading ===== */
+.media-heading {
+  color: #e8bcb9;
+  font-weight: 600;
+  text-align: center;
+  font-family: sans-serif;
+}
