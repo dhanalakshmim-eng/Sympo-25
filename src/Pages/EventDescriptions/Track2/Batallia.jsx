@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import VanillaTilt from "vanilla-tilt";
-import RobotImage from "../../../assets/symposium/robots.png";
+import RobotImage from "../../../assets/symposium/Old/robots.png";
 import "./EnergiaNova.css";
 
 const Batallia = () => {

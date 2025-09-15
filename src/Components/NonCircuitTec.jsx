@@ -3,74 +3,97 @@ import randomColor from "randomcolor";
 import "../text.css";
 import Card from "./Card";
 import Image from "../utils/Img/TechLogo.jpg";
-import elo from "../assets/symposium/eloquence1.jpg";
-import viz from "../assets/symposium/vizyour.jpeg";
-import wiz from "../assets/symposium/Wizzup_Debug.jpeg";
-import ghost from "../assets/symposium/Ghost.png";
-import matter from "../assets/symposium/MatterMindNew.jpg";
-import codesprint from "../assets/symposium/CodeSprint.jpeg";
+
+import OBSSTACKLE from "../assets/symposium/Old/OBS-Stackle.jpg"
+import EscapeRoom from "../assets/symposium/Sympo'25/Escape-Room.jpeg"
+import CUEBATTLE from "../assets/symposium/Sympo'25/CUEBATTLE.png"
+import FLIPSTER from "../assets/symposium/Sympo'25/FLIPSTER.jpg"
+import GIGZUP from "../assets/symposium/Sympo'25/GIGZUP.jpg"
+import Oratio from "../assets/symposium/Sympo'25/Oratio.png"
+import SynaptiQ from "../assets/symposium/Sympo'25/SynaptiQ.png"
+import TriSpark from "../assets/symposium/Sympo'25/TriSpark.png"
+import vizyourway from "../assets/symposium/Sympo'25/VIZ YOUR WAY.png"
+import Cinephilia from "../assets/symposium/Sympo'25/Cinephilia.jpeg"
 
 import RandomEvents from "./RandomEvents";
 
 import { Link } from "react-router-dom";
 
 const NonCircuitTec = () => {
-  const color = randomColor();
   const noncircuittec = RandomEvents("Circuit Branch - Technical Events");
 
   // Events data
   const circuittechnicalEvents = [
     {
+      id: 9,
+      imageSrc: Cinephilia, // Replace with actual image path
+      altText: "Cinephilia",
+      label: "Cinephilia",
+      path: "/Cinephilia",
+    },
+    {
       id: 1,
-      imageSrc: elo, // Replace with actual image path
-      altText: "Eloquence",
-      label: "Eloquence",
-      path: "/eloquence",
+      imageSrc: EscapeRoom, // Replace with actual image path
+      altText: "EscapeRoom",
+      label: "EscapeRoom",
+      path: "/escaperoom",
     },
     {
       id: 2,
-      imageSrc: wiz,
-      altText: "Wizzup",
-      label: "Wizzup",
-      path: "/wizzup",
+      imageSrc: CUEBATTLE,
+      altText: "CUEBATTLE",
+      label: "CUEBATTLE",
+      path: "/cuebattle",
     },
     {
       id: 3,
-      imageSrc: matter,
-      altText: "MatterMind",
-      label: "MatterMind",
-      path: "/mattermind",
+      imageSrc: FLIPSTER,
+      altText: "FLIPSTER",
+      label: "FLIPSTER",
+      path: "/flipster",
     },
+    
     {
       id: 4,
-      imageSrc: viz,
-      altText: "Viz Your Way",
-      label: "Viz Your Way",
-      path: "/vizyourway",
+      imageSrc: GIGZUP,
+      altText: "GIGZUP",
+      label: "GIGZUP",
+      path: "/gigzup",
     },
     {
-      id: 5,
-      imageSrc: ghost,
-      altText: "GhostOps-CTF",
-      label: "GhostOps-CTF",
-      path: "/ghostops",
+      id:5,
+      imageSrc:Oratio,
+      altText: "Oratio",
+      label: "Oratio",
+      path: "/oratio",
     },
     {
       id: 6,
-      imageSrc: codesprint,
-      altText: "Code Sprint",
-      label: "Code Sprint",
-      path: "/codesprint",
+      imageSrc: SynaptiQ,
+      altText: "SynaptiQ",
+      label: "SynaptiQ",
+      path: "/synaptiq",
+    },
+    {
+      id: 7,
+      imageSrc: TriSpark,
+      altText: "TriSpark",
+      label: "TriSpark",
+      path: "/TriSpark",
+    },
+    {
+      id: 8,
+      imageSrc: vizyourway,
+      altText: "vizyourway",
+      label: "vizyourway",
+      path: "/vizyourway",
     },
   ];
 
   return (
     <div className="max-w-7xl mx-auto p-6">
       <h3
-        className="text-3xl md:text-4xl font-bold text-center mb-8 text-white uppercase event-text tracking-widest"
-        style={{
-          textShadow: `2px 2px 15px ${color}`,
-        }}
+        className="techeventfont text-3xl md:text-4xl font-bold text-center mb-8 text-white uppercase event-text tracking-widest"
       >
         Technical Events
       </h3>

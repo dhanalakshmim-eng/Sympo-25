@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import VanillaTilt from "vanilla-tilt";
 import "./VizYourWay.css";
-import EventImage from "../../../assets/symposium/Wizzup_Debug.jpeg";
+import EventImage from "../../../assets/symposium/Old/Wizzup_Debug.jpeg";
 
 const Wizzup = () => {
   const tiltRef = useRef(null);

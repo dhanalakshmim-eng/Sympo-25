@@ -2,13 +2,14 @@ import React from "react";
 import "../text.css"; // Ensure this file contains any other necessary styling
 import Card from "./Card";
 import Image from "../utils/Img/TechLogo.jpg";
-import bgmi from "../assets/symposium/BGMI_FINAL.jpg";
-import ff from "../assets/symposium/NewFreeFire.jpg";
-import cini from "../assets/symposium/Cinephilia.jpg";
-import vault from "../assets/symposium/MysteryVault.jpeg";
-import deadly from "../assets/symposium/deadly.png";
+import bgmi from "../assets/symposium/Old/BGMI_FINAL.jpg";
+import ff from "../assets/symposium/Old/NewFreeFire.jpg";
+import cini from "../assets/symposium/Old/Cinephilia.jpg";
+import vault from "../assets/symposium/Old/MysteryVault.jpeg";
+import deadly from "../assets/symposium/Old/deadly.png";
 import randomColor from "randomcolor";
-import iplauction from "../assets/symposium/iplauction.jpg"
+import iplauction from "../assets/symposium/Old/iplauction.jpg"
+import OBSSTACKLE from "../assets/symposium/Old/OBS-Stackle.jpg"
 
 import { Link } from "react-router-dom";
 // import "./NonCircuitnTech.css";
@@ -18,37 +19,37 @@ const NonCircuitnTech = () => {
   const circuittechnicalEvents = [
     {
       id: 1,
-      imageSrc: cini,
+      imageSrc: Image,
       altText: "Cinephilia",
       path: "/cinephilia",
     },
     {
       id: 2,
-      imageSrc: vault,
+      imageSrc: Image,
       altText: "Mystery Vault",
       path: "/mysteryvault",
     },
     {
       id: 3,
-      imageSrc: deadly,
+      imageSrc: Image,
       altText: "Deadly Deeds",
       path: "/deadlydeeds",
     },
     {
       id: 4,
-      imageSrc: iplauction,
+      imageSrc: Image,
       altText: "IPL Auction",
       path: "/iplauction",
     },
     {
       id: 5,
-      imageSrc: bgmi,
+      imageSrc: Image,
       altText: "BGMI",
       path: "/bgmi",
     },
     {
       id: 6,
-      imageSrc: ff,
+      imageSrc: OBSSTACKLE,
       altText: "Free Fire",
       path: "/ff",
     },

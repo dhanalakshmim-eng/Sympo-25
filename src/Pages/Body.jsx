@@ -10,6 +10,7 @@ import Footer from "../Sections/Footer";
 
 
 import EventButton from "../Components/EventButton";
+import NewButton from "../Components/Button/NewButton";
 
 import Teams from "../Sections/Teams";
 import "animate.css";
@@ -36,14 +37,14 @@ const Body = () => {
   return (
     <div>
       <section className="relative  w-screen h-screen flex items-center justify-center overflow-hidden ">
-      {/* Video Background 
+      {/* Video Background */}
       <video
         className="absolute top-0 left-0 w-full h-full object-cover"
-        src="hero.webm"
+        src="b7.mp4"
         autoPlay
         loop
         muted
-      />*/}
+      />
 
       {/* Overlay (optional, for better text readability) */}
       <div className="absolute top-0 left-0 w-full h-screen "></div>
@@ -53,7 +54,7 @@ const Body = () => {
       <CollegeName />
       <div className="flex flex-wrap justify-center gap-5 my-1 animate__animated animate__fadeInUp duration-500">
         <Link to="/events">
-          <EventButton label="Explore" />
+          <NewButton label="Explore" />
         </Link>
       </div>
 

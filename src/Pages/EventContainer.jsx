@@ -1,9 +1,10 @@
 import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import VanillaTilt from "vanilla-tilt";
-// import eventPoster from "../assets/symposium/OverallPoster.jpeg";
-import eventPoster from "../assets/symposium/overallPoster.jpg"
+// import eventPoster from "../assets/symposium/Old/OverallPoster.jpeg";
+import eventPoster from "../assets/symposium/Old/overallPoster.jpg"
 import EventButton from "../Components/EventButton.jsx";
+import NewButton from "../Components/Button/NewButton.jsx";
 
 const EventContainer = () => {
   const tiltRef = useRef(null);
@@ -34,10 +35,10 @@ const EventContainer = () => {
       </div>
       <div className="lg:gap-10 gap-5 flex flex-col lg:pb-20 sm:flex-row justify-center items-center animate__animated animate__fadeInUp">
         <Link to="/track1">
-          <EventButton label="Track I" />
+          <NewButton style1="true" label="Track I" />
         </Link>
         <Link to="/track2">
-          <EventButton label="Track II" />
+          <NewButton style1="true" label="Track II" />
         </Link>
       </div>
     </div>

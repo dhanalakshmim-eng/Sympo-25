@@ -1,7 +1,10 @@
 import React, { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import VanillaTilt from "vanilla-tilt";
-import EventImage from "../../../assets/symposium/eloquence1.jpg";
+
+
+import EventImage from "../../../assets/symposium/Old/OBS-Stackle.jpg";
+
 
 const Eloquence = () => {
   const tiltRef = useRef(null);

@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import VanillaTilt from "vanilla-tilt";
-import GhostOpsImage from "../../../assets/symposium/Ghost.png";
+import GhostOpsImage from "../../../assets/symposium/Old/Ghost.png";
 import "./Eloquence.css";
 
 const GhostOps = () => {

@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import VanillaTilt from "vanilla-tilt";
-import JigsawImage from "../../../assets/symposium/cassedete.jpg";
+import JigsawImage from "../../../assets/symposium/Old/cassedete.jpg";
 
 const Cassedete = () => {
   const tiltRefJigsaw = useRef(null);

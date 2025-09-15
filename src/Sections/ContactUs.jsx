@@ -86,7 +86,7 @@ const ContactUs = () => {
       href="mailto:symposium2024@jerusalemengg.ac.in"
       className="text-sm md:text-lg hover:underline"
     >
-      symposium2024@jerusalemengg.ac.in
+      symposium2025@jerusalemengg.ac.in
     </a>
   </div>
 </div>
