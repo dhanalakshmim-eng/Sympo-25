@@ -1,8 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "./EnergiaNova.css";
-import RobotImage from "../../../assets/symposium/robots.png";
-import tescaflow from "../../../assets/symposium/Tescaflow.jpg"
+
+import tescaflow from "../../../assets/symposium/Old/Tescaflow.jpg"
 import { useRef, useEffect } from "react";
 const Tescaflow = () => {
   const tiltRef = useRef(null);
