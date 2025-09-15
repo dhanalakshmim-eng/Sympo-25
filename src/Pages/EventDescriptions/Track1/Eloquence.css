@@ -4,11 +4,11 @@
 
 ::-webkit-scrollbar-thumb {
   scrollbar-width: thin;
-  background: linear-gradient(180deg, #ff00cc, #333399); /* Neon Blue */
+  background: linear-gradient(180deg,#ae445a , #333399); /* Neon Blue */
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background:  linear-gradient(180deg, #ff00cc, #333399); /* Green Blue for hover effect */
+  background:  linear-gradient(180deg,#ae445a, #333399); /* Green Blue for hover effect */
 }
 
 ::-webkit-scrollbar-track {
@@ -16,14 +16,14 @@
 }
 
 .gradient-text-sub {
-  background: linear-gradient(90deg, #ff00cc, #333399);
+  background: white;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .gradient-text {
-  background: linear-gradient(280deg, #fc00ff, #00dbde);
+  background: white;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

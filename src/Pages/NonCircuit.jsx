@@ -12,7 +12,7 @@ const NonCircuit = () => {
     <div>
       <TrackInfo 
       label="TRACK I"
-      
+     
       Description="Registration for Technovanza is now open! Secure your spot today and
             be part of an event that celebrates innovation and collaboration.
             Don’t miss the opportunity to engage with tech enthusiasts and experts." />
