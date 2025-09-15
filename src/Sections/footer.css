@@ -6,6 +6,8 @@
 /* ===== Footer Wrapper ===== */
 footer {
   background: linear-gradient(135deg, #1d1a39, #f4d3bfd0); /* dark gradient */
+  background: linear-gradient(to right,#f39f54 0%,#451952 50%, #e8bcb9 100%);
+
   color: white;
 }
 
