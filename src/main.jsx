@@ -18,6 +18,7 @@ import NewAbout from "./Pages/About.jsx";
 import Contact from "./Pages/Contact.jsx";
 
 import TeamCarousel from "./Pages/TeamCarousel.jsx";
+import Cinephilia from "./Pages/EventDesc/Cinephilia.jsx";
 
 const appRouter = createBrowserRouter([
   {
@@ -64,6 +65,10 @@ const appRouter = createBrowserRouter([
         path: "/team",
         element: <TeamCarousel/>,
       },
+      {
+        path:"/cinephilia",
+        element: <Cinephilia />
+      }
     ],
   },
 ]);
