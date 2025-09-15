@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import VanillaTilt from "vanilla-tilt";
-import EventImage from "../../../assets/symposium/iplauction.jpg"; 
+import EventImage from "../../../assets/symposium/Old/iplauction.jpg"; 
 // import "./IPL.css";
 
 const IPL = () => {

@@ -3,11 +3,11 @@ import randomColor from "randomcolor";
 import "../text.css";
 import Card from "../Components/Card";
 import Image from '../utils/Img/TechLogo.jpg';
-import energia from "../assets/symposium/energiaNova.jpg";
-import batallia from "../assets/symposium/robots.png";
-import bizqueset from "../assets/symposium/Biquest.png"
-import tescaflow from "../assets/symposium/Tescaflow.jpg"
-import cassedete from "../assets/symposium/cassedete.jpg"
+import energia from "../assets/symposium/Old/energiaNova.jpg";
+import batallia from "../assets/symposium/Old/robots.png";
+import bizqueset from "../assets/symposium/Old/Biquest.png"
+import tescaflow from "../assets/symposium/Old/Tescaflow.jpg"
+import cassedete from "../assets/symposium/Old/cassedete.jpg"
 
 
 import RandomEvents from "../Components/RandomEvents";

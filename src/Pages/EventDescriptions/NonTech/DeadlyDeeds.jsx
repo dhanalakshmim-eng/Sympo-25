@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import VanillaTilt from "vanilla-tilt";
-import MysteryImage from "../../../assets/symposium/deadly.png";
+import MysteryImage from "../../../assets/symposium/Old/deadly.png";
 import "./MysteryVault.css";
 
 const DeadlyDeeds = () => {

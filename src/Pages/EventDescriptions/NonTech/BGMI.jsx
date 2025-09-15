@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import VanillaTilt from "vanilla-tilt";
-import BGMIImage from "../../../assets/symposium/BGMI_FINAL.jpg";
+import BGMIImage from "../../../assets/symposium/Old/BGMI_FINAL.jpg";
 import "./MysteryVault.css";
 
 const BGMI = () => {
