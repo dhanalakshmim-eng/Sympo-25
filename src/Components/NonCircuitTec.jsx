@@ -5,6 +5,15 @@ import Card from "./Card";
 import Image from "../utils/Img/TechLogo.jpg";
 
 import OBSSTACKLE from "../assets/symposium/Old/OBS-Stackle.jpg"
+import EscapeRoom from "../assets/symposium/Sympo'25/Escape-Room.jpeg"
+import CUEBATTLE from "../assets/symposium/Sympo'25/CUEBATTLE.png"
+import FLIPSTER from "../assets/symposium/Sympo'25/FLIPSTER.jpg"
+import GIGZUP from "../assets/symposium/Sympo'25/GIGZUP.jpg"
+import Oratio from "../assets/symposium/Sympo'25/Oratio.png"
+import SynaptiQ from "../assets/symposium/Sympo'25/SynaptiQ.png"
+import TriSpark from "../assets/symposium/Sympo'25/TriSpark.png"
+import vizyourway from "../assets/symposium/Sympo'25/VIZ YOUR WAY.png"
+import Cinephilia from "../assets/symposium/Sympo'25/Cinephilia.jpeg"
 
 import RandomEvents from "./RandomEvents";
 
@@ -16,46 +25,68 @@ const NonCircuitTec = () => {
   // Events data
   const circuittechnicalEvents = [
     {
+      id: 9,
+      imageSrc: Cinephilia, // Replace with actual image path
+      altText: "Cinephilia",
+      label: "Cinephilia",
+      path: "/Cinephilia",
+    },
+    {
       id: 1,
-      imageSrc: OBSSTACKLE, // Replace with actual image path
-      altText: "Eloquence",
-      label: "Eloquence",
-      path: "/eloquence",
+      imageSrc: EscapeRoom, // Replace with actual image path
+      altText: "EscapeRoom",
+      label: "EscapeRoom",
+      path: "/escaperoom",
     },
     {
       id: 2,
-      imageSrc: Image,
-      altText: "Wizzup",
-      label: "Wizzup",
-      path: "/wizzup",
+      imageSrc: CUEBATTLE,
+      altText: "CUEBATTLE",
+      label: "CUEBATTLE",
+      path: "/cuebattle",
     },
     {
       id: 3,
-      imageSrc: Image,
-      altText: "MatterMind",
-      label: "MatterMind",
-      path: "/mattermind",
+      imageSrc: FLIPSTER,
+      altText: "FLIPSTER",
+      label: "FLIPSTER",
+      path: "/flipster",
     },
+    
     {
       id: 4,
-      imageSrc: Image,
-      altText: "Viz Your Way",
-      label: "Viz Your Way",
-      path: "/vizyourway",
+      imageSrc: GIGZUP,
+      altText: "GIGZUP",
+      label: "GIGZUP",
+      path: "/gigzup",
     },
     {
-      id: 5,
-      imageSrc: Image,
-      altText: "GhostOps-CTF",
-      label: "GhostOps-CTF",
-      path: "/ghostops",
+      id:5,
+      imageSrc:Oratio,
+      altText: "Oratio",
+      label: "Oratio",
+      path: "/oratio",
     },
     {
       id: 6,
-      imageSrc: Image,
-      altText: "Code Sprint",
-      label: "Code Sprint",
-      path: "/codesprint",
+      imageSrc: SynaptiQ,
+      altText: "SynaptiQ",
+      label: "SynaptiQ",
+      path: "/synaptiq",
+    },
+    {
+      id: 7,
+      imageSrc: TriSpark,
+      altText: "TriSpark",
+      label: "TriSpark",
+      path: "/TriSpark",
+    },
+    {
+      id: 8,
+      imageSrc: vizyourway,
+      altText: "vizyourway",
+      label: "vizyourway",
+      path: "/vizyourway",
     },
   ];
 
