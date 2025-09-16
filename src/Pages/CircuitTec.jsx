@@ -65,6 +65,14 @@ const CircuitTec = () => {
       label: "THINKTANK",
       path: "/thinktank",
     },
+    {
+      id: 7,
+      imageSrc: TRACKTRON, 
+      altText: "TRACKTRON",
+      label: "TRACKTRON",
+      path: "/tracktron",
+    },
+
   ];
 
   return (
