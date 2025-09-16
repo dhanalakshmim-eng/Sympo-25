@@ -4,7 +4,9 @@ import Card from "./Card";
 import Image from "../utils/Img/TechLogo.jpg";
 import bgmi from "../assets/symposium/Old/BGMI_FINAL.jpg";
 import ff from "../assets/symposium/Old/NewFreeFire.jpg";
-import cini from "../assets/symposium/Old/Cinephilia.jpg";
+import cini from "../assets/symposium/Sympo'25/Track1/Cinephilia.jpeg";
+import GIGZUP from "../assets/symposium/Sympo'25/Track1/GIGZUP.jpg";
+import CUEBATTLE from "../assets/symposium/Sympo'25/Track1/CUEBATTLE.png"
 import vault from "../assets/symposium/Old/MysteryVault.jpeg";
 import deadly from "../assets/symposium/Old/deadly.png";
 import randomColor from "randomcolor";
@@ -12,6 +14,7 @@ import iplauction from "../assets/symposium/Old/iplauction.jpg"
 import OBSSTACKLE from "../assets/symposium/Old/OBS-Stackle.jpg"
 
 import { Link } from "react-router-dom";
+import { Import } from "lucide-react";
 // import "./NonCircuitnTech.css";
 
 const NonCircuitnTech = () => {
@@ -19,40 +22,33 @@ const NonCircuitnTech = () => {
   const circuittechnicalEvents = [
     {
       id: 1,
-      imageSrc: Image,
+      imageSrc: cini,
       altText: "Cinephilia",
       path: "/cinephilia",
     },
     {
-      id: 2,
-      imageSrc: Image,
-      altText: "Mystery Vault",
-      path: "/mysteryvault",
+          id: 2,
+          imageSrc: GIGZUP,
+          altText: "GIGZUP",
+          label: "GIGZUP",
+          path: "/gigzup",
+          
     },
+    {
+          id: 5,
+          imageSrc: CUEBATTLE,
+          altText: "CUEBATTLE",
+          label: "CUEBATTLE",
+          path: "/cuebattle",
+         
+        },
     {
       id: 3,
       imageSrc: Image,
       altText: "Deadly Deeds",
       path: "/deadlydeeds",
     },
-    {
-      id: 4,
-      imageSrc: Image,
-      altText: "IPL Auction",
-      path: "/iplauction",
-    },
-    {
-      id: 5,
-      imageSrc: Image,
-      altText: "BGMI",
-      path: "/bgmi",
-    },
-    {
-      id: 6,
-      imageSrc: OBSSTACKLE,
-      altText: "Free Fire",
-      path: "/ff",
-    },
+    
   ];
 
   return (
