@@ -2,22 +2,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Noto+Sans+Georgian:wght@100..900&family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playpen+Sans+Hebrew:wght@100..800&family=Shadows+Into+Light&display=swap'); 
 
 .wreck-btn {
-    background-color: #F39F5A; /* fallback color */
+    background-color: #e58d45; /* fallback color */
     color: black;
-    font-size: 24px;
+    font-size: 30px;
     font-weight: bold;
     border: none;
+    border-radius: 5px;
     padding: 10px 20px;
     position: relative;
     cursor: pointer;
     font-family: "Playpen Sans Hebrew", cursive;
-    
     font-style: normal;
     letter-spacing: 2px;
-  
+    text-shadow: 0 0 0 white, 0 0 0 white, 0 0 2px white;
     /* Dotted effect */
-    background-image: radial-gradient(rgb(121, 95, 95) 0.8px, transparent 0.8px);
+    background-image: radial-gradient(rgb(63, 48, 48) 0.8px, transparent 0.8px);
     background-size: 6px 6px; /* controls spacing of dots */
+    
   }
   
   /* Black shadow background */
@@ -29,6 +30,8 @@
     width: 100%;
     height: 100%;
     background: black;
+    border: none;
+    border-radius: 5px;
     z-index: -1;
   }
-  
+
