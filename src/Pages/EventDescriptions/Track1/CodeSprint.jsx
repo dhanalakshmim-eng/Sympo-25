@@ -54,7 +54,7 @@ const CodeSprint = () => {
           <p>Greetings from the Department of Information Technology!</p>
           <p>
             We are excited to welcome you to a national-level technical event
-            that will challenge your creativity, problem-solving prowess, and
+            that will challenge your creativity,angeline problem-solving prowess, and
             technical expertise. Get ready to showcase your skills, compete with
             the best minds, and emerge victorious!
           </p>
