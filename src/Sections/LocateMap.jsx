@@ -4,7 +4,7 @@ const LocateMap = () => {
   return (
     <div className="flex flex-col items-center">
       <div className="mb-4 w-full">
-        <div className="p-2 text-xl text-center md:text-2xl px-2 text-center text-[#ff00cc] bg-gradient-to-br from-[#fc03e3] to-[#a6033c] bg-clip-text text-transparent font-sans font-semibold">Locate Us</div>
+        <div className="p-2 text-xl text-center md:text-2xl px-2 text-center text-[#ff00cc] bg-gradient-to-br from-[#e8bcb9] to-[#ae445a] bg-clip-text text-transparent font-sans font-semibold">Locate Us</div>
         <div className="flex flex-col justify-center py-3 px-3 overflow-hidden">
           <iframe
             className="w-50 h-60 rounded outline outline-white outline-2 shadow-md"

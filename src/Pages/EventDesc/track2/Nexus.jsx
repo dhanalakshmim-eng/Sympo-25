@@ -2,7 +2,7 @@ import React from 'react'
 
 function Nexus() {
   return (
-    <div>nexus</div>
+    <div>Nexus</div>
   )
 }
 

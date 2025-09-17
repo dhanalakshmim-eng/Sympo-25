@@ -12,7 +12,7 @@ import GIGZUP from "../assets/symposium/Sympo'25/Track1/GIGZUP.jpg"
 import Oratio from "../assets/symposium/Sympo'25/Track1/Oratio.png"
 import SynaptiQ from "../assets/symposium/Sympo'25/Track1/SynaptiQ.png"
 import TriSpark from "../assets/symposium/Sympo'25/Track1/TriSpark.png"
-import vizyourway from "../assets/symposium/Sympo'25/Track1/VIZ YOUR WAY.png"
+import vizyourway from "../assets/symposium/Sympo'25/Track1/VIZYOURWAY.png"
 import Site2Sync from "../assets/symposium/Sympo'25/Track1/Site2sync.png"
 
 import RandomEvents from "./RandomEvents";
