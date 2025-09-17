@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import VanillaTilt from "vanilla-tilt";
 
-import EventImage from "../../../assets/symposium/Sympo'25/track2/dEADLYDEEDS.jpeg";
+import EventImage from "../../../assets/symposium/Sympo'25/Track2/dEADLYDEEDS.jpeg";
 
 const Deadlydeeds = () => {
   const tiltRef = useRef(null);

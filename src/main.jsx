@@ -35,6 +35,7 @@ import Nexus from "./Pages/EventDesc/track2/Nexus.jsx";
 import Tracktron from "./Pages/EventDesc/track2/TrackOTron.jsx";
 import Site2Sync from "./Pages/EventDesc/Track1/Site2Sync.jsx";
 import Oratio from "./Pages/EventDesc/Track1/Oratio.jsx";
+import Obstackle from "./Pages/EventDesc/Track1/Obstackle.jsx";
 
 
 const appRouter = createBrowserRouter([
@@ -159,6 +160,10 @@ const appRouter = createBrowserRouter([
         path: "/oratio",
         element: <Oratio />,
         },
+        {
+          path: "/obstackle",
+          element: <Obstackle />,
+          },
 
 
     ],
