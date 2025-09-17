@@ -4,6 +4,7 @@ import VanillaTilt from "vanilla-tilt";
 // import eventPoster from "../assets/symposium/Old/OverallPoster.jpeg";
 import eventPoster from "../assets/symposium/Old/overallPoster.jpg"
 import EventButton from "../Components/EventButton.jsx";
+import NewButton2 from "../Components/Button/NewButton.jsx";
 import NewButton from "../Components/Button/NewButton.jsx";
 
 const EventContainer = () => {
@@ -33,10 +34,12 @@ const EventContainer = () => {
           />
         </div>
       </div>
+      <NewButton2 style1="true" label="Track I  -  CSE | IT | AIDS | CS | CSBS 👇" label1="Track II  -  ECE | EEE | BME | MBA 👇"/><br />
       <div className="lg:gap-10 gap-5 flex flex-col lg:pb-20 sm:flex-row justify-center items-center animate__animated animate__fadeInUp">
         <Link to="/track1">
           <NewButton style1="true" label="Track I" />
         </Link>
+        <br />
         <Link to="/track2">
           <NewButton style1="true" label="Track II" />
         </Link>
