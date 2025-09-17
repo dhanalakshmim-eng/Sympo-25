@@ -45,7 +45,7 @@ const BioMystic = () => {
         <h1>
           ✨
           <span className="text-head lg:text-4xl font-bold mb-4 text-center lg:text-left gradient-text">
-            Technical Event: Rules & Rounds
+            BioMystic : Rules & Rounds
           </span>
         </h1>
 

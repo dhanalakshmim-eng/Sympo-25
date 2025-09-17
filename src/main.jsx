@@ -22,7 +22,7 @@ import Cinephilia from "./Pages/EventDesc/Track1/Cinephilia.jsx";
 import CueBattle from "./Pages/EventDesc/Track1/CueBattle.jsx";
 import EscapeRoom from "./Pages/EventDesc/Track1/EscapeRoom.jsx";
 import Flipster from "./Pages/EventDesc/Track1/Flipster.jsx";
-import GigUp from "./Pages/EventDesc/Track1/GigUp.jsx";
+import Gigzup from "./Pages/EventDesc/Track1/Gigzup.jsx";
 import SynaptiQ from "./Pages/EventDesc/Track1/SynaptiQ.jsx";
 import TriSpark from "./Pages/EventDesc/Track1/TriSpark.jsx";
 import VizYourWay from "./Pages/EventDesc/Track1/VizYourWay.jsx";
@@ -84,7 +84,7 @@ const appRouter = createBrowserRouter([
       },
       {
         path: "/gigzup",
-        element: <GigUp />,
+        element: <Gigzup />,
       },
       {
         path: "/synaptiq",
