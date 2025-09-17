@@ -52,9 +52,10 @@ const Body = () => {
       {/* Hero Content */}
       <div className="mt-small">
       <CollegeName />
+      <br />
       <div className="flex flex-wrap justify-center gap-5 my-1 animate__animated animate__fadeInUp duration-500">
         <Link to="/events">
-          <NewButton label="Explore" />
+          <NewButton label="Register Here" />
         </Link>
       </div>
 
