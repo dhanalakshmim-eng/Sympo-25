@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import VanillaTilt from "vanilla-tilt";
 
-import EventImage from "../../../assets/symposium/Sympo'25/Track1/SynaptiQ.png";
+import EventImage from "../../../assets/symposium/Sympo'25/Track2/THINK TANK.png";
 
 const Thinktank = () => {
   const tiltRef = useRef(null);
@@ -29,7 +29,7 @@ const Thinktank = () => {
       >
         <img
           src={EventImage}
-          alt="Event"
+          alt="Thinktank Event"
           className="w-3/4 md:w-2/3 lg:w-2/3 object-cover rounded-lg shadow-lg"
         />
       </motion.div>
@@ -45,7 +45,7 @@ const Thinktank = () => {
         <h1>
           ✨
           <span className="text-head lg:text-4xl font-bold mb-4 text-center lg:text-left gradient-text">
-            SynaptiQ: Business Knowledge Event
+            Thinktank: Business Knowledge Event
           </span>
         </h1>
 
