@@ -35,24 +35,3 @@
     z-index: -1;
   }
 
-
-.wreck-btn:hover {
-    background-color: #eb8b3c; /* fallback color */
-    color: black;
-    font-size: 30px;
-    font-weight: bold;
-    border: 2px #e58d45 solid;
-    border-radius: 5px;
-    padding: 11px 21px;
-    position: relative;
-    cursor: pointer;
-    font-family: "Playpen Sans Hebrew", cursive;
-    text-shadow: 0 0 0 white, 0 0 0 white, 0 0 2px white;
-    font-style: normal;
-    letter-spacing: 5px;
-    transition: all 0.2s ease-out;
-    /* Dotted effect */
-    background-image: radial-gradient(rgb(63, 48, 48) 0.8px, transparent 0.8px);
-    background-size: 6px 6px; /* controls spacing of dots */
-    animation: flicker 1s infinite;
-}

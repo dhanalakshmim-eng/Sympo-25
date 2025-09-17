@@ -12,20 +12,23 @@ const NonCircuit = () => {
     <div>
       <TrackInfo 
       label="TRACK I"
+      
      
       Description="Registration for Technovanza is now open! Secure your spot today and
             be part of an event that celebrates innovation and collaboration.
             Don’t miss the opportunity to engage with tech enthusiasts and experts." />
-      <NonCircuitTec />
-      <NonCircuitnTech />
-      <div className="flex flex-wrap justify-center gap-5 my-5 animate__animated animate__fadeInUp">
-      <a
+      <div className='flex justify-center z-50 p-4 shadow'>
+        <a
         href="https://docs.google.com/Old/forms/d/e/1FAIpQLSevyF8IMwzejiL3Cx04Q-fxlwnxGz3b41DsBDvRTE-rzIVPMA/viewform" // Replace with your actual Google Form URL
         target="_blank"
         rel="noopener noreferrer"
-      >
-      <NewButton style1="true" label="Register" />
-      </a>
+        >
+        <NewButton style1="true" label="Register"/>
+        </a>
+      </div>
+      <NonCircuitTec />
+      <NonCircuitnTech />
+      <div className="flex flex-wrap justify-center gap-5 my-5 animate__animated animate__fadeInUp">
       </div>
       <br />
     </div>
