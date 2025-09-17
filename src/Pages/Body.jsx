@@ -40,7 +40,7 @@ const Body = () => {
       {/* Video Background */}
       <video
         className="absolute mt-[80/0] top-0 left-0 w-full h-full object-cover"
-        src="b7.mp4"
+        src="bg.mp4"
         autoPlay
         loop
         muted

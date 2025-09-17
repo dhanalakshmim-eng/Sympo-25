@@ -32,8 +32,9 @@ import Deadlydeeds from "./Pages/EventDesc/track2/Deadlydeeds.jsx";
 import Potpurri from "./Pages/EventDesc/track2/Potpurri.jsx";
 import Thinktank from "./Pages/EventDesc/track2/Thinktank.jsx";
 import Nexus from "./Pages/EventDesc/track2/Nexus.jsx";
-import Tracktron from "./Pages/EventDesc/track2/Tracktron.jsx";
+import Tracktron from "./Pages/EventDesc/track2/TrackOTron.jsx";
 import Site2Sync from "./Pages/EventDesc/Track1/Site2Sync.jsx";
+import Oratio from "./Pages/EventDesc/Track1/Oratio.jsx";
 
 
 const appRouter = createBrowserRouter([
@@ -154,6 +155,10 @@ const appRouter = createBrowserRouter([
       path: "/site2Sync",
       element: <Site2Sync />,
       },
+      {
+        path: "/oratio",
+        element: <Oratio />,
+        },
 
 
     ],

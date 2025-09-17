@@ -34,14 +34,14 @@ const EventContainer = () => {
           />
         </div>
       </div>
-      <NewButton2 style1="true" label="Track I  -  CSE | IT | AIDS | CS | CSBS 👇" label1="Track II  -  ECE | EEE | BME | MBA 👇"/><br />
+      
       <div className="lg:gap-10 gap-5 flex flex-col lg:pb-20 sm:flex-row justify-center items-center animate__animated animate__fadeInUp">
         <Link to="/track1">
-          <NewButton style1="true" label="Track I" />
+          <NewButton style1="true" label="Track I" dept="(AIDS,AIML,CSE,CS,CSBS,IT)" />
         </Link>
         <br />
         <Link to="/track2">
-          <NewButton style1="true" label="Track II" />
+          <NewButton style1="true" label="Track II" dept="(BME,ECE,EEE,MBA)" />
         </Link>
       </div>
     </div>
