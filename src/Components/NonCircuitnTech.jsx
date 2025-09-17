@@ -7,11 +7,9 @@ import ff from "../assets/symposium/Old/NewFreeFire.jpg";
 import cini from "../assets/symposium/Sympo'25/Track1/Cinephilia.jpeg";
 import GIGZUP from "../assets/symposium/Sympo'25/Track1/GIGZUP.jpg";
 import CUEBATTLE from "../assets/symposium/Sympo'25/Track1/CUEBATTLE.png"
-import vault from "../assets/symposium/Old/MysteryVault.jpeg";
-import deadly from "../assets/symposium/Old/deadly.png";
+import dEADLYDEEDS from "../assets/symposium/Sympo'25/Track2/dEADLYDEEDS.jpeg"
 import randomColor from "randomcolor";
-import iplauction from "../assets/symposium/Old/iplauction.jpg"
-import OBSSTACKLE from "../assets/symposium/Old/OBS-Stackle.jpg"
+import POTPURRI from "../assets/symposium/Sympo'25/Track2/POTPURRI.png"
 
 import { Link } from "react-router-dom";
 import { Import } from "lucide-react";
@@ -42,12 +40,20 @@ const NonCircuitnTech = () => {
           path: "/cuebattle",
          
         },
-    {
-      id: 3,
-      imageSrc: Image,
-      altText: "Deadly Deeds",
-      path: "/deadlydeeds",
-    },
+   {
+         id: 3,
+         imageSrc: dEADLYDEEDS, 
+         altText: "Deadly Deeds",
+         label: "Deadly Deeds",
+         path: "/deadlydeeds",
+       },
+   {
+         id:8 ,
+         imageSrc: POTPURRI, 
+         altText: "POTPURRI",
+         label: "POTPURRI",
+         path: "/potpurri",
+       },    
     
   ];
 

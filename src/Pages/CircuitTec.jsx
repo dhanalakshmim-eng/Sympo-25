@@ -37,13 +37,7 @@ const CircuitTec = () => {
       altText: "BioMystic",
       path: "/bioMystic",
     },
-    {
-      id: 3,
-      imageSrc: dEADLYDEEDS, 
-      altText: "Deadly Deeds",
-      label: "Deadly Deeds",
-      path: "/deadlydeeds",
-    },
+    
     {
       id: 4,
       imageSrc: Nexus, 
@@ -51,13 +45,7 @@ const CircuitTec = () => {
       label: "Nexus",
       path: "/nexus",
     },
-    {
-      id: 5,
-      imageSrc: POTPURRI, 
-      altText: "POTPURRI",
-      label: "POTPURRI",
-      path: "/potpurri",
-    },
+    
     {
       id: 6,
       imageSrc: THINKTANK, 
