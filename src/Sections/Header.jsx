@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faCalendarDays, faPhone, faHouse } from "@fortawesome/free-solid-svg-icons";
 // import TechLogo from '../utils/Img/TechLogo.jpg';
 import logo from "../assets/symposium/Logo/spidy logo.png";
+import logo1 from "../assets/symposium/Logo/jce-logo2.png";
 import "animate.css";
 
 const Header = () => {
@@ -30,6 +31,11 @@ const Header = () => {
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2">
   <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
     <div className="flex items-center glitch-wrapper">
+    <img
+        src={logo1}
+        alt="Technovanza Logo"
+        className="h-20 w-20"
+      />
       <img
         src={logo}
         alt="Technovanza Logo"
