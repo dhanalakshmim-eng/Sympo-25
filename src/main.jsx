@@ -26,7 +26,15 @@ import GigUp from "./Pages/EventDesc/Track1/GigUp.jsx";
 import SynaptiQ from "./Pages/EventDesc/Track1/SynaptiQ.jsx";
 import TriSpark from "./Pages/EventDesc/Track1/TriSpark.jsx";
 import VizYourWay from "./Pages/EventDesc/Track1/VizYourWay.jsx";
-import AmpItUpArena from "./Pages/EventDesc/Track1/AmpItUpArena.jsx";
+import AmpItUpArena from "./Pages/EventDesc/track2/Ampituparena.jsx";
+import BioMystic from "./Pages/EventDesc/track2/BioMystic.jsx";
+import Deadlydeeds from "./Pages/EventDesc/track2/Deadlydeeds.jsx";
+import Potpurri from "./Pages/EventDesc/track2/Potpurri.jsx";
+import Thinktank from "./Pages/EventDesc/track2/Thinktank.jsx";
+import Nexus from "./Pages/EventDesc/track2/Nexus.jsx";
+import Tracktron from "./Pages/EventDesc/track2/Tracktron.jsx";
+import Site2Sync from "./Pages/EventDesc/Track1/Site2Sync.jsx";
+
 
 const appRouter = createBrowserRouter([
   {
@@ -109,7 +117,44 @@ const appRouter = createBrowserRouter([
         path: "/cinephilia",
         element: <Cinephilia />,
       },
-      
+      {
+        path: "/cinephilia",
+        element: <Cinephilia />,
+      },
+      {
+        path: "/ampItUpArena",
+        element: <AmpItUpArena />,
+      },
+      {
+      path: "/bioMystic",
+      element: <BioMystic/>,
+      },
+      {
+      path: "/deadlydeeds",
+      element: <Deadlydeeds/>,
+      },
+      {
+      path: "/nexus",
+      element: <Nexus/>,
+      },
+      {
+      path: "/potpurri",
+      element: <Potpurri/>,
+      },
+      {
+      path: "/thinktank",
+      element: <Thinktank/>,
+      },
+
+      {
+      path: "/tracktron",
+      element: <Tracktron />,
+      },
+{
+      path: "/site2Sync",
+      element: <Site2Sync />,
+      },
+
 
     ],
   },

@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faCalendarDays, faPhone, faHouse } from "@fortawesome/free-solid-svg-icons";
 // import TechLogo from '../utils/Img/TechLogo.jpg';
-import logo from "../assets/symposium/Logo/Logo-bgremoved.png";
+import logo from "../assets/symposium/Logo/logobg-removed.png";
 import "animate.css";
 
 const Header = () => {

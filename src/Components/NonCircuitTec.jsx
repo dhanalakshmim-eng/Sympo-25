@@ -13,7 +13,7 @@ import Oratio from "../assets/symposium/Sympo'25/Track1/Oratio.png"
 import SynaptiQ from "../assets/symposium/Sympo'25/Track1/SynaptiQ.png"
 import TriSpark from "../assets/symposium/Sympo'25/Track1/TriSpark.png"
 import vizyourway from "../assets/symposium/Sympo'25/Track1/VIZ YOUR WAY.png"
-import Cinephilia from "../assets/symposium/Sympo'25/Track1/Cinephilia.jpeg"
+import Site2Sync from "../assets/symposium/Sympo'25/Track1/Site2sync.png"
 
 import RandomEvents from "./RandomEvents";
 
@@ -27,10 +27,10 @@ const NonCircuitTec = () => {
     
     {
       id: 1,
-      imageSrc: GIGZUP,
-      altText: "GIGZUP",
-      label: "GIGZUP",
-      path: "/gigzup",
+      imageSrc: Site2Sync,
+      altText: "Site2Sync",
+      label: "Site2Sync",
+      path: "/site2Sync",
       
     },
     {
@@ -59,35 +59,23 @@ const NonCircuitTec = () => {
       
     },
     
+    
     {
       id: 5,
-      imageSrc: CUEBATTLE,
-      altText: "CUEBATTLE",
-      label: "CUEBATTLE",
-      path: "/cuebattle",
-     
-    },
-    {
-      id: 6,
       imageSrc: TriSpark,
       altText: "TriSpark",
       label: "TriSpark",
       path: "/triSpark",
     },
     {
-      id: 7,
+      id: 6,
       imageSrc: vizyourway,
       altText: "vizyourway",
       label: "vizyourway",
       path: "/vizyourway",
     },
-    {
-      id: 8,
-      imageSrc: Cinephilia, // Replace with actual image path
-      altText: "Cinephilia",
-      label: "Cinephilia",
-      path: "/cinephilia",
-    },
+    
+    
   ];
 
   return (

@@ -4,14 +4,15 @@ import Card from "./Card";
 import Image from "../utils/Img/TechLogo.jpg";
 import bgmi from "../assets/symposium/Old/BGMI_FINAL.jpg";
 import ff from "../assets/symposium/Old/NewFreeFire.jpg";
-import cini from "../assets/symposium/Old/Cinephilia.jpg";
-import vault from "../assets/symposium/Old/MysteryVault.jpeg";
-import deadly from "../assets/symposium/Old/deadly.png";
+import cini from "../assets/symposium/Sympo'25/Track1/Cinephilia.jpeg";
+import GIGZUP from "../assets/symposium/Sympo'25/Track1/GIGZUP.jpg";
+import CUEBATTLE from "../assets/symposium/Sympo'25/Track1/CUEBATTLE.png"
+import dEADLYDEEDS from "../assets/symposium/Sympo'25/Track2/dEADLYDEEDS.jpeg"
 import randomColor from "randomcolor";
-import iplauction from "../assets/symposium/Old/iplauction.jpg"
-import OBSSTACKLE from "../assets/symposium/Old/OBS-Stackle.jpg"
+import POTPURRI from "../assets/symposium/Sympo'25/Track2/POTPURRI.png"
 
 import { Link } from "react-router-dom";
+import { Import } from "lucide-react";
 // import "./NonCircuitnTech.css";
 
 const NonCircuitnTech = () => {
@@ -19,40 +20,41 @@ const NonCircuitnTech = () => {
   const circuittechnicalEvents = [
     {
       id: 1,
-      imageSrc: Image,
+      imageSrc: cini,
       altText: "Cinephilia",
       path: "/cinephilia",
     },
     {
-      id: 2,
-      imageSrc: Image,
-      altText: "Mystery Vault",
-      path: "/mysteryvault",
+          id: 2,
+          imageSrc: GIGZUP,
+          altText: "GIGZUP",
+          label: "GIGZUP",
+          path: "/gigzup",
+          
     },
     {
-      id: 3,
-      imageSrc: Image,
-      altText: "Deadly Deeds",
-      path: "/deadlydeeds",
-    },
-    {
-      id: 4,
-      imageSrc: Image,
-      altText: "IPL Auction",
-      path: "/iplauction",
-    },
-    {
-      id: 5,
-      imageSrc: Image,
-      altText: "BGMI",
-      path: "/bgmi",
-    },
-    {
-      id: 6,
-      imageSrc: OBSSTACKLE,
-      altText: "Free Fire",
-      path: "/ff",
-    },
+          id: 5,
+          imageSrc: CUEBATTLE,
+          altText: "CUEBATTLE",
+          label: "CUEBATTLE",
+          path: "/cuebattle",
+         
+        },
+   {
+         id: 3,
+         imageSrc: dEADLYDEEDS, 
+         altText: "Deadly Deeds",
+         label: "Deadly Deeds",
+         path: "/deadlydeeds",
+       },
+   {
+         id:8 ,
+         imageSrc: POTPURRI, 
+         altText: "POTPURRI",
+         label: "POTPURRI",
+         path: "/potpurri",
+       },    
+    
   ];
 
   return (
