@@ -23,7 +23,7 @@ const Circuit = () => {
       <NonCircuitnTech />
       <div className="flex flex-wrap justify-center gap-5 my-5 animate__animated animate__fadeInUp">
         <a
-          href="https://docs.google.com/forms/d/e/1FAIpQLSeN-2jLB-1VDYrKwieEQC7grGuG-QyDJXsfqIpr3YAx-cbtXA/viewform"
+          href="https://forms.gle/dZ8AyUzLBfmS5EyF7 "
           target="_blank"
           rel="noopener noreferrer"
         >
