@@ -59,7 +59,7 @@ const ContactUs = () => {
       />
     </svg>
     <a className="text-sm md:text-lg">
-      Jerusalem College Of Engineering, Pallikaranai
+Velachery main road,Narayanapuram, Pallikaranai,Chennai- 600 100
     </a>
   </div>
 
@@ -83,7 +83,7 @@ const ContactUs = () => {
       />
     </svg>
     <a
-      href="mailto:symposium2024@jerusalemengg.ac.in"
+      href="mailto:symposium2025@jerusalemengg.ac.in"
       className="text-sm md:text-lg hover:underline"
     >
       symposium2025@jerusalemengg.ac.in
