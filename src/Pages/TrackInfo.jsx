@@ -18,7 +18,7 @@ const TrackInfo = ({label,Image,Description}) => {
   }, []);
 
   return (
-    <div className="bg-dark-grey text-white-grey flex flex-col items-center py-10 animate__animated animate__fadeInDown">
+    <div className=" bg-dark-grey text-white-grey flex flex-col items-center py-10 animate__animated animate__fadeInDown">
       <div className="p-6 md:p-10 w-full max-w-5xl">
         <h2 className="text-3xl md:text-5xl font-aboutfont tracking-widest text-center">
           {label}
