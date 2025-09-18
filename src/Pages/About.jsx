@@ -1,8 +1,8 @@
 import React, { useEffect, useRef } from "react";
 import "./styles/animation.css"; // Import the CSS for the cubes animation
 import VanillaTilt from "vanilla-tilt";
-import Image from "../assets/symposium/Logo/NewLogo.png";
-
+import Image from "../assets/symposium/Logo/spidy logo.png";
+  
 const NewAbout = () => {
   const tiltRef = useRef(null);
 
@@ -28,7 +28,7 @@ const NewAbout = () => {
 
         {/* Title */}
         <h2 className="text-3xl md:text-5xl font-aboutfont tracking-widest text-left">
-          TECHNOVANZA'25
+          TECHNOVANZA <span> 2025- '26</span>
         </h2>
 
         {/* Content Section */}

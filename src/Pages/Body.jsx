@@ -36,11 +36,11 @@ const Body = () => {
 
   return (
     <div>
-      <section className="relative  w-screen h-screen flex items-center justify-center overflow-hidden ">
+      <section className="relative  w-screen h-100% flex items-center justify-center overflow-hidden ">
       {/* Video Background */}
       <video
-        className="absolute top-0 left-0 w-full h-full object-cover"
-        src="b7.mp4"
+        className="absolute mt-[80/0] top-0 left-0 w-full h-full object-cover"
+        src="bg.mp4"
         autoPlay
         loop
         muted
@@ -52,7 +52,7 @@ const Body = () => {
       {/* Hero Content */}
       <div className="mt-small">
       <CollegeName />
-      <br />
+      
       <div className="flex flex-wrap justify-center gap-5 my-1 animate__animated animate__fadeInUp duration-500">
         <Link to="/events">
           <NewButton label="Register Here" />

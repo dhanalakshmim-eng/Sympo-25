@@ -10,6 +10,7 @@ import CUEBATTLE from "../assets/symposium/Sympo'25/Track1/CUEBATTLE.png"
 import dEADLYDEEDS from "../assets/symposium/Sympo'25/Track2/dEADLYDEEDS.jpeg"
 import randomColor from "randomcolor";
 import POTPURRI from "../assets/symposium/Sympo'25/Track2/POTPURRI.png"
+import OBSSTACKLE from "../assets/symposium/Sympo'25/Track1/OBS-TACKLE RACE.png"
 
 import { Link } from "react-router-dom";
 import { Import } from "lucide-react";
@@ -48,12 +49,19 @@ const NonCircuitnTech = () => {
          path: "/deadlydeeds",
        },
    {
-         id:8 ,
+         id:4 ,
          imageSrc: POTPURRI, 
          altText: "POTPURRI",
          label: "POTPURRI",
          path: "/potpurri",
-       },    
+       }, 
+       {
+        id:5 ,
+        imageSrc: OBSSTACKLE, 
+        altText: "POTPURRI",
+        label: "POTPURRI",
+        path: "/obstackle",
+      },     
     
   ];
 

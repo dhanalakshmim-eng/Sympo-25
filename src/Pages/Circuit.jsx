@@ -17,6 +17,7 @@ const Circuit = () => {
             be part of an event that celebrates innovation and collaboration.
             Don’t miss the opportunity to engage with tech enthusiasts and experts."
       />
+        <NewButton label="Register" />
 
       <CircuitTec />
       <NonCircuitnTech />
@@ -26,7 +27,7 @@ const Circuit = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <NewButton label="Register" />
+        
         </a>
       </div>
       <br />

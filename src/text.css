@@ -179,6 +179,16 @@ padding: 2px;
   transform: skew(-5deg);
   animation: flicker 1.5s infinite;
 }
+
+.margin-clg{
+  margin-top: 2rem;
+}
+.magin-bottom{
+  margin-bottom: 20rem;
+}
+.br-style{
+  margin-bottom: 2rem ;
+}
 /*   .technovanza {
     position: relative;
     font-size: 4rem;

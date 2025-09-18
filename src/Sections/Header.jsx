@@ -3,7 +3,8 @@ import { Link, useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faCalendarDays, faPhone, faHouse } from "@fortawesome/free-solid-svg-icons";
 // import TechLogo from '../utils/Img/TechLogo.jpg';
-import logo from "../assets/symposium/Logo/logobg-removed.png";
+import logo from "../assets/symposium/Logo/spidy logo.png";
+import logo1 from "../assets/symposium/Logo/jce-logo2.png";
 import "animate.css";
 
 const Header = () => {
@@ -30,10 +31,15 @@ const Header = () => {
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2">
   <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
     <div className="flex items-center glitch-wrapper">
+    <img
+        src={logo1}
+        alt="Technovanza Logo"
+        className="h-20 w-20"
+      />
       <img
         src={logo}
         alt="Technovanza Logo"
-        className=" w-20 h-15 sm:w-22 sm:h-10 md:w-22 md:h-10 lg:w-24 lg:h-12 xl:w-24 xl:h-12 mr-2 object-cover"
+        className=" w-10 h-10 sm:w-22 sm:h-10 md:w-22 md:h-10 lg:w-24 lg:h-16 xl:w-26 xl:h-12 mr-2 object-cover"
       />
       {/* <span className="self-center text-2xl font-semibold whitespace-nowrap font-collegefont text-white">
         TECHNOVANZA
