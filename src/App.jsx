@@ -6,7 +6,6 @@ import { Outlet } from "react-router-dom";
 import Loading from "./Components/Loading";
 import SplashScreen from "./Components/SplashScreen";
 import './styles/eventStyles.css';
-
 const App = () => {
   const [showSplash, setShowSplash] = useState(true); // splash first
   const [loading, setLoading] = useState(true);

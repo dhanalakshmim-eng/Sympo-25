@@ -37,6 +37,7 @@ import Tracktron from "./Pages/EventDesc/track2/TrackOTron.jsx";
 import Site2Sync from "./Pages/EventDesc/Track1/Site2Sync.jsx";
 import Oratio from "./Pages/EventDesc/Track1/Oratio.jsx";
 import Obstackle from "./Pages/EventDesc/Track1/Obstackle.jsx";
+import TeamPage from "./Pages/team.jsx";
 
 
 const appRouter = createBrowserRouter([
@@ -74,7 +75,10 @@ const appRouter = createBrowserRouter([
         path: "/about",
         element: <NewAbout />,
       },
-     
+     {
+        path: "/teams",
+        element: <TeamPage />,
+      },
       {
         path: "/contact",
         element: <Contact />,
