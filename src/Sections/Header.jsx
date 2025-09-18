@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faCalendarDays, faPhone, faHouse } from "@fortawesome/free-solid-svg-icons";
 // import TechLogo from '../utils/Img/TechLogo.jpg';
 import logo from "../assets/symposium/Logo/spidy logo.png";
-import logo1 from "../assets/symposium/Logo/jce-logo2.png";
+
 import "animate.css";
 
 const Header = () => {
@@ -79,7 +79,7 @@ const Header = () => {
         className={`font-collegefont block py-2 px-3 rounded md:bg-transparent md:p-0 ${
           currentPath === "/" ?"text-[#E8BCB9] bg-gradient-to-br from-[#E8BCB9] to-[#AE445A] bg-clip-text text-transparent" : "text-white"
         } hover:bg-gradient-to-br hover:from-[#E8BCB9] hover:to-[#AE445A] hover:bg-clip-text hover:text-transparent " bg-gradient-to-r from-pink-500 to-red-500 text-white font-bold rounded-full shadow-lg 
-        transform transition duration-300 hover:scale-105 hover:shadow-xl"`}
+        transform transitioimport logo1 from "../assets/symposium/Logo/jce-logo2.png";n duration-300 hover:scale-105 hover:shadow-xl"`}
         aria-current={currentPath === "/" ? "page" : undefined}
         onClick={ () => {
           closeMenu();
