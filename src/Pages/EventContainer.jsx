@@ -1,48 +1,50 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
-import VanillaTilt from "vanilla-tilt";
-// import eventPoster from "../assets/symposium/Old/OverallPoster.jpeg";
-import eventPoster from "../assets/symposium/Old/overallPoster.jpg"
-import EventButton from "../Components/EventButton.jsx";
-import NewButton2 from "../Components/Button/NewButton.jsx";
-import NewButton from "../Components/Button/NewButton.jsx";
+import eventPoster from "../assets/symposium/Old/overallPoster.jpg";
+import track1Logo from "../assets/symposium/Logo/T1.png";
+import track2Logo from "../assets/symposium/Logo/T2.png";
 
 const EventContainer = () => {
-  const tiltRef = useRef(null);
-
-  useEffect(() => {
-    if (tiltRef.current) {
-      VanillaTilt.init(tiltRef.current, {
-        max: 3, // Maximum tilt rotation (degrees)
-        speed: 10, // Speed of the enter/exit transition
-        glare: false, // Disable glare effect
-      });
-    }
-  }, []);
-
   return (
-    <div className="px-5 min-h-screen flex flex-col justify-start items-center"> {/* Added padding on both sides */}
-      <div className="flex justify-center mt-11 mb-10">
-        <div
-          // ref={tiltRef}
-          className="tilt-container overflow-hidden shadow-md"
-        >
-          <img
-            src={eventPoster}
-            className="w-full h-auto sm:max-w-[360px] md:max-w-[480px] lg:max-w-[600px] xl:max-w-[800px]"
-            alt="Event Poster"
-          />
-        </div>
+    <div className="px-5 min-h-screen flex flex-col justify-start items-center">
+      {/* Poster without border or effects */}
+      <div className="flex justify-center mt-10 mb-6">
+        <img
+          src={eventPoster}
+          className="w-full h-auto sm:max-w-[360px] md:max-w-[480px] lg:max-w-[600px] xl:max-w-[800px] rounded-xl"
+          alt="Event Poster"
+        />
       </div>
-      
-      <div className="lg:gap-10 gap-5 flex flex-col lg:pb-20 sm:flex-row justify-center items-center animate__animated animate__fadeInUp">
-        <Link to="/track1">
-          <NewButton style1="true" label="Track I" dept="(AIDS,AIML,CSE,CS,CSBS,IT)" />
-        </Link>
-        <br />
-        <Link to="/track2">
-          <NewButton style1="true" label="Track II" dept="(BME,ECE,EEE,MBA)" />
-        </Link>
+
+      {/* Track Sections */}
+      <div className="flex flex-col lg:flex-row gap-2 lg:gap-5 justify-center items-center">
+        {/* Track I */}
+        <div className="flex flex-col items-center">
+          <Link to="/track1" className="mb-1">
+            <img
+              src={track1Logo}
+              className="w-40 h-40 md:w-48 md:h-48 lg:w-26 lg:h-26 object-contain"
+              alt="Track I Logo"
+            />
+          </Link>
+          <p className="text-black-800 font-semibold text-sm md:text-base text-center bg-white text-black">
+            (AI&DS, AI&ML, CSE, CS, CSBS, IT)
+          </p>
+        </div>
+
+        {/* Track II */}
+        <div className="flex flex-col items-center">
+          <Link to="/track2" className="mb-2">
+            <img
+              src={track2Logo}
+              className="w-40 h-40 md:w-48 md:h-48 lg:w-26 lg:h-26 object-contain"
+              alt="Track II Logo"
+            />
+          </Link>
+          <p className="text-black-800 font-semibold text-sm md:text-base text-center bg-white text-black">
+            (BME, ECE, EEE, MBA)
+          </p>
+        </div>
       </div>
     </div>
   );
