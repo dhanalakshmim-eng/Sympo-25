@@ -19,7 +19,7 @@ const NonCircuit = () => {
             Don’t miss the opportunity to engage with tech enthusiasts and experts." />
       <div className='flex justify-center z-50 p-4 shadow'>
         <a
-        href="https://docs.google.com/Old/forms/d/e/1FAIpQLSevyF8IMwzejiL3Cx04Q-fxlwnxGz3b41DsBDvRTE-rzIVPMA/viewform" // Replace with your actual Google Form URL
+        href="https://forms.gle/YRbsnJiPvX2qFED79" // Replace with your actual Google Form URL
         target="_blank"
         rel="noopener noreferrer"
         >
