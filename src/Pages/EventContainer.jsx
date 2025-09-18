@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import VanillaTilt from "vanilla-tilt";
 // import eventPoster from "../assets/symposium/Old/OverallPoster.jpeg";
-import eventPoster from "../assets/symposium/Old/overallPoster.jpg"
+import eventPoster from "../assets/symposium/overAll.jpg"
 import EventButton from "../Components/EventButton.jsx";
 import NewButton2 from "../Components/Button/NewButton.jsx";
 import NewButton from "../Components/Button/NewButton.jsx";
@@ -29,7 +29,7 @@ const EventContainer = () => {
         >
           <img
             src={eventPoster}
-            className="w-full h-auto sm:max-w-[360px] md:max-w-[480px] lg:max-w-[600px] xl:max-w-[800px]"
+            className="w-full h-auto sm:max-w-[360px] md:max-w-[480px] lg:max-w-[600px] xl:max-w-[700px]"
             alt="Event Poster"
           />
         </div>
