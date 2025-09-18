@@ -29,7 +29,7 @@ const EventContainer = () => {
         >
           <img
             src={eventPoster}
-            className="w-full h-auto sm:max-w-[360px] md:max-w-[480px] lg:max-w-[600px] xl:max-w-[800px]"
+            className="w-full h-auto sm:max-w-[360px] md:max-w-[480px] lg:max-w-[600px] xl:max-w-[700px]"
             alt="Event Poster"
           />
         </div>
