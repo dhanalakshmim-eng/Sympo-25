@@ -6,11 +6,11 @@ const CollegeName = () => {
   return (
     <div className="text-center p-4 sm:p-6 md:p-8 lg:p-6 xl:p-6">
       <p className="mt-20 clg-font  bg-blue-200 text-3xl sm:text-2xl md:text-3xl lg:text-5xl   font-extrabold mb-0 bg-white bg-clip-text text-transparent font-otherfont animate__animated animate__fadeInUp duration-500">
-        JERUSALEM COLLEGE OF ENGINEERING <br/>
-        <span className="clg-font  bg-blue-200  text-xl font-extrabold bg-white bg-clip-text text-transparent font-otherfont animate__animated animate__fadeInUp duration-500">AN AUTONOMOUS INSTITUTION</span><br />
-        <span className="clg-font  bg-blue-200  text-sm sm:text-sm md:text-base lg:text-lg font-extrabold bg-white bg-clip-text text-transparent font-otherfont animate__animated animate__fadeInUp duration-500">Velachery Main Road, Narayanapuram, Pallikaranai, Chennai, Tamil Nadu - 600100</span><br />
-        <span className="clg-font  bg-blue-200  text-sm sm:text-1xl md:text-2xl lg:text-2xl font-extrabold bg-white bg-clip-text text-transparent font-otherfont animate__animated animate__fadeInUp duration-500">PRESENTS</span> <br />
-        <span className=" clg-font  bg-blue-200 text-xl sm:text-1xl md:text-2xl lg:text-3xl   font-extrabold mb-0 bg-white bg-clip-text text-transparent font-otherfont animate__animated animate__fadeInUp duration-500">AN INTER COLLEGIATE NATIONAL LEVEL TECHNICAL SYMPOSIUM</span><br /><br />
+        JERUSALEM COLLEGE OF ENGINEERING
+        <span className="clg-font  bg-blue-200  text-sm font-extrabold bg-white bg-clip-text text-transparent font-otherfont animate__animated animate__fadeInUp duration-500 block">( AN AUTONOMOUS INSTITUTION )</span>
+        <span className="clg-font  bg-blue-200  text-sm sm:text-sm md:text-base lg:text-lg font-extrabold bg-white bg-clip-text text-transparent font-otherfont animate__animated animate__fadeInUp duration-500 block">Chennai, Tamil Nadu - 600100</span>
+        <span className="clg-font mt-2 bg-blue-200  text-sm sm:text-1xl md:text-2xl lg:text-2xl font-extrabold bg-white bg-clip-text text-transparent font-otherfont animate__animated animate__fadeInUp duration-500 block">PRESENTS</span>
+        <span className=" clg-font mt-6  bg-blue-200 text-xl sm:text-1xl md:text-2xl lg:text-3xl   font-extrabold mb-0 bg-white bg-clip-text text-transparent font-otherfont animate__animated animate__fadeInUp duration-500 block">AN INTER COLLEGIATE NATIONAL LEVEL TECHNICAL SYMPOSIUM</span><br />
         
       </p>
       
