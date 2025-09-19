@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import Shifan from "../Pages/contributors image/shifan.jpg"
-import kishor from"../pages/contributors image/kishorr jj.jpg"
-import dhana from "../pages/contributors image/dhana.jpg"
-import angel from "../pages/contributors image/angeline.jpg"
+import kishor from"../Pages/contributors image/kishorr jj.jpg"
+import dhana from "../Pages/contributors image/dhana.jpg"
+import angel from "../Pages/contributors image/angeline.jpg"
 import nithi from "../Pages/contributors image/ntihi.jpg"
 import akela from "../Pages/contributors image/akela.jpg"
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-
+import loga from "../Pages/contributors image/logapriya.jpg"
 const TeamMember = ({ member, index }) => {
   const [isLoaded, setIsLoaded] = useState(false);
 
@@ -58,16 +58,16 @@ const TeamMember = ({ member, index }) => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i className="fab fa-github text-lg"></i>
+         <FaGithub />
         </a>
         <a
           href={member.linkedin}
-          className="social-icon bg-blue-600 hover:bg-blue-500 text-white p-3 rounded-full"
+          className="social-icon bg-blue-600 hover:bg-blue-500 text-white p-3 rounded-full"npm
           target="_blank"
           rel="noopener noreferrer"
           
         >
-          <i className="fab fa-linkedin text-lg"></i>
+          <FaLinkedin />
         </a>
       </div>
     </div>
@@ -79,23 +79,17 @@ const TeamPage = () => {
     {
       name: "MOHAMED SHIFAN A",
       image: Shifan,
-      github: "https://github.com/alexjohnson",
+      github: "https://github.com/shifan-mts",
       linkedin: "https://in.linkedin.com/in/shifan-mts",
     },
     {
-      name: "KISHORE J J",
+      name: "KISHOR J J",
       image: kishor,
       github: "https://github.com/KishorJJ11",
       linkedin:"https://www.linkedin.com/in/kishorjj/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     },
 
-    {
-      name: "NITHiYAGANESH S",
-      image: nithi,
-      github: "https://github.com/31Nithiyaganesh",
-      linkedin: "https://www.linkedin.com/in/nithiyaganesh-s-70996935a/",
   
-    },
     
     {
       name: "DHANA LAKSHMI M",
@@ -108,21 +102,28 @@ const TeamPage = () => {
       name: "ANGELINE HEPHZIBAH J",
       image: angel,
       github: "https://github.com/angelinedev",
-      linkedin: "www.linkedin.com/in/angeline-h",
+      linkedin: "https://www.linkedin.com/in/angeline-h/",
+
+    },
+      {
+      name: "NITHIYAGANESH S",
+      image: nithi,
+      github: "https://github.com/31Nithiyaganesh",
+      linkedin: "https://www.linkedin.com/in/nithiyaganesh-s-70996935a/",
       
     },
     
     {
       name: "AKELA ",
-      image: akela,
+      image: akela ,
       github: "https://github.com/AkelaManikandan",
       linkedin:"https://www.linkedin.com/in/akela-m-3734ba233",
 
     },
     {
       name: "LogaPriya",
-      image: "/images/image7.jpg",
-      github: "",
+      image: loga,
+      github: "https://github.com/LogapriyaD123/",
       linkedin: "https://www.linkedin.com/in/logapriya-d-82a917369?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app ",
       
     },
