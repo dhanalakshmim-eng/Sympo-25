@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import VanillaTilt from "vanilla-tilt";
 import "../../../styles/eventStyles.css";
-import EventImage from "../../../assets/symposium/Sympo'25/Track1/Site2sync.png";
+import EventImage from "../../../assets/symposium/Sympo'25/Track1/Site2sync.jpg";
 
 const cardVariants = {
   hidden: { opacity: 0, y: 40 },
@@ -138,16 +138,32 @@ const Site2Sync = () => {
     },
     {
       icon: "📞",
-      heading: "For More Information",
+      heading: "Student Coordinators",
       content: (
         <div className="text-base md:text-lg leading-relaxed p-4 bg-gradient-to-r from-indigo-900/30 to-blue-900/30 rounded-lg border border-indigo-500/30">
-          <div className="mb-2 font-semibold text-accent">Student Coordinators:</div>
-          <div className="text-center p-4 bg-yellow-900/20 rounded-lg border border-yellow-500/30">
-            <span className="font-bold text-yellow-400">📢 To be announced</span>
+          <div className="space-y-2">
+            <div className="flex items-center gap-2">
+              <span className="w-2 h-2 bg-green-400 rounded-full"></span>
+              <span className="font-semibold">Mr. Manikandan Askar K : </span>
+              <a href="tel:+917358213508" className="text-accent hover:underline">9150452063</a>
+            </div>
+          
           </div>
         </div>
       ),
       key: "contact"
+    },
+    {
+      icon: "🏛️",
+      heading: "Event Footer",
+      content: (
+        <div className="p-4 bg-gradient-to-r from-purple-900/30 to-pink-900/30 rounded-lg border border-purple-500/30">
+          <p className="text-base md:text-lg leading-relaxed italic">
+            Organized under <span className="font-bold text-primary">TECHNOVANZA 2025-26</span>: An Inter Collegiate National Level Technical Symposium at <span className="font-bold text-accent">Jerusalem College of Engineering, Pallikaranai, Chennai</span>.
+          </p>
+        </div>
+      ),
+      key: "footer"
     }
   ];
 

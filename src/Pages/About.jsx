@@ -56,7 +56,7 @@ const CrossfadeImage = ({ plain, colorful, height = 600 }) => {
   );
 };
 
-const NewAbout = (props) => {
+const NewAbout = () => {
   const tiltRef = useRef(null);
 
   useEffect(() => {
@@ -109,7 +109,6 @@ const NewAbout = (props) => {
     <br />
     <br />
       {/* College Section 1 */}
-      {!props.about && <div className="m-0 p-0">
       <div className="w-full max-w-7xl p-6 md:p-10 flex flex-col md:flex-row items-center">
         {/* Image Left */}
         <div className="md:w-[65%] w-full mb-6 md:mb-0 md:mr-8">
@@ -153,7 +152,6 @@ Jerusalem College of Engineering offers a vibrant campus life with a strong emph
 The college promotes physical fitness through sports such as volleyball, basketball, cricket, and football, fostering team spirit and healthy competition. Regular symposiums, workshops, and cultural fests enrich the campus experience, encouraging creativity and leadership. Supported by a dedicated faculty and modern facilities, student life at Jerusalem College of Engineering is dynamic, inclusive, and nurturing for future professionals.          </p>
         </div>
       </div>
-      </div>}
     </div>
   );
 };

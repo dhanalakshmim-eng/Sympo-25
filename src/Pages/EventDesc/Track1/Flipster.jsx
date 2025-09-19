@@ -163,6 +163,18 @@ const Flipster = () => {
         </div>
       ),
       key: "contact"
+    },
+    {
+      icon: "🏛️",
+      heading: "Event Footer",
+      content: (
+        <div className="p-4 bg-gradient-to-r from-purple-900/30 to-pink-900/30 rounded-lg border border-purple-500/30">
+          <p className="text-base md:text-lg leading-relaxed italic">
+            Organized under <span className="font-bold text-primary">TECHNOVANZA 2025-26</span>: An Inter Collegiate National Level Technical Symposium at <span className="font-bold text-accent">Jerusalem College of Engineering, Pallikaranai, Chennai</span>.
+          </p>
+        </div>
+      ),
+      key: "footer"
     }
   ];
 
