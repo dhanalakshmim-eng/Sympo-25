@@ -69,7 +69,7 @@ const Body = () => {
       </section>
       
       <hr className="border-t-2 border-gray-400 w-3/4 mx-auto my-10" />
-      <NewAbout />
+      <NewAbout style="true" />
       <hr className="border-t-2 border-gray-400 w-3/4 mx-auto my-10" />
       {/* <HomeEventDetails />
       <InfoSections />

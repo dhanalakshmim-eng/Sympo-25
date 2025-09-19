@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Shifan from "../Pages/contributors image/shifan.jpg"
-import kishor from"../Pages/contributors image/kishorr jj.jpg"
+import kishor from"../Pages/contributors image/kishorrjj.jpg"
 import dhana from "../Pages/contributors image/dhana.jpg"
 import angel from "../Pages/contributors image/angeline.jpg"
 import nithi from "../Pages/contributors image/ntihi.jpg"

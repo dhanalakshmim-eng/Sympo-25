@@ -56,7 +56,7 @@ const CrossfadeImage = ({ plain, colorful, height = 600 }) => {
   );
 };
 
-const NewAbout = () => {
+const NewAbout = (props) => {
   const tiltRef = useRef(null);
 
   useEffect(() => {
@@ -109,14 +109,13 @@ const NewAbout = () => {
     <br />
     <br />
       {/* College Section 1 */}
-      <div className="w-full max-w-7xl p-6 md:p-10 flex flex-col md:flex-row items-center">
+     {!props.style && <><div className="w-full max-w-7xl p-6 md:p-10 flex flex-col md:flex-row items-center">
         {/* Image Left */}
         <div className="md:w-[65%] w-full mb-6 md:mb-0 md:mr-8">
           <CrossfadeImage
             plain={CollegeNormal}
             colorful={CollegeColorful}
-            height={600}
-          />
+            height={600} />
         </div>
         {/* Text Right */}
         <div className="md:w-[35%] w-full text-lg leading-relaxed text-justify px-4 flex flex-col justify-center">
@@ -124,34 +123,31 @@ const NewAbout = () => {
             About Our College
           </h2>
           <p className="mb-4">
-Jerusalem College of Engineering, Chennai, established in 1995, is a premier autonomous institution affiliated with Anna University and approved by AICTE. Located in Pallikaranai, Chennai, the college offers a wide range of undergraduate, postgraduate, and doctoral programs in engineering, technology, computer applications, and management. Accredited by NAAC and NBA, it provides quality education grounded in ethical values.          </p>
+            Jerusalem College of Engineering, Chennai, established in 1995, is a premier autonomous institution affiliated with Anna University and approved by AICTE. Located in Pallikaranai, Chennai, the college offers a wide range of undergraduate, postgraduate, and doctoral programs in engineering, technology, computer applications, and management. Accredited by NAAC and NBA, it provides quality education grounded in ethical values.          </p>
           <p className="mb-4">
-The college fosters research, entrepreneurship, and industry collaboration, supported by experienced faculty and modern infrastructure. With specialized courses in fields like Artificial Intelligence, Data Science, and Cyber Security, Jerusalem College of Engineering prepares students for successful careers and meaningful societal contributions.          </p>
+            The college fosters research, entrepreneurship, and industry collaboration, supported by experienced faculty and modern infrastructure. With specialized courses in fields like Artificial Intelligence, Data Science, and Cyber Security, Jerusalem College of Engineering prepares students for successful careers and meaningful societal contributions.          </p>
 
         </div>
-      </div>
+      </div><div className="w-full max-w-7xl p-6 md:p-10 flex flex-col md:flex-row items-center">
 
-      {/* College Section 2 */}
-      <div className="w-full max-w-7xl p-6 md:p-10 flex flex-col md:flex-row items-center">
-        {/* Image Left */}
-        <div className="md:w-[65%] w-full mb-6 md:mb-0 md:mr-8">
-          <CrossfadeImage
-            plain={S1Normal}
-            colorful={S1Colorful}
-            height={600}
-          />
-        </div>
-        {/* Text Right */}
-        <div className="md:w-[35%] w-full text-lg leading-relaxed text-justify px-4 flex flex-col justify-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-left">
-            Campus Life
-          </h2>
-          <p className="mb-4">
-Jerusalem College of Engineering offers a vibrant campus life with a strong emphasis on holistic student development. The college provides excellent infrastructure including smart classrooms, well-equipped laboratories, a spacious library, hostels, sports complexes, and a cafeteria. Students actively participate in various cultural, technical, and sports events, as well as clubs and societies like the National Service Scheme (NSS), Rotaract Club, and Tamil Mandram.          </p>
-          <p>
-The college promotes physical fitness through sports such as volleyball, basketball, cricket, and football, fostering team spirit and healthy competition. Regular symposiums, workshops, and cultural fests enrich the campus experience, encouraging creativity and leadership. Supported by a dedicated faculty and modern facilities, student life at Jerusalem College of Engineering is dynamic, inclusive, and nurturing for future professionals.          </p>
-        </div>
-      </div>
+          <div className="md:w-[65%] w-full mb-6 md:mb-0 md:mr-8">
+            <CrossfadeImage
+              plain={S1Normal}
+              colorful={S1Colorful}
+              height={600} />
+          </div>
+          {/* Text Right */}
+          <div className="md:w-[35%] w-full text-lg leading-relaxed text-justify px-4 flex flex-col justify-center">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-left">
+              Campus Life
+            </h2>
+            <p className="mb-4">
+              Jerusalem College of Engineering offers a vibrant campus life with a strong emphasis on holistic student development. The college provides excellent infrastructure including smart classrooms, well-equipped laboratories, a spacious library, hostels, sports complexes, and a cafeteria. Students actively participate in various cultural, technical, and sports events, as well as clubs and societies like the National Service Scheme (NSS), Rotaract Club, and Tamil Mandram.          </p>
+            <p>
+              The college promotes physical fitness through sports such as volleyball, basketball, cricket, and football, fostering team spirit and healthy competition. Regular symposiums, workshops, and cultural fests enrich the campus experience, encouraging creativity and leadership. Supported by a dedicated faculty and modern facilities, student life at Jerusalem College of Engineering is dynamic, inclusive, and nurturing for future professionals.          </p>
+          </div>
+        </div></>
+}
     </div>
   );
 };
