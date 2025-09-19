@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import VanillaTilt from "vanilla-tilt";
 import "../../../styles/eventStyles.css";
-import StumbleGuysBanner from "../../../assets/symposium/Sympo'25/Track1/OBS-TACKLE RACE.png";
+import StumbleGuysBanner from "../../../assets/symposium/Sympo'25/Track1/OBS-TACKLE RACE.jpg";
 
 const cardVariants = {
   hidden: { opacity: 0, y: 40 },
@@ -141,6 +141,18 @@ const StumbleGuys = () => {
         </div>
       ),
       key: "final"
+    },
+    {
+      icon: "🏛️",
+      heading: "Event Footer",
+      content: (
+        <div className="p-4 bg-gradient-to-r from-purple-900/30 to-pink-900/30 rounded-lg border border-purple-500/30">
+          <p className="text-base md:text-lg leading-relaxed italic">
+            Organized under <span className="font-bold text-primary">TECHNOVANZA 2025-26</span>: An Inter Collegiate National Level Technical Symposium at <span className="font-bold text-accent">Jerusalem College of Engineering, Pallikaranai, Chennai</span>.
+          </p>
+        </div>
+      ),
+      key: "footer"
     }
   ];
 

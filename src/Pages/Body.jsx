@@ -5,7 +5,6 @@ import Faq from "../Sections/Faq";
 import NewAbout from "./About";
 import CountdownTimer from "../Sections/CountDown";
 import Footer from "../Sections/Footer";
-import track1Logo from "../assets/symposium/Logo/T1.png";
 
 
 
@@ -56,13 +55,8 @@ const Body = () => {
       
       <div className="flex flex-wrap justify-center gap-5 my-1 animate__animated animate__fadeInUp duration-500">
         <Link to="/events">
-                    <img
-                      src={track1Logo}
-                      className="w-40 h-40 md:w-18 md:h-18 lg:w-26 lg:h-26 object-contain"
-                      alt="Track I Logo"
-                    />          
+          <NewButton label="Let's Unleash" />
         </Link>
-
       </div>
 
       <CountdownTimer />
