@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
-import Shifan from "../Pages/contributors image/shifan.jpg"
-import kishor from"../pages/contributors image/kishorr jj.jpg"
-import dhana from "../pages/contributors image/dhana.jpg"
-import angel from "../pages/contributors image/angeline.jpg"
-import nithi from "../Pages/contributors image/ntihi.jpg"
-import akela from "../Pages/contributors image/akela.jpg"
+import Shifan from "../Pages/ContributorImage/shifan.jpg"
+import dhana from "../Pages/ContributorImage/dhana.jpg"
+import angel from "../Pages/ContributorImage/angeline.jpg"
+import nithi from "../Pages/ContributorImage/ntihi.jpg"
+import akela from "../Pages/ContributorImage/akela.jpg"
+import kishor from "../Pages/ContributorImage/kishorrjj.jpg"
+      
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const TeamMember = ({ member, index }) => {
