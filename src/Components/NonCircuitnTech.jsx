@@ -11,6 +11,7 @@ import dEADLYDEEDS from "../assets/symposium/Sympo'25/Track2/dEADLYDEEDS.jpeg"
 import randomColor from "randomcolor";
 import POTPURRI from "../assets/symposium/Sympo'25/Track2/POTPURRI.png"
 import OBSSTACKLE from "../assets/symposium/Sympo'25/Track1/OBS-TACKLE RACE.jpg"
+import ORATIO from "../assets/symposium/Sympo'25/Track1/Oratio.png"
 
 import { Link } from "react-router-dom";
 import { Import } from "lucide-react";
@@ -61,7 +62,15 @@ const NonCircuitnTech = () => {
         altText: "POTPURRI",
         label: "POTPURRI",
         path: "/obstackle",
-      },     
+      },
+      {
+        id:6,
+        imageSrc: ORATIO, 
+        altText: "ORATIO",
+        label: "ORATIO",
+        path: "/oratio",
+      },   
+
     
   ];
 
