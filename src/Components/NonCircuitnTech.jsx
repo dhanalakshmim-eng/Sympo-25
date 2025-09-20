@@ -63,13 +63,7 @@ const NonCircuitnTech = () => {
         label: "POTPURRI",
         path: "/obstackle",
       },
-      {
-        id:6,
-        imageSrc: ORATIO, 
-        altText: "ORATIO",
-        label: "ORATIO",
-        path: "/oratio",
-      },   
+      
 
     
   ];
