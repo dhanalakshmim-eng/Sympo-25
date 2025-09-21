@@ -1,6 +1,8 @@
 import React from "react";
 import "./styles/Contact.css";
+import Footer from "../Sections/Footer"
 import "../text.css";
+
 
 const Contact = () => {
   const tracks = [
@@ -40,6 +42,9 @@ const Contact = () => {
   ];
 
   return (
+    <>
+    
+   
     <div className="contact-container bg-transparent text-white py-10 px-10">
       <h1 className="contact_details text-3xl font-extrabold text-center font-otherfont mb-8 bg-clip-text text-transparent bg-gradient-to-r from-[#e8bcb9] to-[#933c4d]">
     CONTACT DETAILS
@@ -81,7 +86,11 @@ const Contact = () => {
           </div>
         ))}
       </div>
+      
+     
     </div>
+    <Footer />
+     </>
   );
 };
 

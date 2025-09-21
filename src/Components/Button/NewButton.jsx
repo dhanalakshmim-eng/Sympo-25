@@ -1,9 +1,17 @@
 import React from "react";
 import "./Button.css";
 
-const NewButton = (props) => {
+const NewButton = ({ label, dept, style1 }) => {
   return (
-    <button style={props.style1 && {border:"white solid 2px"}}className="wreck-btn">{props.label}</button>
+    <div className="btn-container">
+      <button 
+        style={style1 && { border: "white solid 2px" }} 
+        className="wreck-btn"
+      >
+        {label}
+      </button>
+      <p className="dept-caption">{dept}</p>
+    </div>
   );
 };
 

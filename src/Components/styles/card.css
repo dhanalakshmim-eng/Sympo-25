@@ -61,13 +61,7 @@ body {
   background-color: var(--bg-background);
 }
 
-main {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 
 .card {
   position: relative;

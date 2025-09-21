@@ -5,15 +5,15 @@ import Card from "./Card";
 import Image from "../utils/Img/TechLogo.jpg";
 
 import OBSSTACKLE from "../assets/symposium/Old/OBS-Stackle.jpg"
-import EscapeRoom from "../assets/symposium/Sympo'25/Escape-Room.jpeg"
-import CUEBATTLE from "../assets/symposium/Sympo'25/CUEBATTLE.png"
-import FLIPSTER from "../assets/symposium/Sympo'25/FLIPSTER.jpg"
-import GIGZUP from "../assets/symposium/Sympo'25/GIGZUP.jpg"
-import Oratio from "../assets/symposium/Sympo'25/Oratio.png"
-import SynaptiQ from "../assets/symposium/Sympo'25/SynaptiQ.png"
-import TriSpark from "../assets/symposium/Sympo'25/TriSpark.png"
-import vizyourway from "../assets/symposium/Sympo'25/VIZ YOUR WAY.png"
-import Cinephilia from "../assets/symposium/Sympo'25/Cinephilia.jpeg"
+import EscapeRoom from "../assets/symposium/Sympo'25/Track1/escaperoom.png"
+import CUEBATTLE from "../assets/symposium/Sympo'25/Track1/CUEBATTLE.png"
+import FLIPSTER from "../assets/symposium/Sympo'25/Track1/FLIPSTER.jpg"
+import GIGZUP from "../assets/symposium/Sympo'25/Track1/GIGZUP.jpg"
+import Oratio from "../assets/symposium/Sympo'25/Track1/Oratio.png"
+import SynaptiQ from "../assets/symposium/Sympo'25/Track1/SynaptiQ.png"
+import TriSpark from "../assets/symposium/Sympo'25/Track1/TriSpark.png"
+import vizyourway from "../assets/symposium/Sympo'25/Track1/VIZYOURWAY.png"
+import Site2Sync from "../assets/symposium/Sympo'25/Track1/Site2sync.jpg"
 
 import RandomEvents from "./RandomEvents";
 
@@ -25,28 +25,35 @@ const NonCircuitTec = () => {
   // Events data
   const circuittechnicalEvents = [
     {
-      id: 9,
-      imageSrc: Cinephilia, // Replace with actual image path
-      altText: "Cinephilia",
-      label: "Cinephilia",
-      path: "/Cinephilia",
+      id: 0,
+      imageSrc: Oratio,
+      altText: "Oratio",
+      label: "Oratio",
+      path: "/oratio",
+      
     },
     {
+      
       id: 1,
-      imageSrc: EscapeRoom, // Replace with actual image path
-      altText: "EscapeRoom",
-      label: "EscapeRoom",
-      path: "/escaperoom",
+      imageSrc: Site2Sync,
+      altText: "Site2Sync",
+      label: "Site2Sync",
+      path: "/site2Sync",
+      
     },
+    
+
     {
       id: 2,
-      imageSrc: CUEBATTLE,
-      altText: "CUEBATTLE",
-      label: "CUEBATTLE",
-      path: "/cuebattle",
+      imageSrc: SynaptiQ,
+      altText: "SynaptiQ",
+      label: "SynaptiQ",
+      path: "/synaptiq",
+      
     },
     {
       id: 3,
+      
       imageSrc: FLIPSTER,
       altText: "FLIPSTER",
       label: "FLIPSTER",
@@ -55,39 +62,30 @@ const NonCircuitTec = () => {
     
     {
       id: 4,
-      imageSrc: GIGZUP,
-      altText: "GIGZUP",
-      label: "GIGZUP",
-      path: "/gigzup",
+      imageSrc: EscapeRoom, // Replace with actual image path
+      altText: "EscapeRoom",
+      label: "EscapeRoom",
+      path: "/escaperoom",
+      
     },
+    
+    
     {
-      id:5,
-      imageSrc:Oratio,
-      altText: "Oratio",
-      label: "Oratio",
-      path: "/oratio",
-    },
-    {
-      id: 6,
-      imageSrc: SynaptiQ,
-      altText: "SynaptiQ",
-      label: "SynaptiQ",
-      path: "/synaptiq",
-    },
-    {
-      id: 7,
+      id: 5,
       imageSrc: TriSpark,
       altText: "TriSpark",
       label: "TriSpark",
-      path: "/TriSpark",
+      path: "/triSpark",
     },
     {
-      id: 8,
+      id: 6,
       imageSrc: vizyourway,
       altText: "vizyourway",
       label: "vizyourway",
       path: "/vizyourway",
     },
+    
+    
   ];
 
   return (
@@ -100,9 +98,11 @@ const NonCircuitTec = () => {
 
       <div>
         <main className="card-container gap-10 relative flex flex-wrap justify-center w-full">
+          
+        
           {/* Loop through each event and render a Card */}
           {circuittechnicalEvents.map((card) => (
-            <Link to={card.path} key={card.id}>
+            <Link to={card.path} key={card.id}> 
               <Card imageSrc={card.imageSrc} altText={card.altText} />
             </Link>
           ))}
