@@ -3,7 +3,7 @@ import randomColor from "randomcolor";
 import "../text.css";
 import Card from "../Components/Card";
 import Image from '../utils/Img/TechLogo.jpg';
-import AmpItUpArena from "../assets/symposium/Sympo'25/Track2/Amp-it-up-arena.jpeg"
+import AmpItUpArena from "../assets/symposium/Sympo'25/Track2/Amp-it-up-arena.png"
 import BioMystic from "../assets/symposium/Sympo'25/Track2/BioMystic.jpeg"
 import dEADLYDEEDS from "../assets/symposium/Sympo'25/Track2/dEADLYDEEDS.jpeg"
 import Nexus from "../assets/symposium/Sympo'25/Track2/Nexus.jpeg"

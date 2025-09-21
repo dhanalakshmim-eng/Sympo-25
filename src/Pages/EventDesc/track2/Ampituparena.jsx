@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import VanillaTilt from "vanilla-tilt";
 import "../../../styles/eventStyles.css";
-import EventImage from "../../../assets/symposium/Sympo'25/Track2/Amp-it-up-arena.jpeg";
+import EventImage from "../../../assets/symposium/Sympo'25/Track2/Amp-it-up-arena.png";
 
 const cardVariants = {
   hidden: { opacity: 0, y: 40 },
