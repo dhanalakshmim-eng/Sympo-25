@@ -8,7 +8,7 @@ const MediaSection = () => {
 
   return (
     <div className="container flex justify-center">
-      <div className="flex flex-col items-start justify-center">
+      <div className="flex flex-col  justify-center">
         <h1 className="text-xl md:text-2xl text-center text-[#ff00cc] 
                        bg-gradient-to-br from-[#e8bcb9] to-[#ae445a] 
                        bg-clip-text text-transparent font-sans font-semibold 
