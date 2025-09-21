@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import Shifan from "../Pages/contributors image/shifan.jpg"
-import kishor from"../pages/contributors image/kishorr jj.jpg"
+import kishor from"../pages/contributors image/kishorrjj.jpg"
 import dhana from "../pages/contributors image/dhana.jpg"
-import angel from "../pages/contributors image/angeline.jpg"
+import angel from "../pages/contributors image/angel.png"
 import nithi from "../Pages/contributors image/ntihi.jpg"
 import akela from "../Pages/contributors image/akela.jpg"
 import { FaGithub, FaLinkedin } from "react-icons/fa";
@@ -123,7 +123,7 @@ const TeamPage = () => {
       image: akela ,
       github: "https://github.com/AkelaManikandan",
       linkedin:"https://www.linkedin.com/in/akela-m-3734ba233",
-      description:"3RD YEAR CSE", 
+      description:"3RD YEAR CSBS", 
 
     },
     {
