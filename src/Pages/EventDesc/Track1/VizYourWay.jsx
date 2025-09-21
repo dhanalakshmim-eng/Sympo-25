@@ -34,27 +34,20 @@ const VizYourWay = () => {
       heading: "Event Description",
       content: (
         <p className="text-base md:text-lg leading-relaxed">
-          <span className="font-bold gradient-text">Viz Your Way</span> is an engaging two-round competition that challenges participants to showcase their knowledge and creativity in <span className="highlight bg-accent px-2 py-1 rounded-md">data analysis</span> and <span className="highlight bg-accent px-2 py-1 rounded-md">visualization</span>. From a rapid-fire quiz to insightful data graphics, this competition highlights <span className="text-primary font-semibold">speed, accuracy, and storytelling with data</span>.
+          Viz Your Way is an engaging two-round competition that tests participants' knowledge and creativity in data analysis and visualization:<br /><br />
+          <strong>Round 1: Quiz Quest</strong> - A rapid-fire quiz session where teams answer a series of questions to earn points. The top 15 teams qualify for the next round.<br />
+          <strong>Round 2: Data Visualization</strong> - Teams analyze a dataset and create visually appealing and informative graphics to present their insights effectively.
         </p>
       ),
       key: "desc"
     },
     {
       icon: "🎯",
-      heading: "Event Objectives",
+      heading: "Event Objective",
       content: (
-        <ul className="list-none space-y-3 text-base md:text-lg">
-          {[
-            "Test participants' data analysis and visualization skills",
-            "Encourage creativity in presenting insights visually",
-            "Evaluate quick thinking, accuracy, and clarity in communication"
-          ].map((objective, index) => (
-            <li key={index} className="flex items-start gap-3">
-              <span className="text-accent font-bold text-xl">▶</span>
-              <span><strong className="text-primary">{objective.split(' ')[0]}</strong> {objective.slice(objective.indexOf(' ') + 1)}</span>
-            </li>
-          ))}
-        </ul>
+        <p className="text-base md:text-lg leading-relaxed">
+          The main objective of this competition is to foster participants' data-driven creativity and enhance their analytical skills. Our goal is to encourage the extraction of useful insights from data and their transformation into effective visual presentations.
+        </p>
       ),
       key: "objectives"
     },
@@ -66,47 +59,19 @@ const VizYourWay = () => {
           <div className="p-4 bg-gradient-to-r from-blue-900/30 to-purple-900/30 rounded-lg border-l-4 border-blue-400">
             <h3 className="gradient-subhead font-semibold mb-2 text-xl">🏃‍♂️ Round 1: Quiz Quest</h3>
             <ul className="list-none space-y-2 text-base md:text-lg">
-              <li className="flex items-start gap-2">
-                <span className="text-blue-400">▶</span>
-                <span>Participants answer a series of rapid-fire questions under a strict time limit</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-blue-400">▶</span>
-                <span>Points are awarded for correct answers</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-blue-400">▶</span>
-                <span>The top 15 teams qualify for Round 2</span>
-              </li>
+              <li>● Participants will be presented with a series of questions.</li>
+              <li>● A strict time limit will be enforced for answering.</li>
+              <li>● Points are awarded for correct answers.</li>
+              <li>● The top 15 teams will qualify for Round 2.</li>
             </ul>
           </div>
           <div className="p-4 bg-gradient-to-r from-green-900/30 to-teal-900/30 rounded-lg border-l-4 border-green-400">
             <h3 className="gradient-subhead font-semibold mb-2 text-xl">📊 Round 2: Data Visualization</h3>
             <ul className="list-none space-y-2 text-base md:text-lg">
-              <li className="flex items-start gap-2">
-                <span className="text-green-400">▶</span>
-                <span>A dataset will be provided at the start of the round</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-green-400">▶</span>
-                <span>Teams must create insightful visualizations using tools like Python, Excel, Tableau, or Power BI</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-green-400">▶</span>
-                <span>All visuals must be presented on a single page with a short description</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-green-400">▶</span>
-                <span>Charts and graphs must be clear, understandable, and informative</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-red-400">⏰</span>
-                <span>Time limit: <strong className="text-red-400">20 minutes</strong></span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-green-400">▶</span>
-                <span>Final decision will be made by the judges</span>
-              </li>
+              <li>● A dataset will be provided at the start of the round. Participants must create visuals analyzing the dataset using tools like Python, Excel, Tableau, Power BI, etc.</li>
+              <li>● All visualizations must be presented on a single page with a small description or summary.</li>
+              <li>● Visuals must be clear, understandable, and informative.</li>
+              <li>● A total of 20 minutes will be allotted for this round.</li>
             </ul>
           </div>
         </div>
@@ -118,18 +83,9 @@ const VizYourWay = () => {
       heading: "Rules & Regulations",
       content: (
         <ul className="list-none space-y-2 text-base md:text-lg">
-          {[
-            "Each team must consist of 2 members",
-            "Gadget usage is strictly prohibited",
-            "Each round is strictly time-bound",
-            "Participants must follow the event guidelines",
-            "Judges' decisions will be final and binding"
-          ].map((rule, index) => (
-            <li key={index} className="flex items-start gap-3">
-              <span className="text-red-400 font-bold">✦</span>
-              <span>{rule}</span>
-            </li>
-          ))}
+          <li>● Each team should comprise 2 members.</li>
+          <li>● Gadget usage is strictly prohibited.</li>
+          <li>● Each round is strictly time-bound.</li>
         </ul>
       ),
       key: "rules"
@@ -138,31 +94,21 @@ const VizYourWay = () => {
       icon: "🏆",
       heading: "Judging Criteria",
       content: (
-        <div className="space-y-3">
-          <div className="p-3 bg-yellow-900/20 rounded-lg border border-yellow-500/30">
-            <span className="font-semibold text-yellow-400">🥇 Round 1:</span> 
-            <span className="ml-2">Speed + Accuracy of answers</span>
-          </div>
-          <div className="p-3 bg-blue-900/20 rounded-lg border border-blue-500/30">
-            <span className="font-semibold text-blue-400">🥈 Round 2:</span> 
-            <span className="ml-2">Creativity, clarity, and effectiveness of data visualizations</span>
-          </div>
-          <div className="p-3 bg-purple-900/20 rounded-lg border border-purple-500/30">
-            <span className="font-semibold text-purple-400">🥉 Overall:</span> 
-            <span className="ml-2">Presentation and communication of insights</span>
-          </div>
-        </div>
+        <p className="text-base md:text-lg leading-relaxed">
+          Teams will be judged based on the clarity, understandability, and informativeness of their visualizations. The effective use of a variety of charts and graphs to communicate findings is encouraged. The decision made by the judges will be final.
+        </p>
       ),
       key: "judging"
     },
     {
       icon: "📞",
-      heading: "For More Information",
+      heading: "Contact Details",
       content: (
         <div className="text-base md:text-lg leading-relaxed p-4 bg-gradient-to-r from-indigo-900/30 to-blue-900/30 rounded-lg border border-indigo-500/30">
-          <div className="mb-2 font-semibold text-accent">Student Coordinators:</div>
-          <div className="text-center p-4 bg-yellow-900/20 rounded-lg border border-yellow-500/30">
-            <span className="font-bold text-yellow-400">📢 To be announced</span>
+          <p>For more information about the competition or for any inquiries, please contact the event coordinators.</p>
+          <div className="mt-4">
+            <p><strong>LISHIKA SHARON</strong> - 9176126745</p>
+            <p><strong>MADHESH RS</strong> - 8667719356</p>
           </div>
         </div>
       ),
@@ -194,7 +140,7 @@ const VizYourWay = () => {
         <div className="relative">
           <img
             src={EventImage}
-            alt="Viz A Way Event"
+            alt="Viz Your Way Event"
             className="w-5/6 md:w-4/5 lg:w-full object-cover rounded-2xl shadow-2xl border-4 border-gradient"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-blue-600/20 to-transparent rounded-2xl"></div>
@@ -209,9 +155,8 @@ const VizYourWay = () => {
           className="text-center lg:text-left"
         >
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold gradient-text drop-shadow-lg mb-2">
-            ✨ VIZ A WAY
+            Viz Your Way: Data Visualization Competition
           </h1>
-          <p className="text-xl md:text-2xl text-accent font-medium">Data Visualization Competition</p>
         </motion.div>
 
         {sectionCards.map((card, i) => (

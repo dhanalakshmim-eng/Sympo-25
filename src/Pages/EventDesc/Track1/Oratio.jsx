@@ -46,6 +46,25 @@ const Oratio = () => {
       key: "about"
     },
     {
+      icon: "🗂️",
+      heading: "Domains/Topics",
+      content: (
+        <ul className="list-disc ml-6 space-y-1 text-base md:text-lg">
+          <li>Internet of Things</li>
+          <li>Sustainable machine learning</li>
+          <li>Artificial Intelligence</li>
+          <li>Wireless Technology.</li>
+          <li>Neural networks & Deep learning</li>
+          <li>Cloud Computing</li>
+          <li>Cyber Security.</li>
+          <li>AR/VR</li>
+          <li>Next generation networks</li>
+          <li>Big data analysis</li>
+        </ul>
+      ),
+      key: "domains"
+    },
+    {
       icon: "📝",
       heading: "Abstract Format",
       content: (
@@ -123,6 +142,7 @@ const Oratio = () => {
       ),
       key: "submission"
     },
+    
     {
       icon: "🏛️",
       heading: "Event Footer",

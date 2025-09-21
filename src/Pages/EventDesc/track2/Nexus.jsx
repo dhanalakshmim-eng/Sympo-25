@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import VanillaTilt from "vanilla-tilt";
 import "../../../styles/eventStyles.css";
-import EventImage from "../../../assets/symposium/Sympo'25/Track2/Nexus.jpeg";
+import NexusImg from "../../../assets/symposium/Sympo'25/Track2/Nexus.jpeg";
 
 const cardVariants = {
   hidden: { opacity: 0, y: 40 },
@@ -30,75 +30,96 @@ const Nexus = () => {
 
   const sectionCards = [
     {
+      icon: "📖",
+      heading: "Event Description",
+      content: (
+        <p className="text-base md:text-lg leading-relaxed">
+          A paper presentation is a platform where students or researchers present their ideas, research findings, or innovative concepts in front of an audience. It helps in enhancing knowledge sharing, improving communication skills, and encouraging critical thinking. Through a well-structured presentation, participants can highlight the importance of their chosen topic, explain its practical applications, and discuss future developments.
+        </p>
+      ),
+      key: "desc"
+    },
+    {
       icon: "🎯",
       heading: "Objective",
       content: (
-        <div className="p-4 bg-gradient-to-r from-blue-900/30 to-purple-900/30 rounded-lg border border-blue-500/30">
-          <p className="text-base md:text-lg leading-relaxed">
-            Showcase <span className="font-bold text-primary">innovative ideas and research</span> through impactful paper presentations, fostering <span className="highlight bg-accent px-2 py-1 rounded-md">creativity</span> and <span className="highlight bg-accent px-2 py-1 rounded-md">knowledge sharing</span> among students.
-          </p>
-        </div>
+        <ul className="list-disc ml-6 space-y-1 text-base md:text-lg">
+          <li>To provide a clear and concise understanding of the chosen topic.</li>
+          <li>To share innovative ideas, research outcomes, or problem-solving approaches.</li>
+          <li>To develop presentation and communication skills.</li>
+          <li>To encourage interaction, discussion, and knowledge exchange among peers.</li>
+          <li>To inspire future research and practical implementation in the relevant field.</li>
+        </ul>
       ),
       key: "objective"
     },
     {
-      icon: "📌",
-      heading: "Themes",
+      icon: "📜",
+      heading: "Rules & Regulations",
       content: (
-        <div className="grid grid-cols-1 gap-3">
-          {[
-            "AI and Machine Learning in Medical Diagnostics",
-            "Integrated Medical Data Platforms for Improved Diagnostics",
-            "Big Data Analytics in Clinical Decision-Making",
-            "IoT for Diagnostics and Rehabilitation Medicine",
-            "Interface System for Cognitive Support",
-            "Assistive Technologies and Tools",
-            "Communication and Mobility Aids",
-            "Telemedicine Technologies"
-          ].map((theme, index) => (
-            <div key={index} className="p-3 bg-gradient-to-r from-green-900/20 to-teal-900/20 rounded-lg border-l-4 border-green-400">
-              <span className="text-green-400 font-bold">▶</span>
-              <span className="ml-2 text-base md:text-lg">{theme}</span>
-            </div>
-          ))}
-        </div>
+        <ul className="list-none space-y-2 text-base md:text-lg">
+          <li>• Maximum 2 Member in Team</li>
+          <li>• Total 10 minutes for each team</li>
+        </ul>
       ),
-      key: "themes"
+      key: "rules"
     },
     {
-      icon: "📍",
-      heading: "Event Details",
+      icon: "🏆",
+      heading: "Judging Criteria",
       content: (
-        <div className="space-y-3">
-          <div className="p-3 bg-blue-900/20 rounded-lg border border-blue-500/30">
-            <span className="font-semibold text-blue-400">🏢 Venue:</span> 
-            <span className="ml-2">BME Department, 3rd Floor, Main Block</span>
-          </div>
-          <div className="p-3 bg-green-900/20 rounded-lg border border-green-500/30">
-            <span className="font-semibold text-green-400">📅 Date:</span> 
-            <span className="ml-2">10th October</span>
-          </div>
-          <div className="p-3 bg-purple-900/20 rounded-lg border border-purple-500/30">
-            <span className="font-semibold text-purple-400">⏰ Time:</span> 
-            <span className="ml-2">10:30 AM onwards (15 minutes for each team)</span>
-          </div>
-          <div className="p-3 bg-yellow-900/20 rounded-lg border border-yellow-500/30">
-            <span className="font-semibold text-yellow-400">👥 Team Size:</span> 
-            <span className="ml-2">Maximum 2 Members</span>
-          </div>
-        </div>
+        <table className="w-full text-left text-base md:text-lg text-gray-100 border-collapse border border-gray-700">
+          <thead>
+            <tr className="border-b border-gray-700">
+              <th className="px-3 py-2">Criteria</th>
+              <th className="px-3 py-2">Mark</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr className="border-b border-gray-700">
+              <td className="px-3 py-2">Technical Content</td>
+              <td className="px-3 py-2">30</td>
+            </tr>
+            <tr className="border-b border-gray-700">
+              <td className="px-3 py-2">Uniqueness/Innovativeness</td>
+              <td className="px-3 py-2">30</td>
+            </tr>
+            <tr className="border-b border-gray-700">
+              <td className="px-3 py-2">Presentation Content/Skill</td>
+              <td className="px-3 py-2">30</td>
+            </tr>
+            <tr>
+              <td className="px-3 py-2">Question and Answer</td>
+              <td className="px-3 py-2">10</td>
+            </tr>
+          </tbody>
+        </table>
       ),
-      key: "details"
+      key: "judging"
     },
     {
       icon: "📞",
-      heading: "Contact",
+      heading: "Contact Detail",
       content: (
-        <div className="text-base md:text-lg leading-relaxed p-4 bg-gradient-to-r from-indigo-900/30 to-blue-900/30 rounded-lg border border-indigo-500/30">
-          <div className="flex items-center gap-2">
-            <span className="w-2 h-2 bg-green-400 rounded-full"></span>
-            <span className="font-semibold">Vishwa Dilip M.R: </span>
-            <a href="tel:+918778022625" className="text-accent hover:underline">+91 8778022625</a>
+        <div className="text-base md:text-lg leading-relaxed space-y-2 p-4 bg-gradient-to-r from-indigo-900/30 to-blue-900/30 rounded-lg border border-indigo-500/30">
+          <div>
+            <strong>STAFF CO-ORDINATORS</strong><br />
+            Ms. S. SIVAJOTHI KAVITHA - AP/EEE<br />
+            Ms. S. PURNIMA -AP/BME<br />
+            Ms. S. RUDHRA - AP/EEE<br />
+            Ms. D. PRISCILLA SHARLET ASHA -AP/BME<br />
+            Dr. G. MERLIN SHEEBA PROF. /ECE<br />
+            Ms. S. BHAVANISANKARI - ASSO. PROF/ECE<br />
+          </div>
+          <div>
+            <strong>STUDENT CO-ORDINATORS</strong><br />
+            HARINI S - IV EEE (8148837923)<br />
+            PRAVIN M - III EEE<br />
+            MANOJ A - III EEE<br />
+            VISHWA DILIP M R - IV BME (8778022625)<br />
+            HARINI R – IV BME<br />
+            DIVYA R - IV ECE (9360017650)<br />
+            KAVITHA K - IV ECE
           </div>
         </div>
       ),
@@ -129,8 +150,8 @@ const Nexus = () => {
       >
         <div className="relative">
           <img
-            src={EventImage}
-            alt="Nexus Paper Presentation"
+            src={NexusImg}
+            alt="Paper Presentation Event"
             className="w-5/6 md:w-4/5 lg:w-full object-cover rounded-2xl shadow-2xl border-4 border-gradient"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-blue-600/20 to-transparent rounded-2xl"></div>
@@ -145,9 +166,8 @@ const Nexus = () => {
           className="text-center lg:text-left"
         >
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold gradient-text drop-shadow-lg mb-2">
-            ✨ NEXUS
+            Paper Presentation
           </h1>
-          <p className="text-xl md:text-2xl text-accent font-medium">Paper Presentation Event</p>
         </motion.div>
 
         {sectionCards.map((card, i) => (

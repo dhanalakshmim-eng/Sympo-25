@@ -34,27 +34,18 @@ const TriSpark = () => {
       heading: "Event Description",
       content: (
         <p className="text-base md:text-lg leading-relaxed">
-          Welcome to <span className="font-bold gradient-text">TRISPARK</span> — a three-stage coding and logic event that challenges your <span className="highlight bg-accent px-2 py-1 rounded-md">binary decoding</span>, <span className="highlight bg-accent px-2 py-1 rounded-md">visualization</span>, and <span className="highlight bg-accent px-2 py-1 rounded-md">code reconstruction</span> skills. Participants will work in teams to decode binary puzzles, reproduce visual outputs from broken code, and reconstruct scrambled code under <span className="text-primary font-semibold">strict time limits</span>.
+          TRISPARK is an intercollegiate coding event conducted under Technovanza 2025–26. The event focuses on enhancing technical knowledge, logical thinking, and problem-solving skills through coding-based challenges.
         </p>
       ),
       key: "desc"
     },
     {
       icon: "🎯",
-      heading: "Event Objectives",
+      heading: "Event Objective",
       content: (
-        <ul className="list-none space-y-3 text-base md:text-lg">
-          {[
-            "Assess participants' logical thinking and problem-solving skills",
-            "Enhance technical skills in Python and visualization libraries",
-            "Develop efficiency in debugging and code reconstruction"
-          ].map((objective, index) => (
-            <li key={index} className="flex items-start gap-3">
-              <span className="text-accent font-bold text-xl">▶</span>
-              <span><strong className="text-primary">{objective.split(' ')[0]}</strong> {objective.slice(objective.indexOf(' ') + 1)}</span>
-            </li>
-          ))}
-        </ul>
+        <p className="text-base md:text-lg leading-relaxed">
+          The main objective of TRISPARK is to test and improve participants’ logical reasoning, debugging proficiency, and coding efficiency while encouraging teamwork and competitive spirit.
+        </p>
       ),
       key: "objectives"
     },
@@ -64,42 +55,25 @@ const TriSpark = () => {
       content: (
         <div className="space-y-4">
           <div className="p-4 bg-gradient-to-r from-blue-900/30 to-purple-900/30 rounded-lg border-l-4 border-blue-400">
-            <h3 className="gradient-subhead font-semibold mb-2 text-xl">🔢 Round 1: Decode the Puzzle</h3>
-            <div className="space-y-2 text-base md:text-lg">
-              <p><strong className="text-yellow-300">Prerequisite:</strong> Basic knowledge of binary numbers and ASCII conversion</p>
-              <p><strong className="text-yellow-300">Objective:</strong> Test participants' logical thinking and technical skills by decoding binary codes into meaningful words</p>
-              <ul className="list-disc ml-6 mt-2 space-y-1">
-                <li>Participants will be given binary codes representing letters or words — only correctly decoded answers are valid</li>
-                <li>Time limit: <strong className="text-red-400">20 minutes</strong> (no extra time provided)</li>
-                <li>In case of a tie, a quick bonus binary puzzle will decide the winner</li>
-                <li>Judges' decisions are final</li>
-              </ul>
-            </div>
+            <h3 className="gradient-subhead font-semibold mb-2 text-xl">🏃‍♂️ Round 1 – Decode the Puzzle</h3>
+            <ul className="list-none space-y-2 text-base md:text-lg">
+              <li>Prerequisite: Knowledge of binary numbers & ASCII conversion.</li>
+              <li>Task: Decode binary codes into meaningful words within 20 minutes.</li>
+            </ul>
           </div>
           <div className="p-4 bg-gradient-to-r from-green-900/30 to-teal-900/30 rounded-lg border-l-4 border-green-400">
-            <h3 className="gradient-subhead font-semibold mb-2 text-xl">📊 Round 2: Depict the Code</h3>
-            <div className="space-y-2 text-base md:text-lg">
-              <p><strong className="text-yellow-300">Prerequisite:</strong> Basic knowledge of Python and visualization libraries (Matplotlib, Pandas, NumPy)</p>
-              <p><strong className="text-yellow-300">Objective:</strong> Enhance debugging skills, logical thinking, and coding confidence through hands-on practice</p>
-              <ul className="list-disc ml-6 mt-2 space-y-1">
-                <li>Participants must generate the given visual output (graph/chart) from an incomplete code containing blanks and errors</li>
-                <li>Time limit: <strong className="text-red-400">20 minutes</strong></li>
-                <li>Judges' decisions are final</li>
-              </ul>
-            </div>
+            <h3 className="gradient-subhead font-semibold mb-2 text-xl">🔍 Round 2 – Depict the Code</h3>
+            <ul className="list-none space-y-2 text-base md:text-lg">
+              <li>Prerequisite: Knowledge of Python and visualization libraries.</li>
+              <li>Task: Debug incomplete code with blanks and errors to reproduce a given graph/chart.</li>
+            </ul>
           </div>
-          <div className="p-4 bg-gradient-to-r from-purple-900/30 to-pink-900/30 rounded-lg border-l-4 border-purple-400">
-            <h3 className="gradient-subhead font-semibold mb-2 text-xl">⚙️ Round 3: Design the Code</h3>
-            <div className="space-y-2 text-base md:text-lg">
-              <p><strong className="text-yellow-300">Prerequisite:</strong> Basic knowledge of Python (syntax, logic, debugging)</p>
-              <p><strong className="text-yellow-300">Objective:</strong> Test logical thinking and coding efficiency by reconstructing scrambled codes</p>
-              <ul className="list-disc ml-6 mt-2 space-y-1">
-                <li>Participants will receive scrambled codes (split into 4 parts and mixed). Only correctly assembled and executable codes are valid</li>
-                <li>Time limit: <strong className="text-red-400">20 minutes</strong> (no extra time provided)</li>
-                <li>In case of a tie, a quick coding quiz will decide the winner</li>
-                <li>Judges' decisions are final</li>
-              </ul>
-            </div>
+          <div className="p-4 bg-gradient-to-r from-yellow-900/30 to-orange-900/30 rounded-lg border-l-4 border-yellow-400">
+            <h3 className="gradient-subhead font-semibold mb-2 text-xl">💡 Round 3 – Design the Code&</h3>
+            <ul className="list-none space-y-2 text-base md:text-lg">
+              <li>Prerequisite: Knowledge of Python (syntax, logic, debugging).</li>
+              <li>Task: Reconstruct scrambled codes (split into 4 mixed parts) into a valid executable program.</li>
+            </ul>
           </div>
         </div>
       ),
@@ -110,17 +84,11 @@ const TriSpark = () => {
       heading: "Rules & Regulations",
       content: (
         <ul className="list-none space-y-2 text-base md:text-lg">
-          {[
-            "Team size: Maximum of 2 members per team",
-            "Participants must adhere strictly to the time limits",
-            "Any violation of event guidelines will lead to disqualification",
-            "Judges' decisions are final and binding"
-          ].map((rule, index) => (
-            <li key={index} className="flex items-start gap-3">
-              <span className="text-red-400 font-bold">✦</span>
-              <span>{rule}</span>
-            </li>
-          ))}
+          <li>• Each team can have a maximum of two participants.</li>
+          <li>• Only valid, executable solutions will be considered.</li>
+          <li>• Each round has a 20-minute time limit.</li>
+          <li>• Tie-breakers will be used in case of equal scores.</li>
+          <li>• Judges’ decisions are final.</li>
         </ul>
       ),
       key: "rules"
@@ -129,36 +97,26 @@ const TriSpark = () => {
       icon: "🏆",
       heading: "Judging Criteria",
       content: (
-        <div className="space-y-3">
-          <div className="p-3 bg-yellow-900/20 rounded-lg border border-yellow-500/30">
-            <span className="font-semibold text-yellow-400">🎯</span> 
-            <span className="ml-2">Accuracy of answers</span>
-          </div>
-          <div className="p-3 bg-blue-900/20 rounded-lg border border-blue-500/30">
-            <span className="font-semibold text-blue-400">⚡</span> 
-            <span className="ml-2">Efficiency in solving problems</span>
-          </div>
-          <div className="p-3 bg-purple-900/20 rounded-lg border border-purple-500/30">
-            <span className="font-semibold text-purple-400">🧠</span> 
-            <span className="ml-2">Logical approach and problem-solving skills</span>
-          </div>
-          <div className="p-3 bg-green-900/20 rounded-lg border border-green-500/30">
-            <span className="font-semibold text-green-400">💻</span> 
-            <span className="ml-2">Code quality in debugging and reconstruction</span>
-          </div>
-        </div>
+        <ul className="list-none space-y-2 text-base md:text-lg">
+          <li>• Accuracy of solutions</li>
+          <li>• Logical approach</li>
+          <li>• Debugging skills</li>
+          <li>• Time management and efficiency</li>
+        </ul>
       ),
       key: "judging"
     },
     {
       icon: "📞",
-      heading: "For More Information",
+      heading: "Contact Details",
       content: (
         <div className="text-base md:text-lg leading-relaxed p-4 bg-gradient-to-r from-indigo-900/30 to-blue-900/30 rounded-lg border border-indigo-500/30">
-          <div className="mb-2 font-semibold text-accent">Student Coordinators:</div>
-          <div className="text-center p-4 bg-yellow-900/20 rounded-lg border border-yellow-500/30">
-            <span className="font-bold text-yellow-400">📢 To be announced</span>
-          </div>
+          <p>Student Coordinators:</p>
+          <p>Bhuvaneshkumar T (+91 8778858424)</p>
+          <p>Pragadesh R (+91 63792 53307)</p>
+          <br />
+          <p>Faculty Coordinator:</p>
+          <p>Mrs. E. Brindha (+91 97919 72394)</p>
         </div>
       ),
       key: "contact"
@@ -204,9 +162,8 @@ const TriSpark = () => {
           className="text-center lg:text-left"
         >
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold gradient-text drop-shadow-lg mb-2">
-            ✨ TRISPARK
+            TRISPARK
           </h1>
-          <p className="text-xl md:text-2xl text-accent font-medium">Decode, Depict and Develop</p>
         </motion.div>
 
         {sectionCards.map((card, i) => (

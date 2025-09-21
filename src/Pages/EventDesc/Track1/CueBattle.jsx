@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import VanillaTilt from "vanilla-tilt";
 import "../../../styles/eventStyles.css";
-import EventImage from "../../../assets/symposium/Sympo'25/Track1/CUEBATTLE.png";
+import CueBattleBanner from "../../../assets/symposium/Sympo'25/Track1/CUEBATTLE.png";
 
 const cardVariants = {
   hidden: { opacity: 0, y: 40 },
@@ -30,146 +30,110 @@ const CueBattle = () => {
 
   const sectionCards = [
     {
-      icon: "🖌️",
+      icon: "🎲",
+      heading: "Event Description",
+      content: (
+        <p className="text-base md:text-lg leading-relaxed">
+          Cue Battle is a fun and interactive guessing game designed to test communication, creativity, and teamwork — without using words! Teams will face two exciting rounds where they rely solely on drawings and lip-reading skills to guess the correct words or phrases.
+        </p>
+      ),
+      key: "desc"
+    },
+    {
+      icon: "🎯",
+      heading: "Event Objective",
+      content: (
+        <p className="text-base md:text-lg leading-relaxed">
+          To encourage teamwork, sharpen non-verbal communication, and create a lively, engaging experience where participants rely on creativity and intuition instead of direct speech.
+        </p>
+      ),
+      key: "objective"
+    },
+    {
+      icon: "🛠",
       heading: "Round 1: Back Sketch Relay",
       content: (
-        <div className="space-y-4">
-          <div className="p-4 bg-gradient-to-r from-blue-900/30 to-purple-900/30 rounded-lg border-l-4 border-blue-400">
-            <h4 className="font-semibold text-yellow-300 mb-2">👥 Team Formation:</h4>
-            <p className="text-base md:text-lg">Each team must have 2 members, seated one behind the other.</p>
-          </div>
-          <div className="p-4 bg-gradient-to-r from-purple-900/30 to-pink-900/30 rounded-lg border-l-4 border-purple-400">
-            <h4 className="font-semibold text-yellow-300 mb-2">🎯 Game Flow:</h4>
-            <ul className="list-none space-y-2 text-base md:text-lg">
-              <li className="flex items-start gap-2">
-                <span className="text-purple-400">▶</span>
-                <span>The back member is shown a technical word by the organizer</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-purple-400">▶</span>
-                <span>They must draw a simple picture of the word on their partner's back using only one finger</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-purple-400">▶</span>
-                <span>The front member must guess the word and say it out loud</span>
-              </li>
-            </ul>
-          </div>
-          <div className="p-4 bg-gradient-to-r from-green-900/30 to-teal-900/30 rounded-lg border-l-4 border-green-400">
-            <h4 className="font-semibold text-yellow-300 mb-2">📜 Rules:</h4>
-            <ul className="list-none space-y-2 text-base md:text-lg">
-              <li className="flex items-start gap-2">
-                <span className="text-green-400">✦</span>
-                <span>No alphabets, numbers, symbols, or talking — only drawings</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-green-400">✦</span>
-                <span>Time limit: 30–45 seconds per word</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-green-400">✦</span>
-                <span>Correct guesses qualify the team for the next round</span>
-              </li>
-            </ul>
-          </div>
-        </div>
+        <>
+          <h3 className="font-semibold text-lg mb-2">Team Formation:</h3>
+          <ul className="list-disc ml-6 text-base md:text-lg mb-3">
+            <li>Each team consists of 2 members.</li>
+            <li>Members sit one behind the other in a straight line.</li>
+          </ul>
+          <h3 className="font-semibold text-lg mb-2">Game Flow:</h3>
+          <ul className="list-disc ml-6 text-base md:text-lg mb-3">
+            <li>The back member is shown a technical word by the organizer.</li>
+            <li>They must draw a simple sketch of the word on their partner’s back using one finger.</li>
+            <li>The front member must guess the word and say it out loud.</li>
+          </ul>
+          <h3 className="font-semibold text-lg mb-2">Rules:</h3>
+          <ul className="list-disc ml-6 text-base md:text-lg">
+            <li>No alphabets, numbers, symbols, or talking allowed — only drawings.</li>
+            <li>Time limit: 30–45 seconds per word.</li>
+            <li>Teams that guess correctly qualify for the next round.</li>
+          </ul>
+        </>
       ),
       key: "round1"
     },
     {
-      icon: "🤐",
+      icon: "🛠",
       heading: "Round 2: Silent Signals (Earphone Round)",
       content: (
-        <div className="space-y-4">
-          <div className="p-4 bg-gradient-to-r from-indigo-900/30 to-blue-900/30 rounded-lg border-l-4 border-indigo-400">
-            <h4 className="font-semibold text-yellow-300 mb-2">🎧 Setup:</h4>
-            <ul className="list-none space-y-2 text-base md:text-lg">
-              <li className="flex items-start gap-2">
-                <span className="text-indigo-400">▶</span>
-                <span>One member wears earphones with loud music so they cannot hear</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-indigo-400">▶</span>
-                <span>The other member will be shown a word or sentence by the organizer</span>
-              </li>
-            </ul>
-          </div>
-          <div className="p-4 bg-gradient-to-r from-purple-900/30 to-pink-900/30 rounded-lg border-l-4 border-purple-400">
-            <h4 className="font-semibold text-yellow-300 mb-2">🎯 Game Flow:</h4>
-            <ul className="list-none space-y-2 text-base md:text-lg">
-              <li className="flex items-start gap-2">
-                <span className="text-purple-400">▶</span>
-                <span>The non-earphone member mouths the word/sentence silently (lip movements only)</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-purple-400">▶</span>
-                <span>The earphone-wearing member must guess within the time limit</span>
-              </li>
-            </ul>
-          </div>
-          <div className="p-4 bg-gradient-to-r from-red-900/30 to-orange-900/30 rounded-lg border-l-4 border-red-400">
-            <h4 className="font-semibold text-yellow-300 mb-2">📜 Rules:</h4>
-            <ul className="list-none space-y-2 text-base md:text-lg">
-              <li className="flex items-start gap-2">
-                <span className="text-red-400">✦</span>
-                <span>No sounds, gestures, or signals allowed — lip reading only</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-red-400">✦</span>
-                <span>Each team gets 1 minute for this round</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-red-400">✦</span>
-                <span>Correct guesses earn points</span>
-              </li>
-            </ul>
-          </div>
-        </div>
+        <>
+          <h3 className="font-semibold text-lg mb-2">Setup:</h3>
+          <ul className="list-disc ml-6 text-base md:text-lg mb-3">
+            <li>One team member wears earphones with loud music so they cannot hear.</li>
+            <li>The other member is shown a word or sentence by the organizer.</li>
+          </ul>
+          <h3 className="font-semibold text-lg mb-2">Game Flow:</h3>
+          <ul className="list-disc ml-6 text-base md:text-lg mb-3">
+            <li>The member without earphones silently mouths the word/sentence (lip movements only, no sound).</li>
+            <li>The earphone-wearing member must guess the word/sentence within the given time.</li>
+          </ul>
+          <h3 className="font-semibold text-lg mb-2">Rules:</h3>
+          <ul className="list-disc ml-6 text-base md:text-lg">
+            <li>No sounds, gestures, or signals allowed — only lip reading.</li>
+            <li>Time limit: 1 minute per attempt.</li>
+            <li>Each correct guess earns points.</li>
+          </ul>
+        </>
       ),
       key: "round2"
     },
     {
-      icon: "🏆",
-      heading: "Winning Criteria",
+      icon: "📜",
+      heading: "Rules & Regulations",
       content: (
-        <div className="space-y-3">
-          <div className="p-3 bg-yellow-900/20 rounded-lg border border-yellow-500/30">
-            <span className="font-semibold text-yellow-400">🥇</span> 
-            <span className="ml-2">Teams that clear Round 1 qualify for Round 2</span>
-          </div>
-          <div className="p-3 bg-blue-900/20 rounded-lg border border-blue-500/30">
-            <span className="font-semibold text-blue-400">🥈</span> 
-            <span className="ml-2">Points are awarded for each correct guess in Round 2</span>
-          </div>
-          <div className="p-3 bg-purple-900/20 rounded-lg border border-purple-500/30">
-            <span className="font-semibold text-purple-400">🥉</span> 
-            <span className="ml-2">The team with the highest score is declared the winner</span>
-          </div>
-          <div className="p-3 bg-green-900/20 rounded-lg border border-green-500/30">
-            <span className="font-semibold text-green-400">⚡</span> 
-            <span className="ml-2">In case of a tie, a sudden-death tie-breaker round will be conducted</span>
-          </div>
-        </div>
+        <ul className="list-none space-y-2 text-base md:text-lg">
+          <li>Teams must consist of exactly 2 members.</li>
+          <li>Communication is restricted to the method specified in each round.</li>
+          <li>Any violation (talking, using gestures, symbols, or cheating) may lead to disqualification.</li>
+          <li>The organizer’s decision will be final.</li>
+        </ul>
       ),
-      key: "criteria"
+      key: "rules"
+    },
+    {
+      icon: "🏆",
+      heading: "Judging Criteria",
+      content: (
+        <ul className="list-disc ml-6 text-base md:text-lg">
+          <li>Teams that clear Round 1 qualify for Round 2.</li>
+          <li>In Round 2, points are awarded for each correct guess within the time limit.</li>
+          <li>The team with the highest total points at the end of Round 2 wins.</li>
+          <li>In case of a tie, a sudden-death tie-breaker will be conducted with a new word/sentence.</li>
+        </ul>
+      ),
+      key: "judging"
     },
     {
       icon: "📞",
-      heading: "Student Coordinators",
+      heading: "Contact Details",
       content: (
         <div className="text-base md:text-lg leading-relaxed p-4 bg-gradient-to-r from-indigo-900/30 to-blue-900/30 rounded-lg border border-indigo-500/30">
-          <div className="space-y-2">
-            <div className="flex items-center gap-2">
-              <span className="w-2 h-2 bg-green-400 rounded-full"></span>
-              <span className="font-semibold">Ms. Giona Jasley: </span>
-              <a href="tel:+917358213508" className="text-accent hover:underline">7358213508</a>
-            </div>
-            <div className="flex items-center gap-2">
-              <span className="w-2 h-2 bg-green-400 rounded-full"></span>
-              <span className="font-semibold">Ms. Naveena M: </span>
-              <a href="tel:+919345475179" className="text-accent hover:underline">9345475179</a>
-            </div>
-          </div>
+          <p><strong>Student coordinators:</strong></p>
+          <p>Ms. Giona Jasley : 7358213508</p>
+          <p>Ms. Naveena M : 9345475179</p>
         </div>
       ),
       key: "contact"
@@ -199,8 +163,8 @@ const CueBattle = () => {
       >
         <div className="relative">
           <img
-            src={EventImage}
-            alt="Cue Battle"
+            src={CueBattleBanner}
+            alt="Cue Battle Event"
             className="w-5/6 md:w-4/5 lg:w-full object-cover rounded-2xl shadow-2xl border-4 border-gradient"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-blue-600/20 to-transparent rounded-2xl"></div>
@@ -209,15 +173,14 @@ const CueBattle = () => {
 
       <div className="lg:w-4/6 w-full flex flex-col gap-6 overflow-auto custom-scrollbar pb-3" style={{ maxHeight: "calc(100vh - 60px)" }}>
         <motion.div
-          initial={{ opacity: 0, y: -30 }} 
+          initial={{ opacity: 0, y: -30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
           className="text-center lg:text-left"
         >
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold gradient-text drop-shadow-lg mb-2">
-            🎭 Cue Battle
+            Cue Battle
           </h1>
-          <p className="text-xl md:text-2xl text-accent font-medium">Non-Technical Event</p>
         </motion.div>
 
         {sectionCards.map((card, i) => (
