@@ -4,8 +4,9 @@ import CircuitTec from "./CircuitTec";
 import EventButton from "../Components/EventButton";
 import { Link } from "react-router-dom";
 import TrackInfo from "./TrackInfo";
-import img from "../assets/symposium/OverallPoster.jpeg";
+import img from "../assets/symposium/Old/OverallPoster.jpeg";
 import "./styles/animation.css";
+import NewButton from "../Components/Button/NewButton";
 const Circuit = () => {
   return (
     <div>
@@ -16,18 +17,20 @@ const Circuit = () => {
             be part of an event that celebrates innovation and collaboration.
             Don’t miss the opportunity to engage with tech enthusiasts and experts."
       />
-
-      <CircuitTec />
-      <NonCircuitnTech />
       <div className="flex flex-wrap justify-center gap-5 my-5 animate__animated animate__fadeInUp">
         <a
-          href="https://docs.google.com/forms/d/e/1FAIpQLSeN-2jLB-1VDYrKwieEQC7grGuG-QyDJXsfqIpr3YAx-cbtXA/viewform"
+          href="https://forms.gle/dZ8AyUzLBfmS5EyF7"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <EventButton label="Register" />
+        <NewButton label="Register" />
         </a>
       </div>
+        
+
+      <CircuitTec />
+      <NonCircuitnTech />
+      
       <br />
     </div>
   );

@@ -34,7 +34,7 @@ const ContactUs = () => {
   return (
     <section className="bg-transparent text-gray p-4 md:p-6 rounded-md max-w-md md:max-w-lg mx-auto">
       {/* Reduced Reach Out Heading Size */}
-      <h2 className="text-lg md:text-xl text-center text-[#ff00cc] bg-gradient-to-br from-[#fc03e3] to-[#a6033c] bg-clip-text text-transparent font-semibold mb-4 reach-text">
+      <h2 className="text-lg md:text-xl text-center text-[#ff00cc] bg-gradient-to-br from-[#e8bcb9] to-[#ae445a] bg-clip-text text-transparent font-semibold mb-4">
   Reach Out
 </h2>
 
@@ -59,7 +59,7 @@ const ContactUs = () => {
       />
     </svg>
     <a className="text-sm md:text-lg">
-      Jerusalem College Of Engineering, Pallikaranai
+Velachery main road,Narayanapuram, Pallikaranai,Chennai- 600 100
     </a>
   </div>
 
@@ -83,10 +83,10 @@ const ContactUs = () => {
       />
     </svg>
     <a
-      href="mailto:symposium2024@jerusalemengg.ac.in"
+      href="mailto:symposium2025@jerusalemengg.ac.in"
       className="text-sm md:text-lg hover:underline"
     >
-      symposium2024@jerusalemengg.ac.in
+      symposium2025@jerusalemengg.ac.in
     </a>
   </div>
 </div>
@@ -108,7 +108,7 @@ const ContactUs = () => {
                   <PhoneIcon />
                   <p className="text-sm md:text-lg">
                     {`${contact.name} : `}
-                    <a href={`tel:${contact.phone}`} className="hover:underline">
+                    <a href={tel:${contact.phone}} className="hover:underline">
                       {contact.phone}
                     </a>
                   </p>

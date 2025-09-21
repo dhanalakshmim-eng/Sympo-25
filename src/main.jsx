@@ -3,6 +3,7 @@ import { createRoot } from "react-dom/client";
 import App from "./App.jsx";
 import "./App.css";
 import Error from "./Components/Error.jsx";
+import "./styles/eventStyles.css"; 
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Body from "./Pages/Body.jsx";
@@ -15,27 +16,29 @@ import Circuit from "./Pages/Circuit.jsx";
 
 import NonCircuit from "./Pages/NonCircuit.jsx";
 import NewAbout from "./Pages/About.jsx";
-
-
-import Eloquence from "./Pages/EventDescriptions/Track1/Eloquence.jsx";
-import VizYourWay from "./Pages/EventDescriptions/Track1/VizYourWay.jsx";
-import EnergiaNova from "./Pages/EventDescriptions/Track2/EnergiaNova.jsx";
-import GhostOps from "./Pages/EventDescriptions/Track1/GhostOps.jsx";
-import FF from "./Pages/EventDescriptions/NonTech/FF.jsx";
-import BGMI from "./Pages/EventDescriptions/NonTech/BGMI.jsx";
-import Wizzup from "./Pages/EventDescriptions/Track1/Wizzup.jsx";
 import Contact from "./Pages/Contact.jsx";
-import CodeSprint from "./Pages/EventDescriptions/Track1/CodeSprint.jsx";
-import MatterMind from "./Pages/EventDescriptions/Track1/MatterMind.jsx";
-import Ciniphilia from "./Pages/EventDescriptions/NonTech/Ciniphilia.jsx";
-import MysteryVault from "./Pages/EventDescriptions/NonTech/MysteryVault.jsx";
-import DeadlyDeeds from "./Pages/EventDescriptions/NonTech/DeadlyDeeds.jsx";
-import Bizqueset from "./Pages/EventDescriptions/Track2/Bizqueset.jsx";
-import Batallia from "./Pages/EventDescriptions/Track2/Batallia.jsx";
-import TescaFlow from "./Pages/EventDescriptions/Track2/TescaFlow.jsx";
-import IPL from "./Pages/EventDescriptions/NonTech/IplAuction.jsx";
-import Cassedete from "./Pages/EventDescriptions/Track1/Cassedete.jsx";
+
 import TeamCarousel from "./Pages/TeamCarousel.jsx";
+import Cinephilia from "./Pages/EventDesc/Track1/Cinephilia.jsx";
+import CueBattle from "./Pages/EventDesc/Track1/CueBattle.jsx";
+import EscapeRoom from "./Pages/EventDesc/Track1/EscapeRoom.jsx";
+import Flipster from "./Pages/EventDesc/Track1/Flipster.jsx";
+import Gigzup from "./Pages/EventDesc/Track1/Gigzup.jsx";
+import SynaptiQ from "./Pages/EventDesc/Track1/SynaptiQ.jsx";
+import TriSpark from "./Pages/EventDesc/Track1/TriSpark.jsx";
+import VizYourWay from "./Pages/EventDesc/Track1/VizYourWay.jsx";
+import AmpItUpArena from "./Pages/EventDesc/track2/Ampituparena.jsx";
+import BioMystic from "./Pages/EventDesc/track2/BioMystic.jsx";
+import Deadlydeeds from "./Pages/EventDesc/track2/Deadlydeeds.jsx";
+import Potpurri from "./Pages/EventDesc/track2/Potpurri.jsx";
+import Thinktank from "./Pages/EventDesc/track2/Thinktank.jsx";
+import Nexus from "./Pages/EventDesc/track2/Nexus.jsx";
+import Tracktron from "./Pages/EventDesc/track2/TrackOTron.jsx";
+import Site2Sync from "./Pages/EventDesc/Track1/Site2Sync.jsx";
+import Oratio from "./Pages/EventDesc/Track1/Oratio.jsx";
+import Obstackle from "./Pages/EventDesc/Track1/Obstackle.jsx";
+import TeamPage from "./Pages/team.jsx";
+
 
 const appRouter = createBrowserRouter([
   {
@@ -51,78 +54,12 @@ const appRouter = createBrowserRouter([
         path: "/events",
         element: <EventContainer />,
       },
-      {
-        path: "/eloquence",
-        element: <Eloquence />,
-      },
-      {
-        path: "/vizyourway",
-        element: <VizYourWay />,
-      },
-      {
-        path: "/energianova",
-        element: <EnergiaNova />,
-      },
-      {
-        path: "/cassedete",
-        element: <Cassedete />,
-      },
-      {
-        path: "/batallia",
-        element: <Batallia />,
-      },
-      {
-        path: "/tescaflow",
-        element: <TescaFlow />,
-      },
-      {
-        path: "/ghostops",
-        element: <GhostOps />,
-      },
-      {
-        path: "/codesprint",
-        element: <CodeSprint />,
-      },
-      {
-        path: "/mysteryvault",
-        element: <MysteryVault />,
-      },
-      {
-        path: "/deadlydeeds",
-        element: <DeadlyDeeds />,
-      },
-      {
-        path: "/mattermind",
-        element: <MatterMind />,
-      },
-      {
-        path: "/ff",
-        element: <FF />,
-      },
-      {
-        path: "/bgmi",
-        element: <BGMI />,
-      },
-      {
-        path: "/iplauction",
-        element: <IPL />,
-      },
-      {
-        path: "/bizqueset",
-        element: <Bizqueset />,
-      },
+      
       {
         path: "/circuit",
         element: <Circuit />,
       },
-      {
-        path: "/cinephilia",
-        element: <Ciniphilia />,
-      },
-      {
-        path: "/cassedete",
-        element: <Cassedete />,
-      },
+      
       {
         path: "/track2",
         element: <Circuit />,
@@ -138,19 +75,102 @@ const appRouter = createBrowserRouter([
         path: "/about",
         element: <NewAbout />,
       },
-     
+     {
+        path: "/teams",
+        element: <TeamPage />,
+      },
       {
         path: "/contact",
         element: <Contact />,
       },
-      {
-        path: "/wizzup",
-        element: <Wizzup />,
-      },
+      
       {
         path: "/team",
         element: <TeamCarousel/>,
       },
+      {
+        path: "/gigzup",
+        element: <Gigzup />,
+      },
+      {
+        path: "/synaptiq",
+        element: <SynaptiQ />,
+      },
+      {
+        path: "/flipster",
+        element: <Flipster />,
+      },
+      {
+        path: "/escaperoom",
+        element: <EscapeRoom />,
+      },
+      {
+        path: "/cuebattle",
+        element: <CueBattle />,
+      },
+      {
+        path: "/triSpark",
+        element: <TriSpark />,
+      },
+      {
+        path: "/flipster",
+        element: <Flipster />,
+      },
+      {
+        path: "/vizyourway",
+        element: <VizYourWay />,
+      },
+      {
+        path: "/cinephilia",
+        element: <Cinephilia />,
+      },
+      {
+        path: "/cinephilia",
+        element: <Cinephilia />,
+      },
+      {
+        path: "/ampItUpArena",
+        element: <AmpItUpArena />,
+      },
+      {
+      path: "/bioMystic",
+      element: <BioMystic/>,
+      },
+      {
+      path: "/deadlydeeds",
+      element: <Deadlydeeds/>,
+      },
+      {
+      path: "/nexus",
+      element: <Nexus/>,
+      },
+      {
+      path: "/potpurri",
+      element: <Potpurri/>,
+      },
+      {
+      path: "/thinktank",
+      element: <Thinktank/>,
+      },
+
+      {
+      path: "/tracktron",
+      element: <Tracktron />,
+      },
+{
+      path: "/site2Sync",
+      element: <Site2Sync />,
+      },
+      {
+        path: "/oratio",
+        element: <Oratio />,
+        },
+        {
+          path: "/obstackle",
+          element: <Obstackle />,
+          },
+
+
     ],
   },
 ]);

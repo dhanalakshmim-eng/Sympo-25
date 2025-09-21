@@ -15,7 +15,7 @@ const Teams = () => {
         </div> */}
 
         <div className="text-sm text-center sm:text-left">
-          Developed by <Link to="/about"><span className="font-bold">Technovanza Team</span></Link>
+          Developed by <Link to="/teams"><span className="font-bold">Technovanza Team</span></Link>
         </div>
       </div>
     </footer>

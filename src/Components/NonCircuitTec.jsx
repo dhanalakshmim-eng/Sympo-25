@@ -3,83 +3,109 @@ import randomColor from "randomcolor";
 import "../text.css";
 import Card from "./Card";
 import Image from "../utils/Img/TechLogo.jpg";
-import elo from "../assets/symposium/eloquence1.jpg";
-import viz from "../assets/symposium/vizyour.jpeg";
-import wiz from "../assets/symposium/Wizzup_Debug.jpeg";
-import ghost from "../assets/symposium/Ghost.png";
-import matter from "../assets/symposium/MatterMindNew.jpg";
-import codesprint from "../assets/symposium/CodeSprint.jpeg";
+
+import OBSSTACKLE from "../assets/symposium/Old/OBS-Stackle.jpg"
+import EscapeRoom from "../assets/symposium/Sympo'25/Track1/escaperoom.png"
+import CUEBATTLE from "../assets/symposium/Sympo'25/Track1/CUEBATTLE.png"
+import FLIPSTER from "../assets/symposium/Sympo'25/Track1/FLIPSTER.jpg"
+import GIGZUP from "../assets/symposium/Sympo'25/Track1/GIGZUP.jpg"
+import Oratio from "../assets/symposium/Sympo'25/Track1/Oratio.png"
+import SynaptiQ from "../assets/symposium/Sympo'25/Track1/SynaptiQ.png"
+import TriSpark from "../assets/symposium/Sympo'25/Track1/TriSpark.png"
+import vizyourway from "../assets/symposium/Sympo'25/Track1/VIZYOURWAY.png"
+import Site2Sync from "../assets/symposium/Sympo'25/Track1/Site2sync.jpg"
 
 import RandomEvents from "./RandomEvents";
 
 import { Link } from "react-router-dom";
 
 const NonCircuitTec = () => {
-  const color = randomColor();
   const noncircuittec = RandomEvents("Circuit Branch - Technical Events");
 
   // Events data
   const circuittechnicalEvents = [
     {
+      id: 0,
+      imageSrc: Oratio,
+      altText: "Oratio",
+      label: "Oratio",
+      path: "/oratio",
+      
+    },
+    {
       id: 1,
-      imageSrc: Image, // Replace with actual image path
-      altText: "Eloquence",
-      label: "Eloquence",
-      path: "/eloquence",
+      imageSrc: Site2Sync,
+      altText: "Site2Sync",
+      label: "Site2Sync",
+      path: "/site2Sync",
+      
     },
     {
       id: 2,
-      imageSrc: Image,
-      altText: "Wizzup",
-      label: "Wizzup",
-      path: "/wizzup",
+      imageSrc: SynaptiQ,
+      altText: "SynaptiQ",
+      label: "SynaptiQ",
+      path: "/synaptiq",
+      
     },
     {
       id: 3,
-      imageSrc: Image,
-      altText: "MatterMind",
-      label: "MatterMind",
-      path: "/mattermind",
+      
+      imageSrc: FLIPSTER,
+      altText: "FLIPSTER",
+      label: "FLIPSTER",
+      path: "/flipster",
     },
+    
     {
       id: 4,
-      imageSrc: Image,
-      altText: "Viz Your Way",
-      label: "Viz Your Way",
-      path: "/vizyourway",
+      imageSrc: EscapeRoom, // Replace with actual image path
+      altText: "EscapeRoom",
+      label: "EscapeRoom",
+      path: "/escaperoom",
+      
     },
+    
+    
     {
       id: 5,
-      imageSrc: Image,
-      altText: "GhostOps-CTF",
-      label: "GhostOps-CTF",
-      path: "/ghostops",
+      imageSrc: TriSpark,
+      altText: "TriSpark",
+      label: "TriSpark",
+      path: "/triSpark",
     },
     {
       id: 6,
-      imageSrc: Image,
-      altText: "Code Sprint",
-      label: "Code Sprint",
-      path: "/codesprint",
+      imageSrc: vizyourway,
+      altText: "vizyourway",
+      label: "vizyourway",
+      path: "/vizyourway",
     },
+    
+    
   ];
 
   return (
     <div className="max-w-7xl mx-auto p-6">
       <h3
-        className="text-3xl md:text-4xl font-bold text-center mb-8 text-white uppercase event-text tracking-widest"
-        style={{
-          textShadow: `2px 2px 15px ${color}`,
-        }}
+        className="techeventfont text-3xl md:text-4xl font-bold text-center mb-8 text-white uppercase event-text tracking-widest"
       >
         Technical Events
       </h3>
 
       <div>
         <main className="card-container gap-10 relative flex flex-wrap justify-center w-full">
+          <div className="img-container-oration justify-center">
+          <div className="mt-12 flex justify-center items-center">
+          
+          
+          
+        </div>
+          </div>
+        
           {/* Loop through each event and render a Card */}
           {circuittechnicalEvents.map((card) => (
-            <Link to={card.path} key={card.id}>
+            <Link to={card.path} key={card.id}> 
               <Card imageSrc={card.imageSrc} altText={card.altText} />
             </Link>
           ))}

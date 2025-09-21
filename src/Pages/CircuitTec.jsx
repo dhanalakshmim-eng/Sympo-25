@@ -3,14 +3,21 @@ import randomColor from "randomcolor";
 import "../text.css";
 import Card from "../Components/Card";
 import Image from '../utils/Img/TechLogo.jpg';
-import energia from "../assets/symposium/energiaNova.jpg";
-import batallia from "../assets/symposium/robots.png";
-import bizqueset from "../assets/symposium/Biquest.png"
-import tescaflow from "../assets/symposium/Tescaflow.jpg"
-import cassedete from "../assets/symposium/cassedete.jpg"
+import AmpItUpArena from "../assets/symposium/Sympo'25/Track2/Amp-it-up-arena.jpeg"
+import BioMystic from "../assets/symposium/Sympo'25/Track2/BioMystic.jpeg"
+import dEADLYDEEDS from "../assets/symposium/Sympo'25/Track2/dEADLYDEEDS.jpeg"
+import Nexus from "../assets/symposium/Sympo'25/Track2/Nexus.jpeg"
+import POTPURRI from "../assets/symposium/Sympo'25/Track2/POTPURRI.png"
+import THINKTANK from "../assets/symposium/Sympo'25/Track2/THINK TANK.png"
+import TRACKTRON from "../assets/symposium/Sympo'25/Track2/TRACK TRON.jpeg"
+
+import iplauction from "../assets/symposium/Old/iplauction.jpg"
+
 
 import RandomEvents from "../Components/RandomEvents";
 import { Link } from "react-router-dom";
+
+
 
 const CircuitTec = () => {
   const color = randomColor();
@@ -20,41 +27,42 @@ const CircuitTec = () => {
   const circuittechnicalEvents = [
     {
       id: 1,
-      imageSrc: energia, 
-      altText: "Energia Nova",
-      label: "Energia Nova",
-      path: "/energianova",
-      // onClick: () => alert("Energia Nova clicked"),
+      imageSrc: Nexus, 
+      altText: "Nexus",
+      label: "Nexus",
+      path: "/nexus",
     },
     {
       id: 2,
-      imageSrc: cassedete, 
-      altText: "Casse-dete",
-      label: "Casse-dete",
-      path: "/cassedete",
+      imageSrc: AmpItUpArena,
+      altText: "Amp-It-Up-Arena",
+      path: "/ampItUpArena",
     },
     {
       id: 3,
-      imageSrc: batallia, 
-      altText: "Batallia de Robots",
-      label: "Batallia de Robots",
-      path: "/batallia",
+      imageSrc: BioMystic,
+      altText: "BioMystic",
+      path: "/bioMystic",
     },
+    
+    
+    
     {
       id: 4,
-      imageSrc: tescaflow, 
-      altText: "Tescaflow",
-      label: "Tescaflow",
-      path: "/tescaflow",
+      imageSrc: THINKTANK, 
+      altText: "THINKTANK",
+      label: "THINKTANK",
+      path: "/thinktank",
     },
     {
       id: 5,
-      imageSrc: bizqueset, 
-      altText: "BizQuest",
-      label: "BizQueset",
-      path: "/bizqueset",
+      imageSrc: TRACKTRON, 
+      altText: "TRACKTRON",
+      label: "TRACKTRON",
+      path: "/tracktron",
     },
-  ];
+
+  ];  
 
   return (
     <div className="max-w-7xl mx-auto p-6">
