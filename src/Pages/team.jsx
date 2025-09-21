@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import Shifan from "../Pages/contributors image/shifan.jpg"
-import kishor from"../Pages/contributors image/kishorrjj.jpg"
-import dhana from "../Pages/contributors image/dhana.jpg"
-import angel from "../Pages/contributors image/angeline.jpg"
+import kishor from"../pages/contributors image/kishorrjj.jpg"
+import dhana from "../pages/contributors image/dhana.jpg"
+import angel from "../pages/contributors image/angel.png"
 import nithi from "../Pages/contributors image/ntihi.jpg"
 import akela from "../Pages/contributors image/akela.jpg"
 import { FaGithub, FaLinkedin } from "react-icons/fa";
@@ -81,12 +81,14 @@ const TeamPage = () => {
       image: Shifan,
       github: "https://github.com/shifan-mts",
       linkedin: "https://in.linkedin.com/in/shifan-mts",
+      description:"3RD YEAR CSE "
     },
     {
       name: "KISHOR J J",
       image: kishor,
       github: "https://github.com/KishorJJ11",
       linkedin:"https://www.linkedin.com/in/kishorjj/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      description:"3RD YEAR CSE"
     },
 
   
@@ -96,6 +98,7 @@ const TeamPage = () => {
       image: dhana,
       github: "https://github.com/dhanalakshmim-eng",
       linkedin: "https://www.linkedin.com/in/dhanalakshmim2005/",
+      description:"3RD YEAR CSE"
     
     },
     {
@@ -103,6 +106,7 @@ const TeamPage = () => {
       image: angel,
       github: "https://github.com/angelinedev",
       linkedin: "https://www.linkedin.com/in/angeline-h/",
+      description:"3RD YEAR CSE"
 
     },
       {
@@ -110,6 +114,7 @@ const TeamPage = () => {
       image: nithi,
       github: "https://github.com/31Nithiyaganesh",
       linkedin: "https://www.linkedin.com/in/nithiyaganesh-s-70996935a/",
+      description:"2RD YEAR CSE"
       
     },
     
@@ -118,6 +123,7 @@ const TeamPage = () => {
       image: akela ,
       github: "https://github.com/AkelaManikandan",
       linkedin:"https://www.linkedin.com/in/akela-m-3734ba233",
+      description:"3RD YEAR CSBS", 
 
     },
     {
@@ -125,7 +131,7 @@ const TeamPage = () => {
       image: loga,
       github: "https://github.com/LogapriyaD123/",
       linkedin: "https://www.linkedin.com/in/logapriya-d-82a917369?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app ",
-      
+      description:"3RD YEAR CSE", 
     },
  /*    {
       name: "Lisa Anderson",
