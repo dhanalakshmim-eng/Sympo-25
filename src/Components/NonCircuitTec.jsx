@@ -24,7 +24,14 @@ const NonCircuitTec = () => {
 
   // Events data
   const circuittechnicalEvents = [
-    
+    {
+      id: 0,
+      imageSrc: Oratio,
+      altText: "Oratio",
+      label: "Oratio",
+      path: "/oratio",
+      
+    },
     {
       id: 1,
       imageSrc: Site2Sync,
@@ -91,14 +98,7 @@ const NonCircuitTec = () => {
           <div className="img-container-oration justify-center">
           <div className="mt-12 flex justify-center items-center">
           
-          <Link to={"/oratio"}> 
-            <img
-            // ref={tiltRef}
-            src={Oratio}
-            alt="Technovanza Poster"
-            className="max-w-100 md:max-w-[50%] justify-center"
-            />
-          </Link>
+          
           
         </div>
           </div>

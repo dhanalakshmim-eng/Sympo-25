@@ -27,41 +27,42 @@ const CircuitTec = () => {
   const circuittechnicalEvents = [
     {
       id: 1,
-      imageSrc: AmpItUpArena,
-      altText: "Amp-It-Up-Arena",
-      path: "/ampItUpArena",
-    },
-    {
-      id: 2,
-      imageSrc: BioMystic,
-      altText: "BioMystic",
-      path: "/bioMystic",
-    },
-    
-    {
-      id: 4,
       imageSrc: Nexus, 
       altText: "Nexus",
       label: "Nexus",
       path: "/nexus",
     },
+    {
+      id: 2,
+      imageSrc: AmpItUpArena,
+      altText: "Amp-It-Up-Arena",
+      path: "/ampItUpArena",
+    },
+    {
+      id: 3,
+      imageSrc: BioMystic,
+      altText: "BioMystic",
+      path: "/bioMystic",
+    },
+    
+    
     
     {
-      id: 6,
+      id: 4,
       imageSrc: THINKTANK, 
       altText: "THINKTANK",
       label: "THINKTANK",
       path: "/thinktank",
     },
     {
-      id: 7,
+      id: 5,
       imageSrc: TRACKTRON, 
       altText: "TRACKTRON",
       label: "TRACKTRON",
       path: "/tracktron",
     },
 
-  ];
+  ];  
 
   return (
     <div className="max-w-7xl mx-auto p-6">
