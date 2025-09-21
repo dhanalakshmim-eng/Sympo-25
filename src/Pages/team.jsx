@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import Shifan from "../Pages/contributors image/shifan.jpg"
-import kishor from"../pages/contributors image/kishorrjj.jpg"
-import dhana from "../pages/contributors image/dhana.jpg"
-import angel from "../pages/contributors image/angel.png"
+import kishor from"../Pages/contributors image/kishorrjj.jpg"
+import dhana from "../Pages/contributors image/dhana.jpg"
+import angel from "../Pages/contributors image/angel.png"
 import nithi from "../Pages/contributors image/ntihi.jpg"
 import akela from "../Pages/contributors image/akela.jpg"
 import { FaGithub, FaLinkedin } from "react-icons/fa";
