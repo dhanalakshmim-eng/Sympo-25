@@ -5,7 +5,7 @@ import 'animate.css';
 const CollegeName = () => {
   return (
     <div className="text-center p-4 sm:p-6 md:p-8 lg:p-6 xl:p-6">
-      <p className="mt-20 clg-font  bg-blue-200 text-3xl sm:text-2xl md:text-3xl lg:text-5xl   font-extrabold mb-0 bg-white bg-clip-text text-transparent font-otherfont animate__animated animate__fadeInUp duration-500">
+      <p className=" clg-font  bg-blue-200 text-3xl sm:text-2xl md:text-3xl lg:text-5xl   font-extrabold mb-0 bg-white bg-clip-text text-transparent font-otherfont animate__animated animate__fadeInUp duration-500">
         JERUSALEM COLLEGE OF ENGINEERING
         <span className="clg-font  bg-blue-200  text-sm font-extrabold bg-white bg-clip-text text-transparent font-otherfont animate__animated animate__fadeInUp duration-500 block">( AN AUTONOMOUS INSTITUTION )</span>
         <span className="clg-font  bg-blue-200  text-sm sm:text-sm md:text-base lg:text-lg font-extrabold bg-white bg-clip-text text-transparent font-otherfont animate__animated animate__fadeInUp duration-500 block">Chennai, Tamil Nadu - 600100</span>

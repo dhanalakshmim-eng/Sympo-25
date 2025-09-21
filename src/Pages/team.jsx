@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Shifan from "../Pages/contributors image/shifan.jpg"
 import kishor from"../pages/contributors image/kishorr jj.jpg"
 import dhana from "../pages/contributors image/dhana.jpg"
-import angel from"../Pages/contributors image/angel.png"
+import angel from "../pages/contributors image/angeline.jpg"
 import nithi from "../Pages/contributors image/ntihi.jpg"
 import akela from "../Pages/contributors image/akela.jpg"
 import { FaGithub, FaLinkedin } from "react-icons/fa";

@@ -13,7 +13,7 @@ import Oratio from "../assets/symposium/Sympo'25/Track1/Oratio.png"
 import SynaptiQ from "../assets/symposium/Sympo'25/Track1/SynaptiQ.png"
 import TriSpark from "../assets/symposium/Sympo'25/Track1/TriSpark.png"
 import vizyourway from "../assets/symposium/Sympo'25/Track1/VIZYOURWAY.png"
-import Site2Sync from "../assets/symposium/Sympo'25/Track1/Site2sync.png"
+import Site2Sync from "../assets/symposium/Sympo'25/Track1/Site2sync.jpg"
 
 import RandomEvents from "./RandomEvents";
 
@@ -24,7 +24,14 @@ const NonCircuitTec = () => {
 
   // Events data
   const circuittechnicalEvents = [
-    
+    {
+      id: 0,
+      imageSrc: Oratio,
+      altText: "Oratio",
+      label: "Oratio",
+      path: "/oratio",
+      
+    },
     {
       id: 1,
       imageSrc: Site2Sync,
@@ -91,14 +98,7 @@ const NonCircuitTec = () => {
           <div className="img-container-oration justify-center">
           <div className="mt-12 flex justify-center items-center">
           
-          <Link to={"/oratio"}> 
-            <img
-            // ref={tiltRef}
-            src={Oratio}
-            alt="Technovanza Poster"
-            className="max-w-100 md:max-w-[50%] justify-center"
-            />
-          </Link>
+          
           
         </div>
           </div>
