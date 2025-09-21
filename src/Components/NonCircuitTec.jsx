@@ -33,6 +33,7 @@ const NonCircuitTec = () => {
       
     },
     {
+      
       id: 1,
       imageSrc: Site2Sync,
       altText: "Site2Sync",
@@ -40,6 +41,8 @@ const NonCircuitTec = () => {
       path: "/site2Sync",
       
     },
+    
+
     {
       id: 2,
       imageSrc: SynaptiQ,
@@ -95,13 +98,7 @@ const NonCircuitTec = () => {
 
       <div>
         <main className="card-container gap-10 relative flex flex-wrap justify-center w-full">
-          <div className="img-container-oration justify-center">
-          <div className="mt-12 flex justify-center items-center">
           
-          
-          
-        </div>
-          </div>
         
           {/* Loop through each event and render a Card */}
           {circuittechnicalEvents.map((card) => (
