@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 import TrackInfo from '../Pages/TrackInfo'
 import VoltageButton from '../Components/VoltageButton';
 
-import img from "../assets/symposium/Old/track1.jpg"
+
 const NonCircuit = () => {
   return (
     <div>

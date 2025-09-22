@@ -4,11 +4,11 @@ import "../text.css";
 import Card from "./Card";
 import Image from "../utils/Img/TechLogo.jpg";
 
-import OBSSTACKLE from "../assets/symposium/Old/OBS-Stackle.jpg"
+
 import EscapeRoom from "../assets/symposium/Sympo'25/Track1/escaperoom.png"
-import CUEBATTLE from "../assets/symposium/Sympo'25/Track1/CUEBATTLE.png"
+
 import FLIPSTER from "../assets/symposium/Sympo'25/Track1/FLIPSTER.jpg"
-import GIGZUP from "../assets/symposium/Sympo'25/Track1/GIGZUP.jpg"
+
 import Oratio from "../assets/symposium/Sympo'25/Track1/Oratio.png"
 import SynaptiQ from "../assets/symposium/Sympo'25/Track1/SynaptiQ.png"
 import TriSpark from "../assets/symposium/Sympo'25/Track1/TriSpark.png"
