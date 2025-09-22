@@ -27,15 +27,15 @@ const NonCircuitnTech = () => {
       path: "/cinephilia",
     },
     {
-          id: 2,
-          imageSrc: GIGZUP,
-          altText: "GIGZUP",
-          label: "GIGZUP",
-          path: "/gigzup",
-          
-    },
+      id:2,
+      imageSrc: POTPURRI, 
+      altText: "POTPURRI",
+      label: "POTPURRI",
+      path: "/potpurri",
+    }, 
+    
     {
-          id: 5,
+          id: 3,
           imageSrc: CUEBATTLE,
           altText: "CUEBATTLE",
           label: "CUEBATTLE",
@@ -43,26 +43,28 @@ const NonCircuitnTech = () => {
          
         },
    {
-         id: 3,
+         id: 4,
          imageSrc: dEADLYDEEDS, 
          altText: "Deadly Deeds",
          label: "Deadly Deeds",
          path: "/deadlydeeds",
        },
-   {
-         id:4 ,
-         imageSrc: POTPURRI, 
-         altText: "POTPURRI",
-         label: "POTPURRI",
-         path: "/potpurri",
-       }, 
+   
        {
-        id:5 ,
+        id:5,
         imageSrc: OBSSTACKLE, 
-        altText: "POTPURRI",
-        label: "POTPURRI",
+        altText: "OBSSTACKLE",
+        label: "OBSSTACKLE",
         path: "/obstackle",
       },
+      {
+        id: 6,
+        imageSrc: GIGZUP,
+        altText: "GIGZUP",
+        label: "GIGZUP",
+        path: "/gigzup",
+        
+  },
       
 
     
