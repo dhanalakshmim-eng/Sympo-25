@@ -2,16 +2,15 @@ import React from "react";
 import randomColor from "randomcolor";
 import "../text.css";
 import Card from "../Components/Card";
-import Image from '../utils/Img/TechLogo.jpg';
+
 import AmpItUpArena from "../assets/symposium/Sympo'25/Track2/Amp-it-up-arena.jpeg"
 import BioMystic from "../assets/symposium/Sympo'25/Track2/BioMystic.jpeg"
-import dEADLYDEEDS from "../assets/symposium/Sympo'25/Track2/dEADLYDEEDS.jpeg"
+
 import Nexus from "../assets/symposium/Sympo'25/Track2/Nexus.jpeg"
-import POTPURRI from "../assets/symposium/Sympo'25/Track2/POTPURRI.png"
+
 import THINKTANK from "../assets/symposium/Sympo'25/Track2/THINK TANK.png"
 import TRACKTRON from "../assets/symposium/Sympo'25/Track2/TRACK TRON.jpeg"
 
-import iplauction from "../assets/symposium/Old/iplauction.jpg"
 
 
 import RandomEvents from "../Components/RandomEvents";
