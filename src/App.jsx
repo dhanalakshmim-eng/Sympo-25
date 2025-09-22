@@ -11,50 +11,39 @@ import metallicSound from './assets/clicksound.mp3'
 import useSound from "use-sound";
 
 const App = () => {
-  const [showSplash, setShowSplash] = useState(true);
+  const [showSplash, setShowSplash] = useState(true); // splash first
   const [loading, setLoading] = useState(true);
 
-  // background music setup (but don’t auto-play yet)
-  const [playBg, { stop: stopBg }] = useSound(backgroundMusic, {
-    volume: 0.2,
-    loop: true,
-    interrupt: true
-  });
+  const [play, { stop }] = useSound(backgroundMusic, { volume: 0.2, loop: true, interrupt: true});
+
 
   useEffect(() => {
-    const startMusicOnClick = () => {
-      playBg();               // 👈 start playing
-      document.removeEventListener("click", startMusicOnClick); // only once
-    };
+      play();
+      return () => {
+        stop();
+      };
+    }, [play, stop]);
+    
 
-    // wait for first user click
-    document.addEventListener("click", startMusicOnClick);
-
-    return () => {
-      stopBg();
-      document.removeEventListener("click", startMusicOnClick);
-    };
-  }, [playBg, stopBg]);
-
-  // metallic click sound (plays every click)
   useEffect(() => {
     const playSound = () => {
       const audio = new Audio(metallicSound);
-      audio.currentTime = 0; // restart each time
-      audio.play().catch(error =>
-        console.log("Failed to play metallic sound:", error)
-      );
+      audio.currentTime = 0;
+      audio.play().catch(error => console.log("Failed to play metallic sound:", error));
     };
 
-    document.addEventListener("click", playSound);
+    document.addEventListener('keydown', playSound);
 
     return () => {
-      document.removeEventListener("click", playSound);
+      document.removeEventListener('keydown', playSound);
     };
   }, []);
 
   useEffect(() => {
+    // Hide splash after 2s
     const splashTimer = setTimeout(() => setShowSplash(false), 5000);
+
+    // Hide loader after 3s (adjust as needed)
     const loaderTimer = setTimeout(() => setLoading(false), 5000);
 
     return () => {
