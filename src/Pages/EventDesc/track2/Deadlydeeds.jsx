@@ -35,7 +35,13 @@ const Deadlydeeds = () => {
       content: (
         <div className="p-4 bg-gradient-to-r from-purple-900/30 to-pink-900/30 rounded-lg border border-purple-500/30">
           <p className="text-base md:text-lg leading-relaxed">
-            On the night of <span className="font-bold text-primary">October 10th</span>, the shadows will gather at JCE College, where a tale of <span className="highlight bg-accent px-2 py-1 rounded-md">deceit</span>, <span className="highlight bg-accent px-2 py-1 rounded-md">secrets</span>, and <span className="highlight bg-accent px-2 py-1 rounded-md">dark puzzles</span> awaits. A crime has been committed—one so twisted, even the walls whisper in silence. The suspects? Lurking among you. The clues? Buried in riddles, sealed within games, waiting for the brave (or foolish) to uncover them. You shall have only <span className="text-red-400 font-bold">10 minutes</span> to solve all mysteries, expose the culprit, and escape the clutches of Nevermore. Fail… and the truth will remain hidden forever.
+            On the night of <span className="font-bold text-primary">October 10th</span>, the shadows will gather at JCE College, where a tale of <span className="highlight bg-accent px-2 py-1 rounded-md">deceit</span>, <span className="highlight bg-accent px-2 py-1 rounded-md">secrets</span>, and <span className="highlight bg-accent px-2 py-1 rounded-md">dark puzzles</span> awaits. 
+            A crime has been committed—one so twisted, even the walls whisper in silence. 
+            The suspects? <span className="text-yellow-400 font-semibold">Lurking among you.</span> 
+            The clues? Buried in riddles, sealed within games, waiting for the brave (or foolish) to uncover them. 
+            The clock will strike, and you shall have only <span className="text-red-400 font-bold">10 minutes</span> to solve all mysteries, expose the culprit, and escape the clutches of <span className="font-bold text-primary">Nevermore</span>. 
+            Fail… and the truth will remain hidden forever. 
+            Dare to step into the darkness, detectives—the <span className="gradient-text font-bold">Nevermore Mystery</span> begins at JCE College, October 10.
           </p>
         </div>
       ),
