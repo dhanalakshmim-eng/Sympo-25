@@ -31,11 +31,18 @@ const TrackOTron = () => {
   const sectionCards = [
     {
       icon: "🚀",
-      heading: "The Cosmic Tale",
+      heading: "The Cosmic Tale of Track-O-Tron",
       content: (
         <div className="p-4 bg-gradient-to-r from-purple-900/30 to-pink-900/30 rounded-lg border border-purple-500/30">
           <p className="text-base md:text-lg leading-relaxed">
-            Once upon a time, in another universe, a legendary arena called <span className="font-bold gradient-text">Track-O-Tron</span> thrived—a place where robots were not just machines, but <span className="highlight bg-accent px-2 py-1 rounded-md">warriors of innovation</span>. From that distant universe, the arena travelled across galaxies, conducted epic battles in many worlds, and now, traveling through the void of space aboard an alien spaceship, has arrived at <span className="text-primary font-semibold">JCE College, Room M101!</span>
+            Once upon a time, in another universe, a legendary arena called{" "}
+            <span className="font-bold gradient-text">Track-O-Tron</span> thrived—
+            a place where robots were not just machines, but{" "}
+            <span className="highlight bg-accent px-2 py-1 rounded-md">
+              warriors of innovation
+            </span>.
+            From that distant universe, the arena travelled across galaxies, conducted epic battles in many worlds, and now, traveling through the void of space aboard an alien spaceship, has arrived at{" "}
+            <span className="text-primary font-semibold">JCE College, Room M101!</span>
           </p>
         </div>
       ),
@@ -46,7 +53,16 @@ const TrackOTron = () => {
       heading: "The Cosmic Adventurers",
       content: (
         <p className="text-base md:text-lg leading-relaxed">
-          Teams of up to <span className="font-bold text-primary">four</span>—or lone inventors—may bring their creations: <span className="highlight bg-accent px-2 py-1 rounded-md">wired</span>, <span className="highlight bg-accent px-2 py-1 rounded-md">wireless</span>, <span className="highlight bg-accent px-2 py-1 rounded-md">autonomous</span>, or <span className="highlight bg-accent px-2 py-1 rounded-md">semi-autonomous</span>. But beware: <span className="text-red-400 font-semibold">safety is law</span>. Even intergalactic heroes must follow the rules.
+          Teams of up to{" "}
+          <span className="font-bold text-primary">four</span>—or lone inventors—
+          may bring their creations:{" "}
+          <span className="highlight bg-accent px-2 py-1 rounded-md">wired</span>,{" "}
+          <span className="highlight bg-accent px-2 py-1 rounded-md">wireless</span>,{" "}
+          <span className="highlight bg-accent px-2 py-1 rounded-md">autonomous</span>, or{" "}
+          <span className="highlight bg-accent px-2 py-1 rounded-md">semi-autonomous</span>.
+          But beware:{" "}
+          <span className="text-red-400 font-semibold">safety is law</span>.
+          Even intergalactic heroes must follow the rules.
         </p>
       ),
       key: "adventurers"
@@ -58,20 +74,31 @@ const TrackOTron = () => {
         <div className="space-y-3">
           {[
             "Line of Destiny – follow the cosmic path",
-            "Maze of Shadows – dodge obstacles like an interstellar pilot", 
+            "Maze of Shadows – dodge obstacles like an interstellar pilot",
             "Battleground of Titans – Robo Soccer / Sumo",
             "Hands of Steel – Pick & Place mastery",
-            "Pathfinder's Quest – autonomous navigation",
+            "Pathfinder’s Quest – autonomous navigation",
             "Rise of Titans – humanoid/biped challenges"
           ].map((challenge, index) => (
-            <div key={index} className="p-3 bg-gradient-to-r from-blue-900/20 to-purple-900/20 rounded-lg border-l-4 border-blue-400">
+            <div
+              key={index}
+              className="p-3 bg-gradient-to-r from-blue-900/20 to-purple-900/20 rounded-lg border-l-4 border-blue-400"
+            >
               <span className="text-blue-400 font-bold">⚡</span>
               <span className="ml-2 text-base md:text-lg">{challenge}</span>
             </div>
           ))}
           <div className="mt-4 p-4 bg-gradient-to-r from-orange-900/30 to-red-900/30 rounded-lg border border-orange-500/30">
             <p className="text-base md:text-lg leading-relaxed">
-              Each robot gets <span className="font-bold text-yellow-400">5–10 minutes of action</span>, followed by <span className="font-bold text-yellow-400">2–3 minutes of questioning</span> by the guardians (judges). Once the mission begins, no outside help may intervene. Bring your own batteries, tools, chargers, and spares. <span className="text-red-400 font-bold">Any mischief = instant disqualification.</span>
+              Each robot gets{" "}
+              <span className="font-bold text-yellow-400">5–10 minutes of action</span>,
+              followed by{" "}
+              <span className="font-bold text-yellow-400">2–3 minutes of questioning</span>{" "}
+              by the guardians (judges). Once the mission begins, no outside help may
+              intervene. Bring your own batteries, tools, chargers, and spares.{" "}
+              <span className="text-red-400 font-bold">
+                Any mischief = instant disqualification.
+              </span>
             </p>
           </div>
         </div>
@@ -86,7 +113,7 @@ const TrackOTron = () => {
           {[
             "Design & strength",
             "Creativity & originality",
-            "Speed & precision", 
+            "Speed & precision",
             "Code intelligence",
             "Storytelling of the invention",
             "Discipline & respect for rules"
@@ -125,7 +152,10 @@ const TrackOTron = () => {
       content: (
         <div className="p-4 bg-gradient-to-r from-indigo-900/30 to-purple-900/30 rounded-lg border border-indigo-500/30">
           <p className="text-base md:text-lg leading-relaxed">
-            The legend now thrives on Earth, in <span className="font-bold text-primary">Room M101</span>, where students become creators, robots become warriors, and innovation becomes the ultimate intergalactic weapon.
+            The legend now thrives on Earth, in{" "}
+            <span className="font-bold text-primary">Room M101</span>, where students become
+            creators, robots become warriors, and innovation becomes the ultimate
+            intergalactic weapon.
           </p>
           <p className="text-lg md:text-xl font-bold gradient-text text-center mt-3">
             Will you answer the call? The spaceship has landed—the arena awaits.
@@ -133,8 +163,7 @@ const TrackOTron = () => {
         </div>
       ),
       key: "call"
-    },
-
+    }
   ];
 
   return (
@@ -156,9 +185,12 @@ const TrackOTron = () => {
         </div>
       </motion.div>
 
-      <div className="lg:w-4/6 w-full flex flex-col gap-6 overflow-auto custom-scrollbar pb-3" style={{ maxHeight: "calc(100vh - 60px)" }}>
+      <div
+        className="lg:w-4/6 w-full flex flex-col gap-6 overflow-auto custom-scrollbar pb-3"
+        style={{ maxHeight: "calc(100vh - 60px)" }}
+      >
         <motion.div
-          initial={{ opacity: 0, y: -30 }} 
+          initial={{ opacity: 0, y: -30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
           className="text-center lg:text-left"
@@ -166,7 +198,9 @@ const TrackOTron = () => {
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold gradient-text drop-shadow-lg mb-2">
             🚀 Track-O-Tron
           </h1>
-          <p className="text-xl md:text-2xl text-accent font-medium">The Cosmic Robotics Arena</p>
+          <p className="text-xl md:text-2xl text-accent font-medium">
+            The Cosmic Robotics Arena
+          </p>
         </motion.div>
 
         {sectionCards.map((card, i) => (
@@ -180,7 +214,9 @@ const TrackOTron = () => {
           >
             <div className="flex items-center mb-4 gap-3">
               <span className="text-3xl">{card.icon}</span>
-              <h2 className="text-2xl md:text-3xl font-bold gradient-text">{card.heading}</h2>
+              <h2 className="text-2xl md:text-3xl font-bold gradient-text">
+                {card.heading}
+              </h2>
             </div>
             <div className="text-gray-100">{card.content}</div>
           </motion.div>
