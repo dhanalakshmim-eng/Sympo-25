@@ -4,7 +4,7 @@ import CircuitTec from "./CircuitTec";
 import EventButton from "../Components/EventButton";
 import { Link } from "react-router-dom";
 import TrackInfo from "./TrackInfo";
-import img from "../assets/symposium/Old/OverallPoster.jpeg";
+
 import "./styles/animation.css";
 import VoltageButton from '../Components/VoltageButton';
 import NewButton from "../Components/Button/NewButton";
@@ -13,7 +13,7 @@ const Circuit = () => {
     <div>
       <TrackInfo
         label="TRACK II"
-        Image={img}
+      
         Description="Registration for Technovanza is now open! Secure your spot today and
             be part of an event that celebrates innovation and collaboration.
             Don’t miss the opportunity to engage with tech enthusiasts and experts."

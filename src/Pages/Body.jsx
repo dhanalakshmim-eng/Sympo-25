@@ -4,8 +4,7 @@ import Faq from "../Sections/Faq";
 import NewAbout from "./About";
 import CountdownTimer from "../Sections/CountDown";
 import Footer from "../Sections/Footer";
-import EventButton from "../Components/EventButton";
-import NewButton from "../Components/Button/NewButton";
+
 import Teams from "../Sections/Teams";
 import VoltageButton from "../Components/VoltageButton"; // Import your new VoltageButton component
 import "animate.css";

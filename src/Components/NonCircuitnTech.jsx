@@ -1,9 +1,7 @@
 import React from "react";
 import "../text.css"; // Ensure this file contains any other necessary styling
 import Card from "./Card";
-import Image from "../utils/Img/TechLogo.jpg";
-import bgmi from "../assets/symposium/Old/BGMI_FINAL.jpg";
-import ff from "../assets/symposium/Old/NewFreeFire.jpg";
+
 import cini from "../assets/symposium/Sympo'25/Track1/Cinephilia.jpg";
 import GIGZUP from "../assets/symposium/Sympo'25/Track1/GIGZUP.jpg";
 import CUEBATTLE from "../assets/symposium/Sympo'25/Track1/CUEBATTLE.png"
@@ -11,10 +9,10 @@ import dEADLYDEEDS from "../assets/symposium/Sympo'25/Track2/dEADLYDEEDS.jpeg"
 import randomColor from "randomcolor";
 import POTPURRI from "../assets/symposium/Sympo'25/Track2/POTPURRI.png"
 import OBSSTACKLE from "../assets/symposium/Sympo'25/Track1/OBS-TACKLE RACE.jpg"
-import ORATIO from "../assets/symposium/Sympo'25/Track1/Oratio.png"
+
 
 import { Link } from "react-router-dom";
-import { Import } from "lucide-react";
+
 // import "./NonCircuitnTech.css";
 
 const NonCircuitnTech = () => {
