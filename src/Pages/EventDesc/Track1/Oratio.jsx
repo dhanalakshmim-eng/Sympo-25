@@ -142,18 +142,20 @@ const Oratio = () => {
       ),
       key: "submission"
     },
-    
     {
-      icon: "🏛️",
-      heading: "Event Footer",
+      icon: "📞",
+      heading: "Contacts",
       content: (
-        <div className="p-4 bg-gradient-to-r from-purple-900/30 to-pink-900/30 rounded-lg border border-purple-500/30">
-          <p className="text-base md:text-lg leading-relaxed italic">
-            Organized under <span className="font-bold text-primary">TECHNOVANZA 2025-26</span>: An Inter Collegiate National Level Technical Symposium at <span className="font-bold text-accent">Jerusalem College of Engineering, Pallikaranai, Chennai</span>.
-          </p>
-        </div>
+        <ul className="list-none space-y-2 text-base md:text-lg">
+          <li>Keerthana P - +91 6383 907 227</li>
+          <li>Deepak Raj - +91 81221 08670</li>
+          <li>Aarya - +91 73055 46300</li>
+          <li>VAISHNAVI KUMARI - +91 93612 71711</li>
+          <li>Nivetha K - +91 81486 9319</li>
+          <li>Harini - +91 86676 78553</li>
+        </ul>
       ),
-      key: "footer"
+      key: "contacts"
     }
   ];
 
