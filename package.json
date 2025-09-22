@@ -30,6 +30,7 @@
     "slick-carousel": "^1.8.1",
     "styled-components": "^6.1.13",
     "tsparticles": "^3.5.0",
+    "use-sound": "^5.0.0",
     "vanilla-tilt": "^1.8.1"
   },
   "devDependencies": {
