@@ -27,7 +27,7 @@ const Header = () => {
             <img
               src={logo}
               alt="Technovanza Logo"
-              className="w-16 h-20 sm:w-16 sm:h-20 md:w-20 md:h-24 object-contain"
+              className="w-21 h-20   object-contain"
             />
           </a>
           {/* </div> */}
