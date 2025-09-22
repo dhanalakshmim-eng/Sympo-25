@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import VanillaTilt from "vanilla-tilt";
 import "../../../styles/eventStyles.css";
-import EventImage from "../../../assets/symposium/Sympo'25/Track2/Amp-it-up-arena.jpeg";
+import AmpItUpBanner from "../../../assets/symposium/Sympo'25/Track2/Amp-it-up-arena.jpeg"; // <-- replace with actual banner image
 
 const cardVariants = {
   hidden: { opacity: 0, y: 40 },
@@ -13,7 +13,7 @@ const cardVariants = {
   })
 };
 
-const Ampituparena = () => {
+const AmpItUpArena = () => {
   const tiltRef = useRef(null);
 
   useEffect(() => {
@@ -30,82 +30,62 @@ const Ampituparena = () => {
 
   const sectionCards = [
     {
-      icon: "🎪",
-      heading: "Event Tagline",
+      icon: "📖",
+      heading: "Description",
       content: (
-        <div className="p-4 bg-gradient-to-r from-yellow-900/30 to-orange-900/30 rounded-lg border border-yellow-500/30">
-          <p className="text-lg md:text-xl italic font-semibold text-center">
-            <span className="text-yellow-300">"Fuel Your Mind, Test Your Limits!"</span><br />
-            <span className="text-orange-300">"Think Fast. Play Smart and Win"</span>
-          </p>
-        </div>
+        <p className="text-base md:text-lg leading-relaxed">
+          Amp-it-up-Arena is a thrilling 3-round quiz event designed to challenge your knowledge, speed, and technical thinking. 
+          Teams of two will compete in <strong>Round 1</strong> through a Google Form with 20 MCQs (15-minute limit, no negative marking). 
+          Qualifying teams move to <strong>Round 2</strong>, where they must identify connections from displayed images within 30 seconds. 
+          In <strong>Round 3</strong>, teams tackle technical connexions with just 15 seconds per question; passing is allowed. 
+          <br /><br />
+          Fair play is mandatory—no gadgets or external help. Winners and runners-up receive prizes and certificates, 
+          while all valid participants get E-certificates. 
+          <span className="font-bold text-primary"> Think fast, play smart, and fuel your mind!</span>
+        </p>
       ),
-      key: "tagline"
-    },
-    {
-      icon: "👥",
-      heading: "Team Formation",
-      content: (
-        <div className="p-4 bg-gradient-to-r from-blue-900/30 to-purple-900/30 rounded-lg border-l-4 border-blue-400">
-          <p className="text-base md:text-lg font-semibold">Each team must consist of <span className="text-accent">2 members</span>.</p>
-        </div>
-      ),
-      key: "team"
+      key: "description"
     },
     {
       icon: "🎯",
+      heading: "Objective",
+      content: (
+        <ul className="list-disc ml-6 space-y-2 text-base md:text-lg">
+          <li>To bring together young minds with a flair for quizzing and intellectual curiosity.</li>
+          <li>To provide a platform for beginners to engage with knowledge-based competitions and expand their learning horizons.</li>
+          <li>To focus on specific thematic areas of quizzing, encouraging participants to explore and master diverse subjects.</li>
+          <li>To promote healthy competition and foster collaborative learning through discussion and exchange of ideas during the event.</li>
+        </ul>
+      ),
+      key: "objective"
+    },
+    {
+      icon: "🌀",
       heading: "Rounds Overview (3 Rounds)",
       content: (
         <div className="space-y-4">
-          <div className="p-4 bg-gradient-to-r from-green-900/30 to-teal-900/30 rounded-lg border-l-4 border-green-400">
-            <h4 className="font-semibold text-yellow-300 mb-2">📝 Round 1:</h4>
-            <ul className="list-none space-y-1 text-base md:text-lg">
-              <li className="flex items-start gap-2">
-                <span className="text-green-400">▶</span>
-                <span>20 multiple-choice questions</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-green-400">▶</span>
-                <span>No negative marking</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-red-400">⏰</span>
-                <span>Time limit: 15 minutes (form will close automatically)</span>
-              </li>
+          <div className="p-3 bg-blue-900/20 rounded-lg border border-blue-500/30">
+            <h3 className="font-semibold text-blue-400">Round 1</h3>
+            <ul className="list-disc ml-6">
+              <li>20 multiple-choice questions</li>
+              <li>No negative marking</li>
+              <li>Time limit: 15 minutes (form will close automatically)</li>
             </ul>
           </div>
-          <div className="p-4 bg-gradient-to-r from-purple-900/30 to-pink-900/30 rounded-lg border-l-4 border-purple-400">
-            <h4 className="font-semibold text-yellow-300 mb-2">🖼️ Round 2:</h4>
-            <ul className="list-none space-y-1 text-base md:text-lg">
-              <li className="flex items-start gap-2">
-                <span className="text-purple-400">▶</span>
-                <span>A picture will be displayed on the Smart Board</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-red-400">⏰</span>
-                <span>Teams must respond within 30 seconds</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-purple-400">▶</span>
-                <span>No negative marking</span>
-              </li>
+          <div className="p-3 bg-green-900/20 rounded-lg border border-green-500/30">
+            <h3 className="font-semibold text-green-400">Round 2</h3>
+            <ul className="list-disc ml-6">
+              <li>A picture will be displayed on the Smart Board</li>
+              <li>Teams must respond within 30 seconds</li>
+              <li>No negative marking</li>
             </ul>
           </div>
-          <div className="p-4 bg-gradient-to-r from-indigo-900/30 to-blue-900/30 rounded-lg border-l-4 border-indigo-400">
-            <h4 className="font-semibold text-yellow-300 mb-2">⚡ Round 3:</h4>
-            <ul className="list-none space-y-1 text-base md:text-lg">
-              <li className="flex items-start gap-2">
-                <span className="text-indigo-400">▶</span>
-                <span>Each team will get 15 seconds to answer</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-indigo-400">▶</span>
-                <span>Passing is allowed if a team cannot answer</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-indigo-400">▶</span>
-                <span>No negative marking</span>
-              </li>
+          <div className="p-3 bg-purple-900/20 rounded-lg border border-purple-500/30">
+            <h3 className="font-semibold text-purple-400">Round 3</h3>
+            <ul className="list-disc ml-6">
+              <li>Each team will get 15 seconds to answer</li>
+              <li>Passing is allowed if a team cannot answer</li>
+              <li>No negative marking</li>
             </ul>
           </div>
         </div>
@@ -116,50 +96,48 @@ const Ampituparena = () => {
       icon: "⚖️",
       heading: "Fair Play",
       content: (
-        <ul className="list-none space-y-2 text-base md:text-lg">
-          {[
-            "Use of mobile phones, internet search, or external help is strictly prohibited",
-            "Any misconduct may lead to disqualification",
-            "In case of a tie, additional pictures will be given",
-            "The first team to answer correctly will be declared the winner"
-          ].map((rule, index) => (
-            <li key={index} className="flex items-start gap-3">
-              <span className="text-red-400 font-bold">✦</span>
-              <span>{rule}</span>
-            </li>
-          ))}
+        <ul className="list-disc ml-6 space-y-2 text-base md:text-lg">
+          <li>Use of mobile phones, internet search, or external help is strictly prohibited.</li>
+          <li>Any misconduct may lead to disqualification.</li>
+          <li>In case of a tie, additional pictures will be given.</li>
+          <li>The first team to answer correctly will be declared the winner.</li>
         </ul>
       ),
       key: "fairplay"
     },
     {
       icon: "🏆",
-      heading: "Rewards",
+      heading: "Judging Criteria",
       content: (
-        <div className="space-y-3">
-          <div className="p-3 bg-yellow-900/20 rounded-lg border border-yellow-500/30">
-            <span className="font-semibold text-yellow-400">🥇</span> 
-            <span className="ml-2">Winners and Runners-up will receive prizes and certificates</span>
-          </div>
-          <div className="p-3 bg-blue-900/20 rounded-lg border border-blue-500/30">
-            <span className="font-semibold text-blue-400">📜</span> 
-            <span className="ml-2">All valid participants will be awarded E-certificates</span>
-          </div>
-        </div>
+        <p className="text-base md:text-lg leading-relaxed">
+          Teams will be judged based on <strong>accuracy, speed, and logical reasoning</strong> across all three rounds. 
+          In Round 1, scores will be based on the number of correct responses within the time limit. 
+          In Rounds 2 and 3, teams will be evaluated on how quickly and accurately they identify the correct connections. 
+          No negative marking ensures fairness, but time-bound answering adds a competitive edge. 
+          <br /><br />
+          In the case of a tie, a <em>sudden-death tie-breaker</em> will determine the winner. 
+          Judges’ decisions will be <span className="font-semibold text-accent">final and binding</span>.
+        </p>
       ),
-      key: "rewards"
+      key: "judging"
     },
     {
-      icon: "🏛️",
-      heading: "Event Footer",
+      icon: "📞",
+      heading: "Contacts",
       content: (
-        <div className="p-4 bg-gradient-to-r from-purple-900/30 to-pink-900/30 rounded-lg border border-purple-500/30">
-          <p className="text-base md:text-lg leading-relaxed italic">
-            Organized under <span className="font-bold text-primary">TECHNOVANZA 2025-26</span>: An Inter Collegiate National Level Technical Symposium at <span className="font-bold text-accent">Jerusalem College of Engineering, Pallikaranai, Chennai</span>.
-          </p>
+        <div className="space-y-2 text-base md:text-lg">
+          <p><span className="font-bold">Student Coordinators:</span></p>
+          <ul className="ml-6 list-disc">
+            <li>Jamal Mohammed Faazil – 7871335565</li>
+            <li>Mohammed Thammen.M – 8668178321</li>
+          </ul>
+          <p className="mt-3"><span className="font-bold">Faculty Coordinator:</span></p>
+          <ul className="ml-6 list-disc">
+            <li>Mr. J. Arul Prakash – 9840721704</li>
+          </ul>
         </div>
       ),
-      key: "footer"
+      key: "contacts"
     }
   ];
 
@@ -174,8 +152,8 @@ const Ampituparena = () => {
       >
         <div className="relative">
           <img
-            src={EventImage}
-            alt="Amp-it-up-Arena"
+            src={AmpItUpBanner}
+            alt="Amp-it-up-Arena Quiz Event"
             className="w-5/6 md:w-4/5 lg:w-full object-cover rounded-2xl shadow-2xl border-4 border-gradient"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-blue-600/20 to-transparent rounded-2xl"></div>
@@ -192,7 +170,7 @@ const Ampituparena = () => {
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold gradient-text drop-shadow-lg mb-2">
             ⚡ Amp-it-up-Arena
           </h1>
-          <p className="text-xl md:text-2xl text-accent font-medium">Knowledge Competition</p>
+          <p className="text-xl md:text-2xl text-accent font-medium">Quiz Competition</p>
         </motion.div>
 
         {sectionCards.map((card, i) => (
@@ -216,4 +194,4 @@ const Ampituparena = () => {
   );
 };
 
-export default Ampituparena;
+export default AmpItUpArena;
