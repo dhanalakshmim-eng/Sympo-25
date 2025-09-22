@@ -32,10 +32,10 @@ const App = () => {
       audio.play().catch(error => console.log("Failed to play metallic sound:", error));
     };
 
-    document.addEventListener('keydown', playSound);
+    document.addEventListener('click', playSound);
 
     return () => {
-      document.removeEventListener('keydown', playSound);
+      document.removeEventListener('click', playSound);
     };
   }, []);
 
