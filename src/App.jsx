@@ -16,7 +16,7 @@ const App = () => {
 
   const [play, { stop }] = useSound(backgroundMusic, { volume: 0.1, loop: true, interrupt: true});
 
-
+/* audio added */
   useEffect(() => {
       play();
       return () => {
