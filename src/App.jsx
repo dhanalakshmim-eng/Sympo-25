@@ -14,7 +14,7 @@ const App = () => {
   const [showSplash, setShowSplash] = useState(true); // splash first
   const [loading, setLoading] = useState(true);
 
-  const [play, { stop }] = useSound(backgroundMusic, { volume: 0.2, loop: true, interrupt: true});
+  const [play, { stop }] = useSound(backgroundMusic, { volume: 0.1, loop: true, interrupt: true});
 
 
   useEffect(() => {
