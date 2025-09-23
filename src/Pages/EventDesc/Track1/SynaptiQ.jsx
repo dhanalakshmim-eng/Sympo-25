@@ -173,7 +173,7 @@ const SynaptiQ = () => {
           <div className="space-y-2">
             <div className="flex items-center gap-2">
               <span className="w-2 h-2 bg-green-400 rounded-full"></span>
-              <span className="font-semibold">Ms. Gopika G:</span> 
+              <span className="font-semibold">Ms. Gobika G:</span> 
               <a href="tel:+916385636336" className="text-accent hover:underline">+91 6385636336</a>
             </div>
             <div className="flex items-center gap-2">

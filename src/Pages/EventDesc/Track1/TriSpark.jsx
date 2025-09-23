@@ -69,7 +69,7 @@ const TriSpark = () => {
             </ul>
           </div>
           <div className="p-4 bg-gradient-to-r from-yellow-900/30 to-orange-900/30 rounded-lg border-l-4 border-yellow-400">
-            <h3 className="gradient-subhead font-semibold mb-2 text-xl">💡 Round 3 – Design the Code&</h3>
+            <h3 className="gradient-subhead font-semibold mb-2 text-xl">💡 Round 3 – Design the Code</h3>
             <ul className="list-none space-y-2 text-base md:text-lg">
               <li>Prerequisite: Knowledge of Python (syntax, logic, debugging).</li>
               <li>Task: Reconstruct scrambled codes (split into 4 mixed parts) into a valid executable program.</li>

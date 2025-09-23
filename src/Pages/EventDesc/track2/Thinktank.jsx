@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import VanillaTilt from "vanilla-tilt";
 import "../../../styles/eventStyles.css";
-import EventImage from "../../../assets/symposium/Sympo'25/Track2/THINK TANK.png";
+import ThinktankBanner from "../../../assets/symposium/Sympo'25/Track2/THINK TANK.png";
 
 const cardVariants = {
   hidden: { opacity: 0, y: 40 },
@@ -30,40 +30,87 @@ const Thinktank = () => {
 
   const sectionCards = [
     {
-      icon: "🎯",
-      heading: "Objective",
-      content: (
-        <div className="p-4 bg-gradient-to-r from-blue-900/30 to-purple-900/30 rounded-lg border border-blue-500/30">
-          <p className="text-base md:text-lg leading-relaxed">
-            To test and build <span className="font-bold text-primary">business knowledge</span> while promoting <span className="highlight bg-accent px-2 py-1 rounded-md">quick thinking</span>, <span className="highlight bg-accent px-2 py-1 rounded-md">teamwork</span>, and <span className="highlight bg-accent px-2 py-1 rounded-md">healthy competition</span>.
-          </p>
-        </div>
-      ),
-      key: "objective"
-    },
-    {
-      icon: "📜",
-      heading: "Rules & Regulations",
+      icon: "📝",
+      heading: "Business Quiz – Rules & Regulations",
       content: (
         <ul className="list-none space-y-2 text-base md:text-lg">
-          {[
-            "Each team must have 2 members",
-            "The event will consist of 3 rounds (including prelims): Prelims, 1st round – Logo, 2nd round – Rapid Fire",
-            "For all the rounds, the topic will be revealed on the spot",
-            "Teams must arrive on time; late arrivals may not be permitted",
-            "Teams will be evaluated on spontaneity, teamwork, and the effectiveness of their solutions",
-            "The judges' and organizers' decisions are final and cannot be disputed"
-          ].map((rule, index) => (
-            <li key={index} className="flex items-start gap-3">
-              <span className="text-accent font-bold">✦</span>
-              <span>{rule}</span>
-            </li>
-          ))}
+          <li>Team Size: 2 Members per team</li>
         </ul>
       ),
       key: "rules"
     },
-
+    {
+      icon: "📜",
+      heading: "General Instructions",
+      content: (
+        <ul className="list-none space-y-2 text-base md:text-lg">
+          <li>Each team must consist of exactly 2 participants.</li>
+          <li>Teams must report on time; late arrivals may not be permitted.</li>
+          <li>Topics for all rounds will be revealed on the spot.</li>
+          <li>Use of mobile phones, smart devices, or external assistance is strictly prohibited.</li>
+          <li>Any form of cheating, malpractice, or code/answer sharing will lead to immediate disqualification.</li>
+          <li>The judges’ and organizers’ decisions are final and binding.</li>
+        </ul>
+      ),
+      key: "instructions"
+    },
+    {
+      icon: "🛠",
+      heading: "Event Rounds",
+      content: (
+        <div className="space-y-6">
+          <div className="p-4 bg-gradient-to-r from-blue-900/30 to-purple-900/30 rounded-lg border-l-4 border-blue-400">
+            <h3 className="gradient-subhead font-semibold mb-2 text-xl">Prelims (Round 1)</h3>
+            <ul className="list-disc ml-6 text-base md:text-lg">
+              <li>Format: Screening round with a set of objective and short-answer questions on business concepts.</li>
+              <li>Task: Teams must attempt all questions within the time limit.</li>
+              <li>Evaluation: Based on accuracy and total score.</li>
+              <li>Outcome: Top teams qualify for the next round.</li>
+            </ul>
+          </div>
+          <div className="p-4 bg-gradient-to-r from-green-900/30 to-teal-900/30 rounded-lg border-l-4 border-green-400">
+            <h3 className="gradient-subhead font-semibold mb-2 text-xl">Round 2: Logo Identification</h3>
+            <ul className="list-disc ml-6 text-base md:text-lg">
+              <li>Format: Teams will be shown a series of logos, taglines, or brand elements.</li>
+              <li>Task: Identify the brand/company correctly.</li>
+              <li>Evaluation: Accuracy and speed.</li>
+            </ul>
+          </div>
+          <div className="p-4 bg-gradient-to-r from-yellow-900/30 to-orange-900/30 rounded-lg border-l-4 border-yellow-400">
+            <h3 className="gradient-subhead font-semibold mb-2 text-xl">Round 3: Rapid Fire</h3>
+            <ul className="list-disc ml-6 text-base md:text-lg">
+              <li>Format: Quick-fire questioning.</li>
+              <li>Task: Answer as many as possible within the given time.</li>
+              <li>Evaluation: Spontaneity, correctness, and teamwork.</li>
+            </ul>
+          </div>
+        </div>
+      ),
+      key: "rounds"
+    },
+    {
+      icon: "🏆",
+      heading: "Evaluation Criteria",
+      content: (
+        <ul className="list-disc ml-6 text-base md:text-lg">
+          <li>Spontaneity & Presence of Mind</li>
+          <li>Teamwork & Coordination</li>
+          <li>Effectiveness of Responses</li>
+        </ul>
+      ),
+      key: "criteria"
+    },
+    {
+      icon: "🥇",
+      heading: "Final Results",
+      content: (
+        <div className="text-base md:text-lg leading-relaxed">
+          Winners will be declared based on their overall performance across all rounds.<br />
+          Cash prizes and certificates await the top-performing teams.
+        </div>
+      ),
+      key: "results"
+    }
   ];
 
   return (
@@ -77,14 +124,13 @@ const Thinktank = () => {
       >
         <div className="relative">
           <img
-            src={EventImage}
-            alt="Think Tank Event"
+            src={ThinktankBanner}
+            alt="Thinktank Business Quiz Event"
             className="w-5/6 md:w-4/5 lg:w-full object-cover rounded-2xl shadow-2xl border-4 border-gradient"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-blue-600/20 to-transparent rounded-2xl"></div>
         </div>
       </motion.div>
-
       <div className="lg:w-4/6 w-full flex flex-col gap-6 overflow-auto custom-scrollbar pb-3" style={{ maxHeight: "calc(100vh - 60px)" }}>
         <motion.div
           initial={{ opacity: 0, y: -30 }} 
@@ -93,11 +139,9 @@ const Thinktank = () => {
           className="text-center lg:text-left"
         >
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold gradient-text drop-shadow-lg mb-2">
-            ✨ Think Tank
+            Thinktank
           </h1>
-          <p className="text-xl md:text-2xl text-accent font-medium">Business Knowledge Event</p>
         </motion.div>
-
         {sectionCards.map((card, i) => (
           <motion.div
             custom={i}

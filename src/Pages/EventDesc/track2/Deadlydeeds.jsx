@@ -1,8 +1,11 @@
+
+
+
 import React, { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import VanillaTilt from "vanilla-tilt";
 import "../../../styles/eventStyles.css";
-import EventImage from "../../../assets/symposium/Sympo'25/Track2/dEADLYDEEDS.jpeg";
+import NevermoreBanner from "../../../assets/symposium/Sympo'25/Track2/dEADLYDEEDS.jpeg";
 
 const cardVariants = {
   hidden: { opacity: 0, y: 40 },
@@ -30,98 +33,77 @@ const Deadlydeeds = () => {
 
   const sectionCards = [
     {
-      icon: "🕵️‍♂️",
-      heading: "Event Description",
+      icon: "🕵️",
+      heading: "The Nevermore Mystery",
       content: (
-        <div className="p-4 bg-gradient-to-r from-purple-900/30 to-pink-900/30 rounded-lg border border-purple-500/30">
-          <p className="text-base md:text-lg leading-relaxed">
-            On the night of <span className="font-bold text-primary">October 10th</span>, the shadows will gather at JCE College, where a tale of <span className="highlight bg-accent px-2 py-1 rounded-md">deceit</span>, <span className="highlight bg-accent px-2 py-1 rounded-md">secrets</span>, and <span className="highlight bg-accent px-2 py-1 rounded-md">dark puzzles</span> awaits. 
-            A crime has been committed—one so twisted, even the walls whisper in silence. 
-            The suspects? <span className="text-yellow-400 font-semibold">Lurking among you.</span> 
-            The clues? Buried in riddles, sealed within games, waiting for the brave (or foolish) to uncover them. 
-            The clock will strike, and you shall have only <span className="text-red-400 font-bold">10 minutes</span> to solve all mysteries, expose the culprit, and escape the clutches of <span className="font-bold text-primary">Nevermore</span>. 
-            Fail… and the truth will remain hidden forever. 
-            Dare to step into the darkness, detectives—the <span className="gradient-text font-bold">Nevermore Mystery</span> begins at JCE College, October 10.
-          </p>
+        <div className="text-base md:text-lg leading-relaxed">
+          On the night of October 10th, the shadows will gather at JCE College, where a tale of deceit, secrets, and dark puzzles awaits.<br /><br />
+          A crime has been committed—one so twisted, even the walls whisper in silence.<br /><br />
+          The suspects? Lurking among you.<br />
+          The clues? Buried in riddles, sealed within games, waiting for the brave (or foolish) to uncover them.<br /><br />
+          The clock will strike, and you shall have only 10 minutes to solve all mysteries, expose the culprit, and escape the clutches of Nevermore. Fail… and the truth will remain hidden forever.<br /><br />
+          Dare to step into the darkness, detectives—the Nevermore Mystery begins at JCE College, October 10.
         </div>
       ),
-      key: "desc"
+      key: "description"
+    },
+    {
+      icon: "🎲",
+      heading: "Event Flow – The Wednesday Way",
+      content: (
+        <ol className="list-decimal ml-6 text-base md:text-lg space-y-2">
+          <li>
+            Opening Ritual – A gloomy briefing welcomes detectives to the halls of Nevermore, where suspects lurk and secrets rot.
+          </li>
+          <li>
+            The Hunt Begins – Teams dive into 10 mini-investigations (Find the Path, Jumbled Words, Odd One Out, etc.), each peeling back a layer of the mystery.
+          </li>
+          <li>
+            Gathering Evidence – Every solved puzzle yields sinister tokens: fingerprints, blood-stained notes, or suspicious weapons.
+          </li>
+          <li>
+            Interrogation & Theories – Detectives wield their evidence to question suspects and weave chilling deductions.
+          </li>
+          <li>
+            The Last Shadows – Twists surface, revealing hidden motives and the culprit’s darkest fingerprint.
+          </li>
+          <li>
+            Accusation & Theories – Teams deliver their final verdict: the killer, the weapon, and the motive.
+          </li>
+          <li>
+            The Grand Unveiling – The host unmasks the true culprit, exposing how every sinister clue was woven together in the Nevermore mystery.
+          </li>
+        </ol>
+      ),
+      key: "flow"
     },
     {
       icon: "📜",
       heading: "Rules & Regulations",
       content: (
         <ul className="list-none space-y-2 text-base md:text-lg">
-          {[
-            "The mystery must be solved within 10 minutes",
-            "Participants must remain in detective mode at all times",
-            "All puzzles and riddles are open to every team—observation and teamwork are key",
-            "Skipping games is forbidden; every clue may carry crucial weight",
-            "Collaboration is encouraged, but deception will lead to disqualification",
-            "The coordinators' decisions are final and binding, like ravens in the night",
-            "Team Size: 2–4 detectives",
-            "Game Duration: 10 minutes total"
-          ].map((rule, index) => (
-            <li key={index} className="flex items-start gap-3">
-              <span className="text-red-400 font-bold">🔍</span>
-              <span>{rule}</span>
-            </li>
-          ))}
+          <li><strong>Duration of Doom</strong><br />The entire mystery must be solved within 10 minutes—every second wasted brings you closer to eternal failure.</li>
+          <li><strong>Stay in Character</strong><br />Participants must remain in detective mode at all times, keeping the chilling immersion of the mystery alive.</li>
+          <li><strong>Clues of the Macabre</strong><br />All puzzles, riddles, and dark games are open to every team—but only the most observant eyes and unshaken teamwork will catch the shadows between the lines.</li>
+          <li><strong>No Escaping the Maze</strong><br />Each challenge holds a vital piece of the grand riddle. Skipping games is forbidden, for even the smallest clue may carry the weight of guilt or innocence.</li>
+          <li><strong>Teamwork in the Shadows</strong><br />Collaboration is encouraged, but deception or hostility will awaken the wrath of the guardians (coordinators).</li>
+          <li><strong>The Final Word</strong><br />The coordinators’ decisions are absolute and binding—their verdicts echo like ravens in the night.</li>
+          <li>Team Size: 2–4 detectives</li>
+          <li>Game Duration: 10 minutes total</li>
         </ul>
       ),
       key: "rules"
     },
     {
-      icon: "🛠",
-      heading: "Event Flow – The Wednesday Way",
+      icon: "🕯️",
+      heading: "Closing Line",
       content: (
-        <div className="space-y-4">
-          <div className="p-4 bg-gradient-to-r from-red-900/30 to-orange-900/30 rounded-lg border-l-4 border-red-400">
-            <h4 className="font-semibold text-yellow-300 mb-2">🌙 Opening Ritual:</h4>
-            <p className="text-base md:text-lg">A gloomy briefing welcomes detectives to the halls of Nevermore</p>
-          </div>
-          <div className="p-4 bg-gradient-to-r from-purple-900/30 to-pink-900/30 rounded-lg border-l-4 border-purple-400">
-            <h4 className="font-semibold text-yellow-300 mb-2">🔍 The Hunt Begins:</h4>
-            <p className="text-base md:text-lg">Teams dive into 10 mini-investigations (Find the Path, Jumbled Words, Odd One Out, etc.)</p>
-          </div>
-          <div className="p-4 bg-gradient-to-r from-blue-900/30 to-cyan-900/30 rounded-lg border-l-4 border-blue-400">
-            <h4 className="font-semibold text-yellow-300 mb-2">🧩 Gathering Evidence:</h4>
-            <p className="text-base md:text-lg">Every solved puzzle yields sinister tokens: fingerprints, blood-stained notes, or suspicious weapons</p>
-          </div>
-          <div className="p-4 bg-gradient-to-r from-green-900/30 to-teal-900/30 rounded-lg border-l-4 border-green-400">
-            <h4 className="font-semibold text-yellow-300 mb-2">❓ Interrogation & Theories:</h4>
-            <p className="text-base md:text-lg">Detectives use evidence to question suspects and build deductions</p>
-          </div>
-          <div className="p-4 bg-gradient-to-r from-indigo-900/30 to-blue-900/30 rounded-lg border-l-4 border-indigo-400">
-            <h4 className="font-semibold text-yellow-300 mb-2">🌫️ The Last Shadows:</h4>
-            <p className="text-base md:text-lg">Hidden motives surface, leading to the final reveal</p>
-          </div>
-          <div className="p-4 bg-gradient-to-r from-yellow-900/30 to-orange-900/30 rounded-lg border-l-4 border-yellow-400">
-            <h4 className="font-semibold text-yellow-300 mb-2">⚖️ Accusation & Verdict:</h4>
-            <p className="text-base md:text-lg">Teams present their final theory—the killer, weapon, and motive</p>
-          </div>
-          <div className="p-4 bg-gradient-to-r from-pink-900/30 to-red-900/30 rounded-lg border-l-4 border-pink-400">
-            <h4 className="font-semibold text-yellow-300 mb-2">🎭 Grand Unveiling:</h4>
-            <p className="text-base md:text-lg">The host unmasks the true culprit, tying all sinister clues together</p>
-          </div>
-        </div>
-      ),
-      key: "flow"
-    },
-    {
-      icon: "💀",
-      heading: "Closing Words",
-      content: (
-        <div className="p-4 bg-gradient-to-r from-black/30 to-gray-900/30 rounded-lg border border-gray-500/30">
-          <p className="text-base md:text-lg italic text-center font-semibold">
-            <span className="text-red-400">"The shadows will not wait, and neither will the truth.</span> <br />
-            <span className="text-yellow-400">Ten minutes is all you have… solve the Nevermore Mystery, or become part of it."</span>
-          </p>
+        <div className="text-base md:text-lg leading-relaxed italic">
+          "The shadows will not wait, and neither will the truth. Ten minutes is all you have… solve the Nevermore Mystery, or become part of it."
         </div>
       ),
       key: "closing"
-    },
-  
+    }
   ];
 
   return (
@@ -135,7 +117,7 @@ const Deadlydeeds = () => {
       >
         <div className="relative">
           <img
-            src={EventImage}
+            src={NevermoreBanner}
             alt="Nevermore Mystery Event"
             className="w-5/6 md:w-4/5 lg:w-full object-cover rounded-2xl shadow-2xl border-4 border-gradient"
           />
@@ -145,17 +127,15 @@ const Deadlydeeds = () => {
 
       <div className="lg:w-4/6 w-full flex flex-col gap-6 overflow-auto custom-scrollbar pb-3" style={{ maxHeight: "calc(100vh - 60px)" }}>
         <motion.div
-          initial={{ opacity: 0, y: -30 }} 
+          initial={{ opacity: 0, y: -30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
           className="text-center lg:text-left"
         >
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold gradient-text drop-shadow-lg mb-2">
-            🕵️‍♂️ SINISTER SCHEMES
+          Sinister Schemes
           </h1>
-          <p className="text-xl md:text-2xl text-accent font-medium">Mystery Detective Event</p>
         </motion.div>
-
         {sectionCards.map((card, i) => (
           <motion.div
             custom={i}
