@@ -143,7 +143,7 @@ const TriSpark = () => {
         </div>
       </motion.div>
 
-      <div className="lg:w-4/6 w-full flex flex-col gap-6 overflow-auto custom-scrollbar pb-3" style={{ maxHeight: "calc(100vh - 60px)" }}>
+      <div className="lg:w-4/6 w-full flex flex-col gap-6 overflow-auto custom-scrollbar pb-3" style={{ maxHeight: "calc(125vh - 60px)" }}>
         <motion.div
           initial={{ opacity: 0, y: -30 }} 
           animate={{ opacity: 1, y: 0 }}
