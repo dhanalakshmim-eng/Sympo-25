@@ -2,7 +2,7 @@ import React from "react";
 import randomColor from "randomcolor";
 import "../text.css";
 import Card from "./Card";
-import Image from "../utils/Img/TechLogo.jpg";
+
 
 
 import EscapeRoom from "../assets/symposium/Sympo'25/Track1/escaperoom.png"

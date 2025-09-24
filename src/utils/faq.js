@@ -20,4 +20,9 @@ export const questions = [
     question: "Are there prizes for competitions?",
     answer: "Yes, exciting prizes and certificates are awarded to winners of competitions.",
   },
+  {
+    id: 5,
+    question: "Are there e-certificates for all participants?",
+    answer: "Yes, e-certificates are given to all participants.",
+  },
 ];
