@@ -7,6 +7,7 @@ import nithi from "../Pages/contributors image/ntihi.jpg"
 import akela from "../Pages/contributors image/akela.jpg"
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import loga from "../Pages/contributors image/logapriya.jpg"
+import sandhiya from "../Pages/contributors image/sandh.jpg"
 const TeamMember = ({ member, index }) => {
   const [isLoaded, setIsLoaded] = useState(false);
 
@@ -89,6 +90,9 @@ const TeamPage = () => {
       github: "https://github.com/KishorJJ11",
       linkedin:"https://www.linkedin.com/in/kishorjj/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       description:"3RD YEAR CSE"
+
+
+
     },
 
   
@@ -133,15 +137,15 @@ const TeamPage = () => {
       linkedin: "https://www.linkedin.com/in/logapriya-d-82a917369?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app ",
       description:"3RD YEAR CSE", 
     },
- /*    {
-      name: "Lisa Anderson",
-      image: "/images/image8.jpg",
-      github: "https://github.com/lisaanderson",
-      linkedin: "https://linkedin.com/in/lisaanderson",
-      description:
-        "Performance optimization specialist. Ensures applications run smoothly and efficiently across all platforms.",
-    },
     {
+      name: "Santhya",
+      image: sandhiya,
+      github: "https://github.com/Dazzilingqueen19",
+      linkedin: "https://www.linkedin.com/in/santhya-anandan-13824a2b4/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      description:
+        "4TH YEAR CSE",
+    },
+  /*  {
       name: "James Brown",
       image: "/images/image9.jpg",
       github: "https://github.com/jamesbrown",

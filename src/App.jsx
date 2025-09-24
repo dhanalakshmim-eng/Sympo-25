@@ -31,7 +31,6 @@ const App = () => {
       audio.currentTime = 0;
       audio.play().catch(error => console.log("Failed to play metallic sound:", error));
     };
-
     document.addEventListener('click', playSound);
 
     return () => {
