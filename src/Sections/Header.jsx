@@ -88,7 +88,7 @@ const Header = () => {
             >
               <ul className="flex flex-col md:flex-row md:space-x-8 text-2xl md:mt-0 mt-4 p-4 md:p-0">
                 {["/", "/about", "/events", "/contact"].map((path, idx) => {
-                  const labels = ["HOME", "ABOUT", "EVENTS", "CONTACT"];
+                  const labels = ["HOME", "ABOUT", "EVENTS"];
                   return (
                     <li key={path}>
                       <Link

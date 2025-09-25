@@ -17,7 +17,7 @@ const Faq = () => {
               <span className="text-xl text-white">&#x2699;</span>
             </summary>
             <p className="p-2 text-lg text-gray-300 transition-all duration-300 ease-in-out">
-              {question.answer}
+              {question.answer} {question.clgLink && <span><a href={question.clgLink} >Click here!</a></span> }
             </p>  
           </details>
         </div>
