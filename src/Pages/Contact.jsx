@@ -15,9 +15,9 @@ const Contact = () => {
           phone: "+919150829797",
         },
         {
-          name: "Gowtham S",
+          name: "Jinu Sharlin",
           designation: "Student Coordinator",
-          phone: "+919025896912",
+          phone: "+919150254849",
         //   email: "jane@example.com",
         },
       ],
@@ -26,9 +26,9 @@ const Contact = () => {
       trackName: "TRACK II",
       coordinators: [
         {
-          name: "Abdul Hameed E H",
+          name: "Aravind",
           designation: "Student Coordinator",
-          phone: "+918056747791",
+          phone: "+917358488294",
         //   email: "alice@example.com",
         },
         {
